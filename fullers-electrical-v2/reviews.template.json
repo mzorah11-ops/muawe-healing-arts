@@ -1,0 +1,16 @@
+[
+  {
+    "name": "Customer name",
+    "text": "What the customer said about your work.",
+    "rating": 5,
+    "source": "Google",
+    "date": "March 2026",
+    "job": "Gate repair"
+  },
+  {
+    "name": "Another customer",
+    "text": "Copy this block, separate blocks with a comma, and paste them into reviews.json.",
+    "rating": 5,
+    "source": "Facebook"
+  }
+]

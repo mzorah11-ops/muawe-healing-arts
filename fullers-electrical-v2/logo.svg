@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 160" role="img" aria-labelledby="t">
+  <title id="t">Fuller's Electrical Services Ltd</title>
+  <defs>
+    <mask id="cut" maskUnits="userSpaceOnUse" x="0" y="0" width="140" height="140">
+      <rect width="140" height="140" fill="#fff"/>
+      <path d="M97 10 50 78h21L45 132l55-76H78z" fill="#000" stroke="#000" stroke-width="14" stroke-linejoin="round"/>
+    </mask>
+  </defs>
+  <g transform="translate(0 10)">
+    <circle cx="70" cy="70" r="55" fill="none" stroke="#050505" stroke-width="13" mask="url(#cut)"/>
+    <path d="M97 10 50 78h21L45 132l55-76H78z" fill="#D9A23B" stroke="#D9A23B" stroke-width="2" stroke-linejoin="round"/>
+  </g>
+  <g font-family="Montserrat, 'Arial Black', Arial, sans-serif" text-anchor="middle">
+    <text x="360" y="78" font-size="68" font-weight="800" fill="#050505" textLength="390" lengthAdjust="spacingAndGlyphs">FULLER’S</text>
+    <rect x="165" y="104" width="38" height="3" fill="#D9A23B"/>
+    <rect x="517" y="104" width="38" height="3" fill="#D9A23B"/>
+    <text x="360" y="118" font-size="38" font-weight="700" fill="#D9A23B" letter-spacing="1">ELECTRICAL</text>
+    <text x="360" y="148" font-size="25" font-weight="600" fill="#050505" letter-spacing="6">SERVICES LTD</text>
+  </g>
+</svg>

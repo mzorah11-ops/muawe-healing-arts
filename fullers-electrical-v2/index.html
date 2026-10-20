@@ -1,0 +1,1260 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Fuller’s Electrical Services Ltd | Electricians in West Yorkshire</title>
+<meta name="description" content="Fuller’s Electrical Services Ltd — reliable, friendly and professional electricians for homes and businesses across West Yorkshire. Quality workmanship, honest advice and fair pricing. Book a consultation.">
+<meta name="theme-color" content="#ffffff">
+<meta property="og:title" content="Fuller’s Electrical Services Ltd">
+<meta property="og:description" content="Domestic and commercial electricians across West Yorkshire. Quality workmanship, honest advice, fair pricing.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23050505'/%3E%3Cpath d='M42 8 22 34h9L20 56l24-30h-9z' fill='%23D9A23B'/%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('js')</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Electrician",
+  "name": "Fuller’s Electrical Services Ltd",
+  "description": "Reliable, friendly and professional electrical services for domestic and commercial customers across West Yorkshire.",
+  "areaServed": "West Yorkshire, United Kingdom",
+  "identifier": "17177917"
+}
+</script>
+
+<style>
+/* ───────── Tokens: Minimal Monochrome + logo gold ───────── */
+:root{
+  --white:#fff; --black:#050505; --soft:#E5E5E5; --mid:#A8A8A8; --pale:#F2F2F2; --gold:#D9A23B; --gold-hot:#F0B84F;
+  --font:'Inter','Helvetica Neue',Helvetica,Arial,system-ui,sans-serif;
+  --font-logo:'Montserrat','Arial Black',Arial,sans-serif;
+  --ease:cubic-bezier(.25,1,.5,1); --ease-io:cubic-bezier(.76,0,.24,1); --dur-s:.4s; --dur-m:.8s; --dur-l:1.2s;
+  --pad:clamp(20px,4vw,56px); --max:1280px; --header-h:76px;
+}
+/* tones: every section flips these */
+.t-white{--bg:#fff;--fg:#050505;--mut:#555;--line:rgba(5,5,5,.12);--card:#F2F2F2;--acc:#050505}
+.t-pale{--bg:#F2F2F2;--fg:#050505;--mut:#555;--line:rgba(5,5,5,.12);--card:#fff;--acc:#050505}
+.t-black{--bg:#050505;--fg:#fff;--mut:#B8B8B8;--line:rgba(255,255,255,.2);--card:#121212;--acc:#D9A23B}
+.t-gold{--bg:#D9A23B;--fg:#050505;--mut:#2B2111;--line:rgba(5,5,5,.28);--card:#050505;--acc:#050505}
+
+*,*::before,*::after{box-sizing:border-box}
+*{margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--header-h) + 8px);-webkit-text-size-adjust:100%;background:#fff}
+body{font-family:var(--font);font-size:16px;line-height:1.65;color:#050505;background:#fff;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img,svg{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer;touch-action:manipulation}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:4px}
+::selection{background:#050505;color:#fff}
+::-webkit-scrollbar{display:none}
+*{scrollbar-width:none}
+html.lenis,html.lenis body{height:auto}
+.lenis.lenis-smooth{scroll-behavior:auto!important}
+.lenis.lenis-stopped{overflow:hidden}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.skip{position:absolute;left:12px;top:-60px;z-index:300;background:#050505;color:#fff;padding:10px 16px;border-radius:99px;transition:top .2s}
+.skip:focus{top:12px}
+.wrap{width:100%;max-width:var(--max);margin:0 auto;padding-inline:var(--pad)}
+.sec{position:relative;background:var(--bg);color:var(--fg);padding:clamp(80px,11vw,160px) 0}
+
+/* ───────── Type ───────── */
+.eyebrow{display:flex;align-items:center;gap:14px;font-size:11.5px;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:var(--mut);margin-bottom:26px}
+.eyebrow b{font-weight:600;color:var(--fg);padding:3px 9px;border-radius:99px;background:var(--gold);color:#050505;letter-spacing:.1em}
+.eyebrow::after{content:"";flex:1;height:1px;background:var(--line)}
+.h2{font-weight:700;letter-spacing:-.05em;line-height:.92;font-size:clamp(2rem,4.4vw,4.4rem);color:var(--fg)}
+.h2 .g{background:linear-gradient(transparent 62%,var(--gold) 62%,var(--gold) 92%,transparent 92%);padding:0 .06em}
+.lede{max-width:54ch;margin-top:22px;color:var(--mut);font-size:1.0625rem}
+.label{font-size:11px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--mut)}
+
+/* ───────── Buttons (pill / text link / icon) ───────── */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:12px;min-height:52px;padding:0 28px;border-radius:99px;background:#050505;color:#fff;font-size:12.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;
+  transition:background .3s ease,color .3s ease,transform .3s var(--ease),border-color .3s ease;border:1px solid #050505}
+.btn svg{width:16px;height:16px;transition:transform .3s var(--ease)}
+.btn--gold{background:var(--gold);border-color:var(--gold);color:#050505}
+.btn--ghost{background:transparent;color:inherit;border-color:currentColor}
+.btn--link{background:none;border:0;border-radius:0;padding:0;min-height:44px;color:inherit;position:relative}
+.btn--link::after{content:"";position:absolute;left:0;right:0;bottom:8px;height:1px;background:currentColor;transform-origin:left;transition:transform .4s var(--ease)}
+.t-black .btn:not(.btn--gold):not(.btn--link){background:#fff;color:#050505;border-color:#fff}
+.t-black .btn--ghost{background:transparent!important;color:#fff!important;border-color:rgba(255,255,255,.5)!important}
+@media (hover:hover){
+  .btn:hover svg{transform:translateX(4px)}
+  .btn:not(.btn--link):not(.btn--gold):hover{background:var(--gold);border-color:var(--gold);color:#050505}
+  .t-black .btn:not(.btn--link):not(.btn--gold):hover{background:var(--gold)!important;border-color:var(--gold)!important;color:#050505!important}
+  .btn--gold:hover{background:#050505;border-color:#050505;color:#fff}
+  .btn--link:hover::after{transform:scaleX(.35)}
+}
+.btn:active{transform:scale(.97)}
+
+/* ───────── Header ───────── */
+.progress{position:fixed;inset:0 0 auto 0;height:3px;z-index:260;background:var(--gold);transform:scaleX(0);transform-origin:left;pointer-events:none}
+.header{position:fixed;inset:0 0 auto 0;z-index:250;height:var(--header-h);transition:background .35s ease,border-color .35s ease;border-bottom:1px solid transparent}
+html.scrolled .header{background:rgba(255,255,255,.88);border-color:rgba(5,5,5,.1);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px)}
+.menu-open .header{background:transparent!important;border-color:transparent!important;-webkit-backdrop-filter:none!important;backdrop-filter:none!important}
+.header .bar{height:100%;display:flex;align-items:center;justify-content:space-between;gap:16px;padding-inline:var(--pad)}
+.logo{display:block;color:#050505}
+.logo svg{height:46px;width:auto;aspect-ratio:560/160}
+.hdr-r{display:flex;align-items:center;gap:12px}
+.hdr-book{display:inline-flex}
+.pill{display:inline-flex;align-items:center;gap:10px;min-height:40px;padding:0 16px 0 18px;border-radius:99px;background:#050505;color:#fff;font-size:11px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;transition:background .3s,color .3s}
+.pill .dots{display:inline-flex;gap:3px}
+.pill .dots i{width:4px;height:4px;border-radius:50%;background:currentColor;transition:transform .35s var(--ease)}
+@media (hover:hover){.pill:hover{background:var(--gold);color:#050505}.pill:hover .dots i:nth-child(2){transform:translateY(-3px)}}
+.menu-open .pill .dots i:nth-child(1){transform:translate(7px,0)}
+@media (max-width:760px){.hdr-book{display:none}.logo svg{height:40px}:root{--header-h:68px}}
+
+/* ───────── Menu overlay ───────── */
+.menu{position:fixed;inset:0;z-index:240;background:#fff;color:#050505;visibility:hidden;clip-path:circle(0 at calc(100% - 70px) 38px);
+  transition:clip-path .9s var(--ease-io),visibility 0s .9s;overflow-y:auto;overscroll-behavior:contain}
+.menu-open .menu{visibility:visible;clip-path:circle(150% at calc(100% - 70px) 38px);transition:clip-path .9s var(--ease-io),visibility 0s}
+.menu-open{overflow:hidden}
+.menu-in{min-height:100%;display:grid;grid-template-columns:1.3fr 1fr;gap:clamp(24px,5vw,80px);align-items:center;padding:calc(var(--header-h) + 24px) var(--pad) 60px;max-width:1500px;margin:0 auto}
+.menu-nav{display:flex;flex-direction:column}
+.menu-nav a{display:flex;align-items:baseline;gap:18px;padding:4px 0;font-weight:700;letter-spacing:-.045em;line-height:1.02;font-size:clamp(2.4rem,8vw,6rem);opacity:0;transform:translateY(30px);transition:opacity .6s ease,transform .8s var(--ease),color .3s}
+.menu-nav a i{font-style:normal;font-size:.18em;letter-spacing:.14em;font-weight:500;color:var(--mut);min-width:2.4em}
+.menu-open .menu-nav a{opacity:1;transform:none}
+.menu-nav a:nth-child(1){transition-delay:.3s}.menu-nav a:nth-child(2){transition-delay:.35s}.menu-nav a:nth-child(3){transition-delay:.4s}
+.menu-nav a:nth-child(4){transition-delay:.45s}.menu-nav a:nth-child(5){transition-delay:.5s}.menu-nav a:nth-child(6){transition-delay:.55s}
+.menu-nav a.on{text-decoration:underline;text-decoration-color:var(--gold);text-decoration-thickness:.07em;text-underline-offset:.12em}
+@media (hover:hover){.menu-nav:hover a{color:#BDBDBD}.menu-nav a:hover{color:#050505}}
+.menu-side{border-top:1px solid rgba(5,5,5,.14);opacity:0;transform:translateY(20px);transition:opacity .7s ease .55s,transform .9s var(--ease) .55s}
+.menu-open .menu-side{opacity:1;transform:none}
+.menu-side>div{padding:20px 0;border-bottom:1px solid rgba(5,5,5,.14)}
+.menu-side .v{display:block;margin-top:6px;font-size:1.15rem;font-weight:600;letter-spacing:-.01em}
+.menu-side .btn{margin-top:22px}
+@media (max-width:860px){.menu-in{grid-template-columns:1fr;align-items:start;gap:28px}}
+
+/* ───────── Hero: column line at 37vw, fluid vw scale ───────── */
+:root{--col:37vw;--hx:26vw;--toppad:max(3vw,8vh);--rtop-h:clamp(56px,5vw,84px);--h1gap:clamp(28px,5vw,80px);--s:clamp(2.5rem,6.25vw,9.5rem);
+  --h1top:calc(var(--header-h) + var(--toppad) + var(--rtop-h) + var(--h1gap))}
+.hero{position:relative;min-height:100svh;background:#fff;color:#050505;overflow:hidden;isolation:isolate}
+.hero::after{content:"";position:absolute;left:var(--pad);right:var(--pad);bottom:0;height:1px;background:rgba(5,5,5,.2);z-index:1}
+.vline{position:absolute;left:var(--col);top:0;bottom:0;width:1px;background:rgba(5,5,5,.2);z-index:1;overflow:hidden}
+.vline i{position:absolute;left:0;top:0;width:3px;height:140px;margin-left:-1px;background:linear-gradient(transparent,var(--gold));animation:flow 5s cubic-bezier(.6,0,.4,1) infinite 1.5s;will-change:transform}
+@keyframes flow{0%{transform:translateY(-140px)}70%,100%{transform:translateY(100vh)}}
+.ghost{position:absolute;top:calc(var(--h1top) + var(--s)*.93);z-index:0;font-weight:800;letter-spacing:-.06em;line-height:.8;font-size:calc(var(--s)*.9);color:#EEEEEE;white-space:nowrap;pointer-events:none;user-select:none}
+.ghost-l{left:.6vw}.ghost-r{right:.6vw}
+.js .ghost-l{transform:translateX(-30%);opacity:0;transition:transform 1.6s var(--ease-io) .5s,opacity 1.2s ease .5s}
+.js .ghost-r{transform:translateX(30%);opacity:0;transition:transform 1.6s var(--ease-io) .5s,opacity 1.2s ease .5s}
+.js .ready .ghost{transform:none;opacity:1}
+.hero-in{position:relative;z-index:2;padding-top:calc(var(--header-h) + var(--toppad));padding-bottom:clamp(90px,12vh,140px)}
+.r-top{display:grid;grid-template-columns:var(--col) 1fr;height:var(--rtop-h)}
+.rt-l{display:flex;justify-content:flex-start;align-items:flex-start;padding-left:var(--hx);padding-right:1.6vw}
+.rb-l{display:flex;justify-content:flex-end;align-items:flex-start;padding-right:1.6vw}
+.mark-wrap{position:relative;width:var(--rtop-h);height:var(--rtop-h);flex:none}
+.mark-wrap::after{content:"";position:absolute;inset:-35%;border-radius:50%;background:radial-gradient(circle,rgba(217,162,59,.5),transparent 62%);opacity:0;animation:glow 3.2s ease-in-out infinite 2.2s;z-index:-1}
+@keyframes glow{0%,100%{opacity:.15}50%{opacity:.75}}
+.bolt-mark{width:100%;height:100%;overflow:visible}
+.bolt-mark circle,.bolt-mark path{stroke-linejoin:round}
+.js .bolt-mark .r,.js .bolt-mark .b{stroke-dasharray:1;stroke-dashoffset:1}
+.js .bolt-mark .b{fill-opacity:0}
+.js .ready .bolt-mark .r{animation:draw 1.5s var(--ease-io) .2s forwards}
+.js .ready .bolt-mark .b{animation:draw 1.3s var(--ease-io) .7s forwards,fillin .6s ease 1.9s forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+@keyframes fillin{to{fill-opacity:1}}
+.hl-label{font-size:11px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;line-height:1.6;text-align:right}
+.hl-label b{display:block;font-weight:700}
+.meta{padding-left:1.6vw;font-size:clamp(12px,.95vw,15px);font-weight:600;line-height:1.3;letter-spacing:-.01em}
+.h1-wrap{position:relative;margin-top:var(--h1gap);padding-left:var(--hx)}
+.h1{font-weight:700;font-size:var(--s);line-height:.88;letter-spacing:-.05em}
+.h1-wrap>.h1:not(.fx){position:relative;z-index:1}
+/* Electric text: stroked copies of the headline sit behind it (glow + live electric arc) */
+.h1-fx{position:absolute;inset:0;z-index:0;pointer-events:none;user-select:none;animation:fxpulse 3.4s ease-in-out infinite 2.2s}
+.fx{position:absolute;top:0;left:var(--hx);margin:0;color:transparent;white-space:nowrap;opacity:0;transition:opacity 1.8s ease 1.3s}
+.fx .fl{display:block}
+.js .ready .fx{opacity:1}
+html:not(.js) .fx{opacity:1}
+.fx-glow1{-webkit-text-stroke:clamp(5px,.8vw,12px) rgba(217,162,59,.34);filter:blur(clamp(14px,2vw,30px))}
+.fx-glow2{-webkit-text-stroke:clamp(2.5px,.4vw,6px) rgba(217,162,59,.62);filter:blur(clamp(3px,.5vw,8px))}
+.fx-arc{-webkit-text-stroke:clamp(1.5px,.22vw,3.5px) #D9A23B}
+.fx-arc.live{filter:url(#fx-electric);will-change:filter}
+.fx-arc.live.f2{filter:url(#fx-electric-2)}
+@keyframes fxpulse{0%,100%{opacity:.72}50%{opacity:1}}
+
+/* Electric text on the other big headings (layers are added by script on desktop) */
+.h2{position:relative;isolation:isolate}
+.h2-fx{--fxc:217,162,59;position:absolute;inset:0;z-index:-1;pointer-events:none;user-select:none;animation:fxpulse 3.6s ease-in-out infinite 1s}
+.t-gold .h2-fx{--fxc:255,255,255}
+.fx2{position:absolute;left:0;top:0;width:100%;display:block;color:transparent!important;text-decoration-color:transparent!important;opacity:0;transition:opacity 1.6s ease .5s}
+.fx2 .g{background:none!important}
+.h2-fx.on .fx2{opacity:1}
+.fx2.fx-glow1{-webkit-text-stroke:.12em rgba(var(--fxc),.34);filter:blur(.32em)}
+.fx2.fx-glow2{-webkit-text-stroke:.06em rgba(var(--fxc),.62);filter:blur(.08em)}
+.fx2.fx-arc{-webkit-text-stroke:.035em rgb(var(--fxc))}
+
+/* ───────── Liquid metal button (shader ring over a black pill; CSS metal when the shader is off) ───────── */
+.lm-btn{position:relative;display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 30px;border-radius:99px;isolation:isolate;color:#E9E9E9;font-size:12.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;white-space:nowrap;cursor:pointer;
+  transition:transform .8s cubic-bezier(.34,1.56,.64,1)}
+.lm-metal{position:absolute;inset:0;z-index:0;border-radius:99px;overflow:hidden;
+  background:conic-gradient(from 210deg,#f4f4f4,#8c8c92 18%,#fafafa 34%,#6e6e74 52%,#e9e9ec 70%,#9a9aa0 86%,#f4f4f4);
+  box-shadow:0 0 0 1px rgba(0,0,0,.3),0 36px 14px 0 rgba(0,0,0,.02),0 20px 12px 0 rgba(0,0,0,.08),0 9px 9px 0 rgba(0,0,0,.12),0 2px 5px 0 rgba(0,0,0,.15);
+  transition:box-shadow .15s cubic-bezier(.4,0,.2,1),transform .8s cubic-bezier(.34,1.56,.64,1)}
+.lm-metal canvas{position:absolute!important;inset:0;width:100%!important;height:100%!important;display:block!important;border-radius:99px!important}
+.lm-face{position:absolute;inset:2px;z-index:1;border-radius:99px;background:linear-gradient(180deg,#202020 0%,#000 100%);transition:box-shadow .15s cubic-bezier(.4,0,.2,1),transform .8s cubic-bezier(.34,1.56,.64,1)}
+.lm-label{position:relative;z-index:2;display:inline-flex;align-items:center;gap:12px;text-shadow:0 1px 2px rgba(0,0,0,.5);pointer-events:none}
+.lm-label svg{width:16px;height:16px;transition:transform .3s cubic-bezier(.25,1,.5,1)}
+.lm-rip{position:absolute;inset:0;z-index:3;border-radius:99px;overflow:hidden;pointer-events:none}
+.lm-rip i{position:absolute;width:20px;height:20px;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.4) 0%,rgba(255,255,255,0) 70%);animation:lmrip .6s ease-out forwards}
+@keyframes lmrip{0%{transform:translate(-50%,-50%) scale(0);opacity:.6}100%{transform:translate(-50%,-50%) scale(4);opacity:0}}
+@media (hover:hover){
+  .lm-btn:hover .lm-metal{box-shadow:0 0 0 1px rgba(0,0,0,.4),0 12px 6px 0 rgba(0,0,0,.05),0 8px 5px 0 rgba(0,0,0,.1),0 4px 4px 0 rgba(0,0,0,.15),0 1px 2px 0 rgba(0,0,0,.2)}
+  .lm-btn:hover .lm-label svg{transform:translateX(4px)}
+}
+.lm-btn:active .lm-metal,.lm-btn:active .lm-face{transform:translateY(1px) scale(.98)}
+.lm-btn:active .lm-face{box-shadow:inset 0 2px 4px rgba(0,0,0,.4),inset 0 1px 2px rgba(0,0,0,.3)}
+.lm-btn:focus-visible{outline:2px solid var(--gold);outline-offset:4px}
+.lm-btn.sm{min-height:40px;padding:0 20px;font-size:11px}
+.l-r{padding-left:calc(var(--col) - var(--hx) + 1.6vw)}
+.h1 .hl{position:relative;display:inline-block}
+.h1 .hl::after{content:"";position:absolute;left:0;right:0;bottom:.04em;height:.16em;background:var(--gold);transform:scaleX(0);transform-origin:left;transition:transform 1.1s var(--ease-io) 1.1s;z-index:-1}
+.js .ready .h1 .hl::after{transform:scaleX(1)}
+html:not(.js) .h1 .hl::after{transform:scaleX(1)}
+.line{display:block;overflow:hidden;padding-bottom:.2em;margin-bottom:-.2em}
+.line>span{display:block}
+.cta{display:flex;flex-wrap:wrap;gap:14px 26px;align-items:center;margin-top:clamp(24px,4vh,40px)}
+.r-bot{display:grid;grid-template-columns:var(--col) 1fr;margin-top:clamp(22px,2.6vw,44px)}
+.rb-r{padding-left:1.6vw}
+.rb-r .cta{margin-top:0}
+.hero-foot{position:absolute;z-index:3;left:var(--pad);right:var(--pad);bottom:clamp(18px,3vh,32px);display:flex;justify-content:space-between;align-items:flex-end;font-size:11px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:#050505;pointer-events:none}
+.scroll-ind{display:flex;align-items:center;gap:14px;pointer-events:auto}
+.scroll-ind .ln{position:relative;width:1px;height:44px;background:rgba(5,5,5,.25);overflow:hidden}
+.scroll-ind .ln i{position:absolute;left:-1.5px;width:4px;height:4px;border-radius:50%;background:#050505;animation:dot 2.2s var(--ease-io) infinite}
+@keyframes dot{0%{transform:translateY(-6px)}100%{transform:translateY(46px)}}
+@media (max-width:860px){
+  :root{--col:0px;--hx:calc(var(--pad) + 18px);--s:clamp(2.6rem,15.5vw,5rem);--rtop-h:60px;--h1gap:28px;--toppad:20px}
+  .vline{left:var(--pad);opacity:.6}
+  .r-top{display:block;height:auto}
+  .rt-l{padding-right:var(--pad);gap:18px;justify-content:flex-start;align-items:center}
+  .hl-label{text-align:left}
+  .meta{padding:16px var(--pad) 0 var(--hx);font-size:13.5px}
+  .l-r{padding-left:0}
+  .r-bot{display:block}
+  .rb-l{justify-content:flex-start;padding:0 var(--pad) 18px var(--hx)}
+  .rb-r{padding-left:var(--hx)}
+  .hero-in{padding-bottom:170px}
+  .ghost{top:auto;font-size:17vw}
+  .ghost-l{bottom:118px}.ghost-r{bottom:62px}
+  .hero-foot .scroll-ind{display:none}
+}
+
+/* ───────── Gold trust strip ───────── */
+.strip{background:var(--gold);color:#050505}
+.strip .wrap{display:grid;grid-template-columns:repeat(4,1fr)}
+.cell{padding:32px 22px;border-left:1px solid rgba(5,5,5,.25)}
+.cell:first-child{border-left:0;padding-left:0}
+.cell .big{font-weight:700;font-size:clamp(1.15rem,2.2vw,1.75rem);letter-spacing:-.03em;line-height:1.12}
+.cell p{margin-top:6px;font-size:12px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:#2B2111}
+@media (max-width:760px){.strip .wrap{grid-template-columns:1fr 1fr}.cell:nth-child(odd){border-left:0;padding-left:0}.cell:nth-child(n+3){border-top:1px solid rgba(5,5,5,.25)}.cell{padding:24px 16px}}
+
+/* ───────── Services ───────── */
+.svc-grid{display:grid;grid-template-columns:.8fr 1.4fr;gap:clamp(32px,6vw,100px);align-items:start}
+.svc-head{position:sticky;top:calc(var(--header-h) + 32px)}
+.svc-list{border-bottom:1px solid var(--line)}
+.svc{position:relative;display:grid;grid-template-columns:56px 1fr 28px;gap:6px 18px;align-items:start;padding:26px 0;border-top:1px solid var(--line);overflow:hidden}
+.svc::before{content:"";position:absolute;left:0;top:0;height:2px;width:100%;background:var(--gold);transform:scaleX(0);transform-origin:left;transition:transform .6s var(--ease)}
+.svc .n{font-size:12px;font-weight:600;letter-spacing:.14em;color:var(--mut);padding-top:.55em}
+.svc h3{font-weight:700;letter-spacing:-.03em;font-size:clamp(1.3rem,2.4vw,1.9rem);line-height:1.15;transition:transform .5s var(--ease)}
+.svc p{grid-column:2;color:var(--mut);max-width:52ch;font-size:.97rem}
+.svc .ar{grid-row:1;grid-column:3;width:22px;height:22px;margin-top:.4em;transition:transform .5s var(--ease)}
+@media (hover:hover){.svc:hover::before{transform:scaleX(1)}.svc:hover h3{transform:translateX(10px)}.svc:hover .ar{transform:translateX(4px) rotate(-45deg)}}
+.svc-cta{display:flex;flex-wrap:wrap;gap:12px 28px;align-items:center;margin-top:36px}
+@media (max-width:900px){.svc-grid{grid-template-columns:1fr}.svc-head{position:static}}
+@media (max-width:520px){.svc{grid-template-columns:40px 1fr 22px}}
+
+/* ───────── About ───────── */
+.about{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(32px,7vw,110px);align-items:start}
+.about .txt p{color:var(--mut);margin-top:20px;max-width:56ch}
+.about .txt p:first-of-type{margin-top:28px}
+.vals{display:grid;grid-template-columns:1fr 1fr;gap:0;margin-top:clamp(36px,5vw,64px);border-top:1px solid var(--line)}
+.val{padding:24px 24px 26px 0;border-bottom:1px solid var(--line)}
+.val:nth-child(odd){border-right:1px solid var(--line)}
+.val:nth-child(even){padding-left:24px}
+.val .n{font-size:11.5px;font-weight:600;letter-spacing:.16em;color:var(--mut)}
+.val h3{font-weight:700;letter-spacing:-.03em;font-size:1.3rem;margin:8px 0 6px}
+.val p{font-size:.93rem;color:var(--mut);margin:0}
+.facts{border-radius:20px;background:var(--card);padding:8px 28px;border:1px solid var(--line)}
+.fact{display:flex;gap:16px;align-items:flex-start;padding:20px 0;border-top:1px solid var(--line)}
+.fact:first-child{border-top:0}
+.fact .ic{flex:none;width:34px;height:34px;border-radius:50%;background:var(--gold);color:#050505;display:flex;align-items:center;justify-content:center}
+.fact .ic svg{width:17px;height:17px}
+.fact b{display:block;font-weight:600;letter-spacing:-.01em}
+.fact span{font-size:.9rem;color:var(--mut)}
+@media (max-width:900px){.about{grid-template-columns:1fr}.vals{grid-template-columns:1fr}.val:nth-child(odd){border-right:0}.val:nth-child(even){padding-left:0}}
+
+/* ───────── Work gallery ───────── */
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:clamp(150px,19vw,260px);gap:12px}
+.shot{position:relative;margin:0;overflow:hidden;border-radius:18px;background:var(--card);border:1px solid var(--line)}
+.shot:first-child{grid-column:span 2;grid-row:span 2}
+.shot img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .9s var(--ease)}
+@media (hover:hover){.shot:hover img{transform:scale(1.05)}}
+.shot figcaption{position:absolute;left:0;right:0;bottom:0;padding:36px 18px 14px;font-size:11px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:#fff;background:linear-gradient(transparent,rgba(5,5,5,.85))}
+.shot figcaption b{color:var(--gold);margin-right:10px}
+.ph{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;text-align:center;padding:16px}
+.ph::before{content:"";position:absolute;inset:0;opacity:.5;background:linear-gradient(to top right,transparent calc(50% - .5px),var(--line) 50%,transparent calc(50% + .5px)),linear-gradient(to top left,transparent calc(50% - .5px),var(--line) 50%,transparent calc(50% + .5px))}
+.ph span{position:relative;background:#050505;border:1px solid var(--line);border-radius:99px;padding:8px 16px;font-size:10.5px;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:#B8B8B8}
+@media (max-width:760px){.gallery{grid-template-columns:1fr 1fr;grid-auto-rows:clamp(130px,38vw,200px)}.shot:first-child{grid-column:span 2;grid-row:span 1}.ph span{font-size:9.5px;padding:6px 10px}}
+
+/* ───────── Reviews ───────── */
+.rv-top{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px 32px;margin-bottom:28px}
+.rv-score{display:flex;align-items:center;gap:16px}
+.rv-score strong{font-weight:700;font-size:3rem;letter-spacing:-.05em;line-height:1}
+.reviews{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:18px}
+.review{position:relative;margin:0;padding:30px 28px 26px;background:var(--card);border-radius:20px;border:1px solid var(--line);display:flex;flex-direction:column;gap:20px;transition:transform .5s var(--ease),box-shadow .5s}
+@media (hover:hover){.review:hover{transform:translateY(-4px);box-shadow:0 24px 40px -28px rgba(5,5,5,.4)}}
+.stars{display:flex;gap:3px;color:var(--gold)}
+.stars svg{width:17px;height:17px}
+.review blockquote{margin:0;font-size:1.12rem;font-weight:500;letter-spacing:-.015em;line-height:1.5}
+.review footer{margin-top:auto;display:flex;align-items:center;gap:12px;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--mut)}
+.review footer b{display:block;color:var(--fg);font-weight:600;margin-bottom:2px}
+.review .av{flex:none;width:40px;height:40px;border-radius:50%;background:var(--gold);color:#050505;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;letter-spacing:.04em}
+
+/* Scrolling testimonial columns: slow, endless vertical loop with soft fade at top and bottom */
+.rv-cols{display:flex;justify-content:center;gap:24px;height:clamp(460px,72vh,740px);overflow:hidden;
+  -webkit-mask-image:linear-gradient(to bottom,transparent,#000 20%,#000 80%,transparent);mask-image:linear-gradient(to bottom,transparent,#000 20%,#000 80%,transparent)}
+.rv-col{flex:0 1 340px;min-width:0;overflow:hidden}
+.rv-track{display:flex;flex-direction:column;animation:rvscroll var(--dur,40s) linear infinite;animation-delay:var(--dl,0s);will-change:transform;backface-visibility:hidden}
+@keyframes rvscroll{to{transform:translateY(-50%)}}
+.rv-cols .review{margin:0 0 24px;width:100%;flex:none}
+.rv-cols:hover .rv-track,.rv-cols.paused .rv-track,.rv-cols.idle .rv-track{animation-play-state:paused}
+.rv-pause{display:inline-flex;align-items:center;gap:10px;min-height:40px;padding:0 18px;border-radius:99px;border:1px solid var(--line);font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--fg);transition:background .3s,border-color .3s}
+.rv-pause::before{content:"";width:8px;height:10px;border-left:2.5px solid currentColor;border-right:2.5px solid currentColor}
+.rv-pause[aria-pressed="true"]::before{width:0;height:0;border:0;border-left:9px solid currentColor;border-top:5.5px solid transparent;border-bottom:5.5px solid transparent}
+@media (hover:hover){.rv-pause:hover{border-color:var(--fg)}}
+.rv-pause[hidden]{display:none}
+
+/* Lightning strike canvas (behind the hero and services content) */
+.bolt-bg{position:absolute;inset:0;width:100%;height:100%;z-index:0;pointer-events:none}
+#services>.wrap{position:relative;z-index:1}
+.review .tagsample{position:absolute;top:14px;right:14px;font-size:9.5px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;padding:4px 10px;border-radius:99px;background:var(--gold);color:#050505}
+.review.sample{border-style:dashed}
+.rv-cta{display:flex;flex-wrap:wrap;gap:12px 28px;align-items:center;margin-top:36px}
+
+/* ───────── Booking ───────── */
+.book-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(32px,6vw,96px);align-items:start}
+.book-side ul{list-style:none;margin:34px 0 0;padding:0}
+.book-side li{display:flex;gap:16px;padding:16px 0;border-top:1px solid var(--line);font-size:.95rem}
+.book-side li span{font-size:12px;font-weight:600;letter-spacing:.14em;padding-top:3px;flex:none}
+.form{border-radius:28px;background:var(--bg);color:var(--fg);padding:clamp(22px,4vw,46px);box-shadow:0 40px 70px -40px rgba(5,5,5,.55)}
+.fgroup{margin-bottom:30px}
+.fgroup>.label{display:block;margin-bottom:14px}
+.fgroup>.label i{font-style:normal;color:var(--gold);margin-right:10px;font-weight:600}
+.days{display:grid;grid-template-columns:repeat(5,1fr);gap:8px}
+.chip{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;min-height:68px;padding:8px 4px;border-radius:16px;border:1px solid var(--line);font-size:10.5px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);transition:border-color .25s,background .25s,color .25s,transform .2s}
+.chip strong{font-size:1.4rem;font-weight:700;letter-spacing:-.03em;color:var(--fg);line-height:1.1}
+.chip[aria-pressed="true"]{border-color:var(--gold);background:var(--gold);color:#050505}
+.chip[aria-pressed="true"] strong{color:#050505}
+.chip:disabled{opacity:.3;cursor:not-allowed;text-decoration:line-through}
+.chip:active:not(:disabled){transform:scale(.96)}
+@media (hover:hover){.chip:hover:not(:disabled):not([aria-pressed="true"]){border-color:var(--fg)}}
+.slots{display:grid;grid-template-columns:repeat(5,1fr);gap:8px}
+.slots .chip{min-height:46px;flex-direction:row;font-size:12.5px;letter-spacing:.06em;border-radius:99px}
+.slots-hint{font-size:13.5px;color:var(--mut);padding:10px 0}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.field{display:flex;flex-direction:column;gap:8px;margin-bottom:18px}
+.field label,.field .lab{font-size:11px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--mut)}
+.field input,.field select,.field textarea{width:100%;font:inherit;font-size:16px;color:var(--fg);background:transparent;border:0;border-bottom:1px solid var(--line);padding:10px 0;border-radius:0;transition:border-color .3s;-webkit-appearance:none;appearance:none}
+.field select{background-image:linear-gradient(45deg,transparent 50%,var(--fg) 50%),linear-gradient(135deg,var(--fg) 50%,transparent 50%);background-position:calc(100% - 12px) 55%,calc(100% - 7px) 55%;background-size:5px 5px;background-repeat:no-repeat;padding-right:28px}
+.field select option{background:#121212;color:#fff}
+.field textarea{resize:vertical;min-height:84px}
+.field input:focus,.field select:focus,.field textarea:focus{outline:0;border-color:var(--gold)}
+.field ::placeholder{color:#777}
+.radios{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.radios label{cursor:pointer}
+.radios input{position:absolute;opacity:0;pointer-events:none}
+.radios span{display:flex;align-items:center;justify-content:center;min-height:48px;border-radius:99px;border:1px solid var(--line);font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--fg);transition:border-color .25s,background .25s,color .25s}
+.radios input:checked+span{border-color:var(--gold);background:var(--gold);color:#050505}
+.radios input:focus-visible+span{outline:2px solid var(--gold);outline-offset:2px}
+.err{min-height:22px;font-size:13.5px;color:var(--gold-hot);margin:-6px 0 16px}
+.form .btn--submit{width:100%}
+.fine{margin-top:16px;font-size:12.5px;color:var(--mut);text-align:center}
+.done{display:none}
+.form.sent .fields{display:none}
+.form.sent .done{display:block;animation:rise .6s var(--ease) both}
+.done h3{font-weight:700;letter-spacing:-.04em;font-size:2rem;margin:12px 0}
+.summary{margin:24px 0;border:1px solid var(--line);border-radius:18px;padding:6px 20px}
+.summary div{display:flex;justify-content:space-between;gap:20px;padding:12px 0;border-top:1px solid var(--line);font-size:.92rem}
+.summary div:first-child{border-top:0}
+.summary b{font-weight:500;color:var(--mut);letter-spacing:.14em;text-transform:uppercase;font-size:11px;flex:none;padding-top:2px}
+.summary span{text-align:right}
+.note{margin:0 0 20px;padding:14px 18px;border-radius:14px;border:1px dashed var(--gold);color:var(--gold-hot);font-size:.9rem}
+@keyframes rise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+@media (max-width:900px){.book-grid{grid-template-columns:1fr}}
+@media (max-width:520px){.row2{grid-template-columns:1fr}.slots{grid-template-columns:repeat(3,1fr)}.days{grid-template-columns:repeat(5,minmax(58px,1fr));overflow-x:auto;padding-bottom:6px}}
+
+/* ───────── Contact ───────── */
+.contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(28px,5vw,72px)}
+.info{border-top:1px solid var(--line)}
+.info-row{padding:24px 0;border-bottom:1px solid var(--line)}
+.info-row .big{display:block;margin-top:8px;font-weight:700;letter-spacing:-.03em;font-size:clamp(1.3rem,2.6vw,2rem);line-height:1.25}
+.info-row .big.ph-t{color:#8a8a8a}
+.map{position:relative;min-height:400px;border-radius:24px;overflow:hidden;background:var(--card);border:1px solid var(--line)}
+.map iframe{position:absolute;inset:0;width:100%;height:100%;border:0;filter:grayscale(1) contrast(1.05)}
+.map .pin{position:absolute;left:16px;bottom:16px;z-index:2;background:#050505;color:#fff;border-radius:99px;padding:10px 18px;font-size:11px;font-weight:600;letter-spacing:.16em;text-transform:uppercase}
+@media (max-width:860px){.contact-grid{grid-template-columns:1fr}.map{min-height:320px}}
+
+/* ───────── Footer ───────── */
+.footer{background:#050505;color:#fff;padding:60px 0 40px}
+.foot{display:flex;flex-wrap:wrap;gap:32px 56px;justify-content:space-between;align-items:flex-start}
+.foot .logo{color:#fff}
+.foot nav{display:flex;flex-wrap:wrap;gap:10px 28px}
+.foot nav a{font-size:11.5px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;min-height:34px;display:inline-flex;align-items:center;color:#D0D0D0}
+@media (hover:hover){.foot nav a:hover{color:var(--gold)}}
+.foot-ghost{margin-top:clamp(30px,5vw,72px);font-weight:800;letter-spacing:-.06em;line-height:.74;font-size:clamp(4rem,21vw,26rem);color:#161616;white-space:nowrap;overflow:hidden;padding-left:1vw;user-select:none;pointer-events:none}
+.footer{padding-bottom:0!important}
+@media (max-width:760px){.footer{padding-bottom:74px!important}}
+.legal{margin-top:44px;padding-top:22px;border-top:1px solid rgba(255,255,255,.18);display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#9A9A9A}
+
+/* counter pill + mobile bar */
+.hudc{position:fixed;left:var(--pad);bottom:22px;z-index:200;display:none;align-items:center;gap:14px;padding:10px 18px;border-radius:99px;background:#050505;color:#fff;font-size:11px;font-weight:500;letter-spacing:.18em;text-transform:uppercase;
+  opacity:0;transform:translateY(10px);transition:opacity .5s ease,transform .6s var(--ease);pointer-events:none}
+.hudc.show{opacity:1;transform:none}
+.hudc .track{width:54px;height:1px;background:rgba(255,255,255,.3);position:relative}
+.hudc .track i{position:absolute;inset:0;background:var(--gold);transform:scaleX(0);transform-origin:left}
+@media (min-width:861px){.hudc{display:flex}}
+.mbar{position:fixed;inset:auto 0 0 0;z-index:190;display:none;grid-template-columns:1fr 1fr;gap:8px;padding:10px var(--pad) calc(10px + env(safe-area-inset-bottom));background:rgba(255,255,255,.92);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border-top:1px solid rgba(5,5,5,.12);transform:translateY(100%);transition:transform .45s var(--ease)}
+.mbar.show{transform:none}
+.mbar a{display:flex;align-items:center;justify-content:center;gap:10px;min-height:50px;border-radius:99px;font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;background:#050505;color:#fff}
+.mbar a+a{background:var(--gold);color:#050505}
+.mbar svg{width:16px;height:16px}
+@media (max-width:760px){.mbar{display:grid}.footer{padding-bottom:calc(40px + 74px)}}
+
+/* ───────── Motion ───────── */
+.js .reveal{opacity:0;transform:translateY(28px);transition:opacity .9s ease,transform 1.1s var(--ease);transition-delay:var(--d,0s)}
+.js .reveal.in{opacity:1;transform:none}
+.js .line>span{transform:translateY(108%);transition:transform 1.2s var(--ease-io);transition-delay:var(--d,0s)}
+.js .ready .line>span{transform:none}
+.js .hero-fade{opacity:0;transform:translateY(14px);transition:opacity 1s ease,transform 1.1s var(--ease);transition-delay:var(--d,0s)}
+.js .ready .hero-fade{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition-duration:.01ms!important;transition-delay:0s!important}
+  .js .reveal,.js .line>span,.js .hero-fade,.js .ghost{opacity:1!important;transform:none!important}
+  .js .bolt-mark .r,.js .bolt-mark .b{stroke-dashoffset:0}.js .bolt-mark .b{fill-opacity:1}
+  .js .h1 .hl::after{transform:scaleX(1)}
+}
+</style>
+</head>
+
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+<!-- Logo + icon sprite -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <mask id="boltcut" maskUnits="userSpaceOnUse" x="0" y="0" width="140" height="140">
+      <rect width="140" height="140" fill="#fff"/>
+      <path d="M97 10 50 78h21L45 132l55-76H78z" fill="#000" stroke="#000" stroke-width="14" stroke-linejoin="round"/>
+    </mask>
+    <symbol id="logo-full" viewBox="0 0 560 160">
+      <g transform="translate(0 10)">
+        <circle cx="70" cy="70" r="55" fill="none" stroke="currentColor" stroke-width="13" mask="url(#boltcut)"/>
+        <path d="M97 10 50 78h21L45 132l55-76H78z" fill="#D9A23B" stroke="#D9A23B" stroke-width="2" stroke-linejoin="round"/>
+      </g>
+      <g font-family="Montserrat, 'Arial Black', Arial, sans-serif" text-anchor="middle">
+        <text x="360" y="78" font-size="68" font-weight="800" fill="currentColor" textLength="390" lengthAdjust="spacingAndGlyphs">FULLER’S</text>
+        <rect x="165" y="104" width="38" height="3" fill="#D9A23B"/><rect x="517" y="104" width="38" height="3" fill="#D9A23B"/>
+        <text x="360" y="118" font-size="38" font-weight="700" fill="#D9A23B" letter-spacing="1">ELECTRICAL</text>
+        <text x="360" y="148" font-size="25" font-weight="600" fill="currentColor" letter-spacing="6">SERVICES LTD</text>
+      </g>
+    </symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16M14 6l6 6-6 6"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2.5 2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.2 6.1 20.6l1.3-6.6L2.5 9.4l6.6-.8z"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.500 4.500 4.500L19 7.500"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4.500 6v5.500c0 4.500 3.200 8 7.500 9.500 4.300-1.500 7.500-5 7.500-9.500V6z"/><path d="m9 12 2.200 2.200L15 10"/></symbol>
+    <symbol id="i-building" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V5l8-2v18M12 8h8v13M2 21h20M7 9h2M7 13h2M7 17h2M15 12h2M15 16h2"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6 7-11.500A7 7 0 0 0 5 9.500C5 15 12 21 12 21z"/><circle cx="12" cy="9.500" r="2.500"/></symbol>
+  </defs>
+</svg>
+
+<!-- Electric-text filter: moving turbulence drives a displacement map (used behind the hero headline) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <filter id="fx-electric" color-interpolation-filters="sRGB" x="-20%" y="-30%" width="140%" height="160%">
+      <feTurbulence type="turbulence" baseFrequency="0.02" numOctaves="3" result="n1" seed="1"/>
+      <feOffset in="n1" dx="0" dy="0" result="o1"><animate attributeName="dy" values="500;0" dur="6s" repeatCount="indefinite" calcMode="linear"/></feOffset>
+      <feTurbulence type="turbulence" baseFrequency="0.02" numOctaves="3" result="n2" seed="1"/>
+      <feOffset in="n2" dx="0" dy="0" result="o2"><animate attributeName="dy" values="0;-500" dur="6s" repeatCount="indefinite" calcMode="linear"/></feOffset>
+      <feTurbulence type="turbulence" baseFrequency="0.02" numOctaves="3" result="n3" seed="2"/>
+      <feOffset in="n3" dx="0" dy="0" result="o3"><animate attributeName="dx" values="400;0" dur="6s" repeatCount="indefinite" calcMode="linear"/></feOffset>
+      <feTurbulence type="turbulence" baseFrequency="0.02" numOctaves="3" result="n4" seed="2"/>
+      <feOffset in="n4" dx="0" dy="0" result="o4"><animate attributeName="dx" values="0;-400" dur="6s" repeatCount="indefinite" calcMode="linear"/></feOffset>
+      <feComposite in="o1" in2="o2" result="p1"/>
+      <feComposite in="o3" in2="o4" result="p2"/>
+      <feBlend in="p1" in2="p2" mode="color-dodge" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="20" xChannelSelector="R" yChannelSelector="B"/>
+    </filter>
+  </defs>
+</svg>
+
+<header class="header" id="header">
+  <div class="bar">
+    <a class="logo" href="#top" aria-label="Fuller’s Electrical Services Ltd — home"><svg viewBox="0 0 560 160" aria-hidden="true"><use href="#logo-full"/></svg></a>
+    <div class="hdr-r">
+      <a class="lm-btn sm hdr-book" href="#book"><span class="lm-metal" aria-hidden="true"></span><span class="lm-face" aria-hidden="true"></span><span class="lm-label">Book a consultation</span></a>
+      <button class="pill" id="menuBtn" aria-expanded="false" aria-controls="menu"><span id="menuTxt">Menu</span><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="menu" id="menu" data-lenis-prevent role="dialog" aria-modal="true" aria-label="Menu">
+  <div class="menu-in">
+    <nav class="menu-nav" id="menuNav" aria-label="Main">
+      <a href="#services"><i>01</i>Services</a>
+      <a href="#about"><i>02</i>About</a>
+      <a href="#work"><i>03</i>Our work</a>
+      <a href="#reviews"><i>04</i>Reviews</a>
+      <a href="#book"><i>05</i>Book</a>
+      <a href="#contact"><i>06</i>Contact</a>
+    </nav>
+    <aside class="menu-side">
+      <div><span class="label">Phone</span><a class="v" data-href="tel" data-bind="phone">[Add phone number]</a></div>
+      <div><span class="label">Email</span><a class="v" data-href="mail" data-bind="email">[Add email]</a></div>
+      <div><span class="label">Covering</span><span class="v">West Yorkshire &amp; surrounding areas</span>
+        <a class="lm-btn" href="#book"><span class="lm-metal" aria-hidden="true"></span><span class="lm-face" aria-hidden="true"></span><span class="lm-label">Book a consultation <svg><use href="#i-arrow"/></svg></span></a></div>
+    </aside>
+  </div>
+</div>
+
+<div class="hudc" id="hudc" aria-hidden="true"><span id="hcN">01</span><span>/ 07</span><span class="track"><i id="hcBar"></i></span><span id="hcT">Intro</span></div>
+
+<main id="main">
+<!-- ═════ HERO ═════ -->
+<section class="hero t-white" id="top" data-sec="Intro">
+  <div class="vline" aria-hidden="true"><i></i></div>
+  <div class="ghost ghost-l" aria-hidden="true">fuller’s</div>
+  <div class="ghost ghost-r" aria-hidden="true">electrical</div>
+
+  <div class="hero-in">
+    <div class="r-top">
+      <div class="rt-l">
+        <div class="mark-wrap" aria-hidden="true">
+          <svg class="bolt-mark" viewBox="0 0 140 140" fill="none">
+            <circle class="r" cx="70" cy="70" r="55" pathLength="1" stroke="#050505" stroke-width="3"/>
+            <path class="b" pathLength="1" d="M97 10 50 78h21L45 132l55-76H78z" stroke="#D9A23B" stroke-width="3" fill="#D9A23B"/>
+          </svg>
+        </div>
+      </div>
+      <p class="meta hero-fade" style="--d:.8s">Reliable, friendly and professional<br>electricians across West Yorkshire<br>and surrounding areas.</p>
+    </div>
+
+    <div class="h1-wrap">
+      <div class="h1-fx" aria-hidden="true">
+        <div class="h1 fx fx-glow1"><span class="fl">Electrical</span><span class="fl">work,</span><span class="fl">done</span><span class="fl l-r">right.</span></div>
+        <div class="h1 fx fx-glow2"><span class="fl">Electrical</span><span class="fl">work,</span><span class="fl">done</span><span class="fl l-r">right.</span></div>
+        <div class="h1 fx fx-arc"><span class="fl">Electrical</span><span class="fl">work,</span><span class="fl">done</span><span class="fl l-r">right.</span></div>
+      </div>
+      <h1 class="h1">
+        <span class="line" style="--d:.15s"><span>Electrical</span></span>
+        <span class="line" style="--d:.28s"><span>work,</span></span>
+        <span class="line" style="--d:.41s"><span>done</span></span>
+        <span class="line l-r" style="--d:.54s"><span><span class="hl">right.</span></span></span>
+      </h1>
+    </div>
+
+    <div class="r-bot">
+      <div class="rb-l"><p class="hl-label hero-fade" style="--d:.9s"><b>Electricians</b>Domestic &amp;<br>commercial</p></div>
+      <div class="rb-r">
+        <div class="cta hero-fade" style="--d:.75s">
+          <a class="lm-btn" href="#book"><span class="lm-metal" aria-hidden="true"></span><span class="lm-face" aria-hidden="true"></span><span class="lm-label">Book a consultation <svg><use href="#i-arrow"/></svg></span></a>
+          <a class="btn btn--link" href="#services">Our services <svg><use href="#i-arrow"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-foot hero-fade" style="--d:1s">
+    <span>West Yorkshire</span>
+    <a class="scroll-ind" href="#services" aria-label="Scroll to services"><span>Scroll</span><span class="ln"><i></i></span></a>
+  </div>
+</section>
+
+<!-- Trust strip -->
+<div class="strip">
+  <div class="wrap">
+    <div class="cell reveal"><div class="big">Verified</div><p>by MyBuilder</p></div>
+    <div class="cell reveal" style="--d:.08s"><div class="big">Warranty</div><p>offered on work</p></div>
+    <div class="cell reveal" style="--d:.16s"><div class="big">Domestic &amp; commercial</div><p>homes and businesses</p></div>
+    <div class="cell reveal" style="--d:.24s"><div class="big">West Yorkshire</div><p>&amp; surrounding areas</p></div>
+  </div>
+</div>
+
+<!-- ═════ SERVICES ═════ -->
+<section class="sec t-pale" id="services" data-sec="Services">
+  <div class="wrap svc-grid">
+    <div class="svc-head">
+      <div class="eyebrow reveal"><b>01</b> Services</div>
+      <h2 class="h2 reveal" style="--d:.05s">Everything electrical, <span class="g">done properly.</span></h2>
+      <p class="lede reveal" style="--d:.1s">From a single light fitting to a full rewire, for homes and businesses. Tell us what you need and we’ll talk it through honestly.</p>
+      <div class="svc-cta reveal" style="--d:.15s"><a class="lm-btn" href="#book"><span class="lm-metal" aria-hidden="true"></span><span class="lm-face" aria-hidden="true"></span><span class="lm-label">Book a consultation <svg><use href="#i-arrow"/></svg></span></a></div>
+    </div>
+
+    <div class="svc-list">
+      <article class="svc reveal"><span class="n">01</span><h3>Rewires</h3><svg class="ar"><use href="#i-arrow"/></svg><p>Full and partial rewires to bring older installations up to a safe, modern standard.</p></article>
+      <article class="svc reveal"><span class="n">02</span><h3>Consumer unit upgrades</h3><svg class="ar"><use href="#i-arrow"/></svg><p>Replacement fuse boards and consumer units, installed neatly and tested.</p></article>
+      <article class="svc reveal"><span class="n">03</span><h3>Lighting</h3><svg class="ar"><use href="#i-arrow"/></svg><p>Interior, ceiling and track lighting, from a single fitting to a whole-room scheme.</p></article>
+      <article class="svc reveal"><span class="n">04</span><h3>Outdoor lighting &amp; power</h3><svg class="ar"><use href="#i-arrow"/></svg><p>Garden and exterior lights and weatherproof outdoor sockets, built to cope with the weather.</p></article>
+      <article class="svc reveal"><span class="n">05</span><h3>Testing &amp; safety reports</h3><svg class="ar"><use href="#i-arrow"/></svg><p>Inspection and testing, including electrical safety reports (EICR) for homes, landlords and businesses.</p></article>
+      <article class="svc reveal"><span class="n">06</span><h3>Fault finding &amp; repairs</h3><svg class="ar"><use href="#i-arrow"/></svg><p>Tracing and fixing faults, tripping circuits and failed fittings.</p></article>
+      <article class="svc reveal"><span class="n">07</span><h3>EV charger installation</h3><svg class="ar"><use href="#i-arrow"/></svg><p>Home and workplace electric vehicle charge points, installed and tested.</p></article>
+      <article class="svc reveal"><span class="n">08</span><h3>Smoke &amp; heat alarms</h3><svg class="ar"><use href="#i-arrow"/></svg><p>Alarm installation and replacement for added peace of mind.</p></article>
+      <article class="svc reveal"><span class="n">09</span><h3>Commercial electrical</h3><svg class="ar"><use href="#i-arrow"/></svg><p>Installations, maintenance and upgrades for shops, offices and other business premises.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- ═════ ABOUT ═════ -->
+<section class="sec t-white" id="about" data-sec="About">
+  <div class="wrap">
+    <div class="about">
+      <div class="txt">
+        <div class="eyebrow reveal"><b>02</b> About us</div>
+        <h2 class="h2 reveal" style="--d:.05s">Reliable, friendly <span class="g">and professional.</span></h2>
+        <div class="reveal" style="--d:.1s">
+          <p>Fuller’s Electrical Services Ltd provides electrical services for domestic and commercial customers across West Yorkshire and surrounding areas.</p>
+          <p>We pride ourselves on quality workmanship, honest advice and fair pricing, and on leaving every job clean, safe and completed to the highest standard.</p>
+        </div>
+      </div>
+
+      <div class="facts reveal" style="--d:.12s">
+        <div class="fact"><span class="ic"><svg><use href="#i-check"/></svg></span><div><b>Verified by MyBuilder</b><span>Checked and listed on MyBuilder</span></div></div>
+        <div class="fact"><span class="ic"><svg><use href="#i-shield"/></svg></span><div><b>Warranty offered</b><span>Your work is backed by a warranty</span></div></div>
+        <div class="fact"><span class="ic"><svg><use href="#i-building"/></svg></span><div><b>Registered company</b><span>Registered at Companies House, no. 17177917</span></div></div>
+        <div class="fact"><span class="ic"><svg><use href="#i-pin"/></svg></span><div><b>West Yorkshire</b><span>And surrounding areas</span></div></div>
+      </div>
+    </div>
+
+    <div class="vals">
+      <div class="val reveal"><span class="n">01</span><h3>Quality workmanship</h3><p>Careful installation and testing, done to last.</p></div>
+      <div class="val reveal" style="--d:.06s"><span class="n">02</span><h3>Honest advice</h3><p>Straight answers on what you need, and what you don’t.</p></div>
+      <div class="val reveal" style="--d:.12s"><span class="n">03</span><h3>Fair pricing</h3><p>Clear, fair prices with no unpleasant surprises.</p></div>
+      <div class="val reveal" style="--d:.18s"><span class="n">04</span><h3>Clean &amp; safe</h3><p>Every job left tidy, safe and completed properly.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═════ WORK ═════ -->
+<section class="sec t-black" id="work" data-sec="Our work">
+  <div class="wrap">
+    <div class="eyebrow reveal"><b>03</b> Our work</div>
+    <h2 class="h2 reveal" style="--d:.05s;margin-bottom:clamp(36px,6vw,72px)">Recent <span class="g">projects.</span></h2>
+    <div class="gallery reveal" id="gallery"></div>
+  </div>
+</section>
+
+<!-- ═════ REVIEWS ═════ -->
+<section class="sec t-pale" id="reviews" data-sec="Reviews">
+  <div class="wrap">
+    <div class="eyebrow reveal"><b>04</b> Reviews</div>
+    <h2 class="h2 reveal" style="--d:.05s;margin-bottom:clamp(30px,5vw,56px)">What customers <span class="g">say.</span></h2>
+    <div class="rv-top reveal"><div id="rvTop"></div><button type="button" class="rv-pause" id="rvPause" aria-pressed="false">Pause scrolling</button></div>
+    <div class="reviews" id="reviewList" role="list" aria-label="Customer reviews"></div>
+    <div class="rv-cta reveal">
+      <a class="btn btn--gold" id="rvLeave" href="#book" target="_blank" rel="noopener">Leave a review <svg><use href="#i-arrow"/></svg></a>
+      <a class="btn btn--link" id="rvMB" href="#" target="_blank" rel="noopener" hidden>See us on MyBuilder <svg><use href="#i-arrow"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- ═════ BOOK ═════ -->
+<section class="sec t-gold" id="book" data-sec="Book">
+  <div class="wrap book-grid">
+    <div class="book-side">
+      <div class="eyebrow reveal"><b style="background:#050505;color:#fff">05</b> Book a consultation</div>
+      <h2 class="h2 reveal" style="--d:.05s">Let’s talk <span style="text-decoration:underline;text-decoration-thickness:.07em;text-underline-offset:.1em">about your job.</span></h2>
+      <p class="lede reveal" style="--d:.1s;color:#2B2111">Choose a day and time, tell us what you need, and we’ll confirm your slot.</p>
+      <ul class="reveal" style="--d:.15s">
+        <li><span>01</span>Pick a weekday and a time that suits you</li>
+        <li><span>02</span>Tell us about the job and the property</li>
+        <li><span>03</span>We confirm by phone or message</li>
+      </ul>
+    </div>
+
+    <form class="form t-black reveal" id="bookForm" novalidate style="--d:.1s">
+      <div class="fields">
+        <div class="fgroup"><span class="label"><i>01</i>Choose a day</span><div class="days" id="days" role="group" aria-label="Choose a day"></div></div>
+        <div class="fgroup"><span class="label"><i>02</i>Choose a time</span><div class="slots" id="slots" role="group" aria-label="Choose a time"><p class="slots-hint" style="grid-column:1/-1">Select a day first.</p></div></div>
+        <div class="fgroup" style="margin-bottom:12px">
+          <span class="label"><i>03</i>Your details</span>
+          <div class="row2" style="margin-top:6px">
+            <div class="field"><label for="f-name">Name</label><input id="f-name" name="name" autocomplete="name" required placeholder="Your name"></div>
+            <div class="field"><label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required placeholder="07…"></div>
+          </div>
+          <div class="field"><label for="f-service">What do you need?</label>
+            <select id="f-service" name="service">
+              <option>Rewire</option><option>Consumer unit upgrade</option><option>Lighting</option><option>Outdoor lighting &amp; sockets</option>
+              <option>Testing &amp; safety report (EICR)</option><option>Fault finding &amp; repair</option><option>EV charger</option><option>Smoke &amp; heat alarms</option>
+              <option>Commercial electrical</option><option>Not sure — need advice</option>
+            </select>
+          </div>
+          <div class="field"><span class="lab">Property type</span>
+            <div class="radios">
+              <label><input type="radio" name="where" value="Home" checked><span>Home</span></label>
+              <label><input type="radio" name="where" value="Business"><span>Business</span></label>
+            </div>
+          </div>
+          <div class="field"><label for="f-town">Town or postcode</label><input id="f-town" name="town" autocomplete="postal-code" placeholder="e.g. Leeds or LS1"></div>
+          <div class="field"><label for="f-msg">Job details <span style="text-transform:none;letter-spacing:0">(optional)</span></label><textarea id="f-msg" name="msg" rows="3" placeholder="Tell us a little about the work…"></textarea></div>
+        </div>
+        <p class="err" id="err" role="alert"></p>
+        <button class="btn btn--gold btn--submit" type="submit">Request consultation <svg><use href="#i-arrow"/></svg></button>
+        <p class="fine">We’ll confirm your slot by phone or message.</p>
+      </div>
+
+      <div class="done" id="done" tabindex="-1">
+        <span class="label">Almost done</span>
+        <h3>Send your request</h3>
+        <p id="doneTxt">Here’s what we’ll send. Tap below to message us, or call to confirm straight away.</p>
+        <div class="summary" id="summary"></div>
+        <p class="note" id="doneNote" hidden>Preview only: add your phone number or email in the SETTINGS block of index.html so requests can be sent.</p>
+        <div class="cta" style="margin-top:0">
+          <a class="btn btn--gold" id="wa" href="#" target="_blank" rel="noopener" hidden>Send via WhatsApp <svg><use href="#i-arrow"/></svg></a>
+          <a class="btn btn--gold" id="mailbtn" href="#" hidden>Send by email <svg><use href="#i-arrow"/></svg></a>
+          <a class="btn btn--ghost" id="callbtn" href="#" hidden><svg><use href="#i-phone"/></svg>Call instead</a>
+          <button class="btn btn--link" type="button" id="edit">Edit request</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- ═════ CONTACT ═════ -->
+<section class="sec t-white" id="contact" data-sec="Contact">
+  <div class="wrap">
+    <div class="eyebrow reveal"><b>06</b> Contact</div>
+    <h2 class="h2 reveal" style="--d:.05s;margin-bottom:clamp(30px,5vw,56px)">Get in <span class="g">touch.</span></h2>
+    <div class="contact-grid">
+      <div class="info reveal">
+        <div class="info-row"><span class="label">Phone</span><a class="big" data-href="tel" data-bind="phone">[Add phone number]</a></div>
+        <div class="info-row"><span class="label">Email</span><a class="big" data-href="mail" data-bind="email">[Add email]</a></div>
+        <div class="info-row"><span class="label">Opening hours</span><span class="big" data-bind="hours">[Add opening hours]</span></div>
+        <div class="info-row"><span class="label">Covering</span><span class="big">West Yorkshire &amp; surrounding areas</span></div>
+        <div class="info-row" style="border-bottom:0"><span class="label">Company</span><span class="big" style="font-size:1.05rem;font-weight:600;letter-spacing:-.01em">Fuller’s Electrical Services Ltd<br>Registered at Companies House · No. 17177917</span></div>
+      </div>
+      <div class="map reveal" style="--d:.1s">
+        <iframe title="Map of West Yorkshire" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=West+Yorkshire,+UK&amp;z=9&amp;output=embed"></iframe>
+        <span class="pin">West Yorkshire</span>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="foot">
+      <a class="logo" href="#top" aria-label="Back to top"><svg viewBox="0 0 560 160" style="height:52px" aria-hidden="true"><use href="#logo-full"/></svg></a>
+      <nav aria-label="Footer"><a href="#services">Services</a><a href="#about">About</a><a href="#work">Work</a><a href="#reviews">Reviews</a><a href="#book">Book</a><a href="#contact">Contact</a></nav>
+    </div>
+    <div class="legal"><span>© <span id="yr">2026</span> Fuller’s Electrical Services Ltd</span><span>Company no. 17177917</span></div>
+  </div>
+  <div class="foot-ghost" aria-hidden="true">fuller’s</div>
+</footer>
+
+<div class="mbar" id="mbar"><a data-href="tel" href="#book"><svg><use href="#i-phone"/></svg>Call</a><a href="#book">Book now</a></div>
+
+<script>
+(function(){
+'use strict';
+var $=function(s,c){return (c||document).querySelector(s)}, $$=function(s,c){return Array.prototype.slice.call((c||document).querySelectorAll(s))};
+var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches, root=document.documentElement;
+
+/* ═══════════════ SETTINGS — edit these ═══════════════ */
+var SETTINGS={
+  phone:'',          // e.g. '07123 456789'
+  email:'',          // e.g. 'info@fullerselectrical.co.uk'
+  hours:'',          // e.g. 'Mon – Fri, 08:00 – 18:00'
+  mybuilder:'',      // your MyBuilder profile URL (shows a "See us on MyBuilder" button)
+  bookingEndpoint:'',// optional form endpoint (e.g. Formspree) to receive booking requests
+  bookDays:10,       // how many weekdays to offer
+  bookFrom:9,        // first slot (hour, 24h)
+  bookTo:17          // last slot (hour, 24h)
+};
+// Inline reviews (or use reviews.json): {name:'A. Customer', text:'…', rating:5, source:'MyBuilder', date:'May 2026', job:'Rewire'}
+var REVIEWS=[];
+
+/* contact binding (placeholders until filled in) */
+var digits=(SETTINGS.phone||'').replace(/[^\d+]/g,''),
+    wa=digits?digits.replace(/^\+/,'').replace(/^0/,'44'):'';
+$$('[data-bind]').forEach(function(el){
+  var k=el.dataset.bind,v=SETTINGS[k];
+  if(v){el.textContent=v}else el.classList.add('ph-t');
+});
+$$('[data-href="tel"]').forEach(function(a){if(digits)a.href='tel:'+digits;else a.setAttribute('href','#book')});
+$$('[data-href="mail"]').forEach(function(a){if(SETTINGS.email)a.href='mailto:'+SETTINGS.email;else a.setAttribute('href','#book')});
+if(SETTINGS.mybuilder){var mb=$('#rvMB');mb.href=SETTINGS.mybuilder;mb.hidden=false}
+
+/* ═══ London time ═══ */
+function londonNow(){
+  var p={},f=new Intl.DateTimeFormat('en-GB',{timeZone:'Europe/London',year:'numeric',month:'numeric',day:'numeric',hour:'numeric',minute:'numeric',weekday:'short',hourCycle:'h23'});
+  f.formatToParts(new Date()).forEach(function(x){p[x.type]=x.value});
+  return {y:+p.year,m:+p.month,d:+p.day,h:+p.hour,min:+p.minute,wd:{Sun:0,Mon:1,Tue:2,Wed:3,Thu:4,Fri:5,Sat:6}[p.weekday]};
+}
+
+/* ═══ Scroll state ═══ */
+var prog=$('#progress'),mbar=$('#mbar'),hudc=$('#hudc'),hcBar=$('#hcBar'),ticking=false;
+function onScroll(){
+  var y=window.scrollY,vh=window.innerHeight,max=document.documentElement.scrollHeight-vh,p=max>0?Math.min(y/max,1):0;
+  root.classList.toggle('scrolled',y>20);
+  prog.style.transform='scaleX('+p+')';
+  mbar.classList.toggle('show',y>vh*.6);
+  hudc.classList.toggle('show',y>vh*.75);
+  hcBar.style.transform='scaleX('+p+')';
+  ticking=false;
+}
+window.addEventListener('scroll',function(){if(!ticking){ticking=true;requestAnimationFrame(onScroll)}},{passive:true});
+onScroll();
+
+var secs=$$('[data-sec]'),mlinks=$$('#menuNav a');
+if('IntersectionObserver' in window){
+  var so=new IntersectionObserver(function(es){es.forEach(function(e){
+    if(!e.isIntersecting)return;
+    $('#hcN').textContent=('0'+(secs.indexOf(e.target)+1)).slice(-2);$('#hcT').textContent=e.target.dataset.sec;
+    mlinks.forEach(function(l){l.classList.toggle('on',l.getAttribute('href')==='#'+e.target.id)});
+  })},{rootMargin:'-45% 0px -50% 0px'});
+  secs.forEach(function(s){so.observe(s)});
+}
+
+/* ═══ Menu ═══ */
+var mbtn=$('#menuBtn'),mtxt=$('#menuTxt');
+function setMenu(o){
+  root.classList.toggle('menu-open',o);mbtn.setAttribute('aria-expanded',o);mtxt.textContent=o?'Close':'Menu';
+  if(window.__lenis){o?window.__lenis.stop():window.__lenis.start()}
+  if(o)setTimeout(function(){var a=$('#menuNav a');a&&a.focus({preventScroll:true})},450);
+}
+mbtn.addEventListener('click',function(){setMenu(!root.classList.contains('menu-open'))});
+$$('#menu a').forEach(function(a){a.addEventListener('click',function(){setMenu(false)})});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&root.classList.contains('menu-open')){setMenu(false);mbtn.focus()}});
+
+/* ═══ Entrance + reveals ═══ */
+function ready(){document.body.classList.add('ready')}
+if(document.fonts&&document.fonts.ready){Promise.race([document.fonts.ready,new Promise(function(r){setTimeout(r,900)})]).then(function(){requestAnimationFrame(ready)})}else ready();
+var rv=$$('.reveal');
+if('IntersectionObserver' in window && !reduce){
+  var ro=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');ro.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px',threshold:.05});
+  rv.forEach(function(el){ro.observe(el)});
+}else rv.forEach(function(el){el.classList.add('in')});
+
+/* ═══ Gallery placeholders ═══ */
+(function(){
+  var box=$('#gallery');
+  // To add a real photo: put the file in fullers-electrical/images/ and set src, e.g. src:'images/outdoor-light.jpg'. Leave src:'' for a placeholder.
+  var PHOTOS=[
+    {src:'',alt:'',title:'Outdoor lighting'},
+    {src:'',alt:'',title:'Consumer unit'},
+    {src:'',alt:'',title:'Weatherproof sockets'},
+    {src:'',alt:'',title:'Ceiling & track lighting'},
+    {src:'',alt:'',title:'Cabling & fault finding'}
+  ];
+  function esc(t){var d=document.createElement('div');d.textContent=t;return d.innerHTML}
+  box.innerHTML=PHOTOS.map(function(p,i){
+    var n=('0'+(i+1)).slice(-2),cap='<figcaption><b>'+n+'</b>'+esc(p.title)+'</figcaption>';
+    return '<figure class="shot">'+(p.src?'<img src="'+esc(p.src)+'" alt="'+esc(p.alt||p.title)+'" loading="lazy" decoding="async">':'<div class="ph" role="img" aria-label="Photo placeholder: '+esc(p.title)+'"><span>Photo '+n+' · add image</span></div>')+cap+'</figure>';
+  }).join('');
+})();
+
+/* ═══ Reviews (reads reviews.json; shows samples until real ones exist) ═══ */
+(function(){
+  var box=$('#reviewList'),top=$('#rvTop'),star='<svg><use href="#i-star"/></svg>';
+  var SAMPLE=[
+    {name:'Customer name',text:'Your first customer review goes here. Add real reviews in reviews.json and these samples disappear.',rating:5,source:'MyBuilder'},
+    {name:'Customer name',text:'A short quote about the quality of the work, the tidy finish and how friendly and reliable the service was.',rating:5,source:'Google'},
+    {name:'Customer name',text:'Another happy customer. Mention the job, such as a rewire, lighting or a consumer unit upgrade.',rating:5,source:'MyBuilder'}
+  ];
+  function stars(n){var s='';for(var i=0;i<5;i++)s+=i<n?star:star.replace('<svg>','<svg style="opacity:.25">');return '<div class="stars" role="img" aria-label="'+n+' out of 5 stars">'+s+'</div>'}
+  function esc(t){var d=document.createElement('div');d.textContent=t==null?'':String(t);return d.innerHTML}
+  var pauseBtn=$('#rvPause'),cur={list:[],sample:false},colsN=0,userPaused=false,rt;
+  function initials(n){var p=String(n||'').trim().split(/\s+/);return ((p[0]||'?')[0]+(p.length>1?p[p.length-1][0]:'')).toUpperCase()}
+  function card(r,sample,hidden){
+    return '<figure class="review'+(sample?' sample':'')+'"'+(hidden?' aria-hidden="true"':' role="listitem"')+'>'+(sample?'<span class="tagsample">Sample</span>':'')+stars(Math.max(1,Math.min(5,+r.rating||5)))+
+      '<blockquote>“'+esc(r.text)+'”</blockquote><footer><span class="av" aria-hidden="true">'+esc(initials(r.name))+'</span><span><b>'+esc(r.name)+'</b>'+esc([r.source,r.date,r.job].filter(Boolean).join(' · '))+'</span></footer></figure>';
+  }
+  function colCount(){return window.innerWidth>=1024?3:window.innerWidth>=768?2:1}
+
+  /* layout: endless vertical columns (static grid if the visitor prefers reduced motion) */
+  function layout(){
+    var list=cur.list,sample=cur.sample;
+    if(reduce){
+      box.className='reviews';box.innerHTML=list.map(function(r){return card(r,sample,false)}).join('');
+      pauseBtn.hidden=true;return;
+    }
+    var n=colCount();colsN=n;
+    box.className='rv-cols';pauseBtn.hidden=false;
+    var groups=[];for(var c=0;c<n;c++)groups.push([]);
+    list.forEach(function(r,i){groups[i%n].push(r)});
+    groups=groups.filter(function(g){return g.length});
+    box.innerHTML=groups.map(function(g){
+      return '<div class="rv-col"><div class="rv-track">'+g.map(function(r){return card(r,sample,false)}).join('')+'</div></div>';
+    }).join('');
+    var vh=box.clientHeight||600,speeds=[1,.79,.88],phase=[0,.35,.7];
+    $$('.rv-col',box).forEach(function(col,i){
+      var track=$('.rv-track',col),group=groups[i];
+      var one=track.scrollHeight||300,reps=Math.max(1,Math.ceil((vh*1.15)/one));     // enough copies to fill the window
+      var set=group.map(function(r){return card(r,sample,false)}).join(''),setHidden=group.map(function(r){return card(r,sample,true)}).join('');
+      var html='',k;
+      for(k=0;k<reps;k++)html+=k?setHidden:set;                                        // first copy is read by screen readers
+      for(k=0;k<reps;k++)html+=setHidden;                                              // second half = the seamless loop
+      track.innerHTML=html;
+      var dist=one*reps,dur=dist/(30*speeds[i%3]);
+      track.style.setProperty('--dur',dur.toFixed(1)+'s');
+      track.style.setProperty('--dl','-'+(dur*phase[i%3]).toFixed(1)+'s');
+    });
+    box.classList.toggle('paused',userPaused);
+  }
+  function render(list,sample){
+    cur.list=list;cur.sample=sample;layout();
+    if(sample){top.innerHTML='<p class="label">Sample reviews. Add yours in <b>reviews.json</b>.</p>';return}
+    var avg=list.reduce(function(a,r){return a+(+r.rating||5)},0)/list.length;
+    top.innerHTML='<div class="rv-score"><strong>'+avg.toFixed(1)+'</strong>'+stars(Math.round(avg))+'<span class="label">'+list.length+' customer review'+(list.length===1?'':'s')+'</span></div>';
+  }
+  /* controls: pause button, pause while off-screen, re-layout when the column count changes */
+  pauseBtn.addEventListener('click',function(){
+    userPaused=!userPaused;pauseBtn.setAttribute('aria-pressed',userPaused);pauseBtn.textContent=userPaused?'Play scrolling':'Pause scrolling';box.classList.toggle('paused',userPaused);
+  });
+  if('IntersectionObserver' in window)new IntersectionObserver(function(es){box.classList.toggle('idle',!es[0].isIntersecting)},{rootMargin:'100px'}).observe(box);
+  window.addEventListener('resize',function(){clearTimeout(rt);rt=setTimeout(function(){if(!reduce&&colCount()!==colsN)layout()},200)});
+  function clean(d){d=Array.isArray(d)?d:(d&&d.reviews)||[];return d.filter(function(r){return r&&r.text&&r.name})}
+  render(REVIEWS.length?REVIEWS:SAMPLE,!REVIEWS.length);
+  if(window.fetch)fetch('reviews.json',{cache:'no-store'}).then(function(r){return r.ok?r.json():[]}).then(function(d){var l=clean(d);if(l.length)render(l,false)}).catch(function(){});
+  var leave=$('#rvLeave');
+  if(wa){leave.href='https://wa.me/'+wa+'?text='+encodeURIComponent('Hi, I’d like to leave a review for Fuller’s Electrical Services:\n')}
+  else if(SETTINGS.mybuilder){leave.href=SETTINGS.mybuilder}
+  else{leave.removeAttribute('target');leave.href='#contact'}
+})();
+
+/* ═══ Booking ═══ */
+(function(){
+  var daysEl=$('#days'),slotsEl=$('#slots'),form=$('#bookForm'),err=$('#err'),sel={date:null,label:'',time:null};
+  var now=londonNow(),list=[],i=0;
+  while(list.length<SETTINGS.bookDays&&i<40){
+    var dt=new Date(Date.UTC(now.y,now.m-1,now.d+i)),wd=dt.getUTCDay();i++;
+    if(wd===0||wd===6)continue;
+    if(i===1&&now.h>=SETTINGS.bookTo-1)continue;
+    list.push(dt);
+  }
+  function iso(d){return d.toISOString().slice(0,10)}
+  function fmt(d,o){return d.toLocaleDateString('en-GB',Object.assign({timeZone:'UTC'},o))}
+  daysEl.innerHTML=list.map(function(d){
+    return '<button type="button" class="chip" aria-pressed="false" data-iso="'+iso(d)+'" data-label="'+fmt(d,{weekday:'long',day:'numeric',month:'long'})+'"><span>'+fmt(d,{weekday:'short'})+'</span><strong>'+fmt(d,{day:'numeric'})+'</strong><span>'+fmt(d,{month:'short'})+'</span></button>';
+  }).join('');
+  function renderSlots(isToday){
+    var h='';for(var t=SETTINGS.bookFrom;t<=SETTINGS.bookTo;t++){var off=isToday&&t<now.h+2,l=(t<10?'0':'')+t+':00';
+      h+='<button type="button" class="chip" aria-pressed="false" data-t="'+l+'"'+(off?' disabled':'')+'>'+l+'</button>'}
+    slotsEl.innerHTML=h;sel.time=null;
+  }
+  daysEl.addEventListener('click',function(e){
+    var b=e.target.closest('.chip');if(!b)return;
+    $$('.chip',daysEl).forEach(function(c){c.setAttribute('aria-pressed',c===b)});
+    sel.date=b.dataset.iso;sel.label=b.dataset.label;
+    renderSlots(sel.date===iso(new Date(Date.UTC(now.y,now.m-1,now.d))));err.textContent='';
+  });
+  slotsEl.addEventListener('click',function(e){
+    var b=e.target.closest('.chip');if(!b||b.disabled)return;
+    $$('.chip',slotsEl).forEach(function(c){c.setAttribute('aria-pressed',c===b)});sel.time=b.dataset.t;err.textContent='';
+  });
+
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    var fd=new FormData(form),name=(fd.get('name')||'').trim(),phone=(fd.get('phone')||'').trim();
+    if(!sel.date){err.textContent='Please choose a day.';return}
+    if(!sel.time){err.textContent='Please choose a time.';return}
+    if(!name){err.textContent='Please enter your name.';$('#f-name').focus();return}
+    if(phone.replace(/\D/g,'').length<10){err.textContent='Please enter a valid phone number.';$('#f-phone').focus();return}
+    err.textContent='';
+    var data={name:name,phone:phone,service:fd.get('service'),property:fd.get('where'),town:(fd.get('town')||'').trim(),message:(fd.get('msg')||'').trim(),date:sel.label,time:sel.time};
+    var rows=[['Day',data.date],['Time',data.time],['Name',data.name],['Phone',data.phone],['Job',data.service],['Property',data.property]];
+    if(data.town)rows.push(['Location',data.town]);
+    if(data.message)rows.push(['Details',data.message]);
+    var sm=$('#summary');sm.innerHTML='';
+    rows.forEach(function(r){var d=document.createElement('div'),b=document.createElement('b'),s=document.createElement('span');b.textContent=r[0];s.textContent=r[1];d.appendChild(b);d.appendChild(s);sm.appendChild(d)});
+    var text='Hi, I’d like to book a consultation.\n'+rows.map(function(r){return r[0]+': '+r[1]}).join('\n');
+    var waB=$('#wa'),mailB=$('#mailbtn'),callB=$('#callbtn');
+    waB.hidden=!wa;if(wa)waB.href='https://wa.me/'+wa+'?text='+encodeURIComponent(text);
+    mailB.hidden=!SETTINGS.email;if(SETTINGS.email)mailB.href='mailto:'+SETTINGS.email+'?subject='+encodeURIComponent('Consultation request')+'&body='+encodeURIComponent(text);
+    callB.hidden=!digits;if(digits)callB.href='tel:'+digits;
+    $('#doneNote').hidden=!!(wa||SETTINGS.email);
+    if(SETTINGS.bookingEndpoint)fetch(SETTINGS.bookingEndpoint,{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify(data)}).catch(function(){});
+    form.classList.add('sent');$('#done').focus({preventScroll:true});
+    form.scrollIntoView({behavior:reduce?'auto':'smooth',block:'center'});
+  });
+  $('#edit').addEventListener('click',function(){form.classList.remove('sent')});
+})();
+
+/* ═══ Electric text behind the hero headline ═══
+   Animated SVG turbulence displaces a stroked copy of the headline. Runs only on desktop pointers,
+   pauses off-screen, and switches itself off on slow devices (static glow outline remains). */
+(function(){
+  var FX={speed:1,chaos:1};                       // speed: animation rate · chaos: how violently the arc jitters
+  var flt1=$('#fx-electric'),hero=$('#top');
+  if(!flt1||!hero)return;
+  if(reduce||!window.matchMedia('(hover:hover) and (pointer:fine)').matches||window.innerWidth<861)return;
+
+  /* a second filter instance for the smaller section headings (jitter is scaled to each text size) */
+  var flt2=flt1.cloneNode(true);flt2.id='fx-electric-2';flt1.parentNode.appendChild(flt2);
+  var svg=flt1.ownerSVGElement;
+
+  /* add glow + arc layers behind every .h2 */
+  var h2s=$$('.h2');
+  h2s.forEach(function(h){
+    var inner=h.innerHTML,box=document.createElement('span');
+    box.className='h2-fx';box.setAttribute('aria-hidden','true');
+    ['glow1','glow2','arc'].forEach(function(k){
+      var s=document.createElement('span');s.className='fx2 fx-'+k+(k==='arc'?' f2':'');s.innerHTML=inner;box.appendChild(s);
+    });
+    h.insertBefore(box,h.firstChild);
+    requestAnimationFrame(function(){requestAnimationFrame(function(){box.classList.add('on')})});
+  });
+
+  /* every arc layer is switched on only while it is on screen */
+  var items=[{el:$('.fx-arc',hero),flt:flt1}].concat($$('.h2-fx .fx-arc').map(function(a){return {el:a,flt:flt2}}));
+  var liveCount=0,dead=false,tabVisible=true;
+  items.forEach(function(it){it.visible=false;it.live=false});
+
+  function tune(){
+    items.forEach(function(it,i){
+      if(i>1&&it.flt===flt2&&items[1]!==it)return;               // tune each filter once, from its first element
+      var el=it.el,fs=parseFloat(getComputedStyle(el).fontSize)||60,r=el.getBoundingClientRect(),W=r.width||800,H=r.height||240,dur=(6/(FX.speed||1))+'s';
+      $('feDisplacementMap',it.flt).setAttribute('scale',(fs*.22*FX.chaos).toFixed(1));
+      var vals=[(H*1.4).toFixed(0)+';0','0;-'+(H*1.4).toFixed(0),(W*.6).toFixed(0)+';0','0;-'+(W*.6).toFixed(0)];
+      $$('animate',it.flt).forEach(function(a,j){a.setAttribute('values',vals[j]);a.setAttribute('dur',dur)});
+    });
+  }
+  function apply(){
+    var want=0;
+    items.forEach(function(it){
+      var v=!dead&&tabVisible&&it.visible;
+      if(v!==it.live){it.live=v;it.el.classList.toggle('live',v)}
+      if(v)want++;
+    });
+    if(want!==liveCount){
+      liveCount=want;
+      try{want?svg.unpauseAnimations():svg.pauseAnimations()}catch(e){}
+    }
+  }
+  tune();
+  var rt;window.addEventListener('resize',function(){clearTimeout(rt);rt=setTimeout(tune,150)});
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){
+      es.forEach(function(e){items.forEach(function(it){if(it.host===e.target)it.visible=e.isIntersecting})});apply();
+    },{rootMargin:'80px'});
+    items.forEach(function(it){it.host=it.el.closest('.hero')||it.el.closest('.h2');io.observe(it.host)});
+  }else items.forEach(function(it){it.visible=true});
+  document.addEventListener('visibilitychange',function(){tabVisible=!document.hidden;apply()});
+  apply();
+
+  /* performance guard: if frames are slow while any filter runs, drop the live effect for good */
+  var n=0,sum=0,last=0;
+  (function probe(t){
+    if(dead)return;
+    if(liveCount&&last){var d=t-last;if(d<250){n++;if(n>20)sum+=d}}
+    last=liveCount?t:0;
+    if(n>=140){if(sum/(n-20)>30){dead=true;apply()}return}
+    requestAnimationFrame(probe);
+  })(performance.now());
+})();
+
+/* ═══ Liquid metal buttons ═══
+   Press/ripple behaviour everywhere; the WebGL metal shader (Paper Shaders, Apache-2.0) loads lazily on desktop only.
+   Everywhere else the buttons keep their CSS chrome ring. */
+(function(){
+  var btns=$$('.lm-btn');if(!btns.length)return;
+  btns.forEach(function(b){
+    b.addEventListener('pointerdown',function(e){
+      var r=b.getBoundingClientRect(),w=document.createElement('span'),i=document.createElement('i');
+      w.className='lm-rip';i.style.left=(e.clientX-r.left)+'px';i.style.top=(e.clientY-r.top)+'px';w.appendChild(i);b.appendChild(w);
+      setTimeout(function(){w.remove()},650);
+    });
+  });
+  if(reduce||!window.matchMedia('(hover:hover) and (pointer:fine)').matches||window.innerWidth<861)return;
+
+  function mount(m){
+    btns.forEach(function(b){
+      var host=$('.lm-metal',b),sm;
+      try{
+        sm=new m.ShaderMount(host,m.liquidMetalFragmentShader,{
+          u_colorBack:[.667,.667,.675,1],u_colorTint:[1,1,1,1],
+          u_repetition:4,u_softness:.5,u_shiftRed:.3,u_shiftBlue:.3,u_distortion:0,u_contour:0,u_angle:45,u_isImage:false,
+          u_scale:8,u_rotation:0,u_offsetX:.1,u_offsetY:-.1,u_originX:.5,u_originY:.5,u_worldWidth:0,u_worldHeight:0,u_fit:0
+        },undefined,.6);
+      }catch(err){return}
+      var hover=false;
+      b.addEventListener('mouseenter',function(){hover=true;sm.setSpeed(1)});
+      b.addEventListener('mouseleave',function(){hover=false;sm.setSpeed(.6)});
+      b.addEventListener('click',function(){sm.setSpeed(2.4);setTimeout(function(){sm.setSpeed(hover?1:.6)},300)});
+    });
+  }
+  function load(){
+    import('https://cdn.jsdelivr.net/npm/@paper-design/shaders@0.0.81/+esm').then(mount).catch(function(){});
+  }
+  if('requestIdleCallback' in window)requestIdleCallback(load,{timeout:3000});else setTimeout(load,1200);
+})();
+
+/* ═══ Lightning strike behind the hero and services sections ═══
+   A faint gold bolt strikes down from the top of the screen to the (lagged) cursor, flickers, then fades.
+   A small ember marks the strike point in between. Desktop pointers only; touch devices and "reduce motion"
+   get one still bolt. Only visible sections draw, and the loop stops when the tab is hidden. */
+(function(){
+  var secs=[$('#top'),$('#services')].filter(Boolean);
+  if(!secs.length)return;
+  var STRENGTH=1;          // overall strength (faint by default): raise for a bolder strike
+  var LAG=.075;            // how far the strike point trails the cursor: lower = more delay
+  var GAP=[900,1800];      // quiet time between strikes in ms (min, max)
+  var live=window.matchMedia('(hover:hover) and (pointer:fine)').matches&&!reduce;
+  var dpr=Math.min(window.devicePixelRatio||1,1.5);
+  var GLOW='217,162,59',CORE='236,168,26';
+  var items=secs.map(function(el){
+    var c=document.createElement('canvas');c.className='bolt-bg';c.setAttribute('aria-hidden','true');el.insertBefore(c,el.firstChild);
+    return {el:el,c:c,ctx:c.getContext('2d'),w:0,h:0,vis:false,rest:el.id==='top'?[.74,.46]:[.86,.34]};
+  });
+
+  function rgba(c,a){return 'rgba('+c+','+Math.max(0,Math.min(1,a)).toFixed(3)+')'}
+  function rnd(a,b){return a+Math.random()*(b-a)}
+
+  /* jagged line by recursive midpoint displacement */
+  function jag(a,b,disp,depth){
+    var pts=[a,b];
+    for(var d=0;d<depth;d++){
+      var next=[pts[0]];
+      for(var i=0;i<pts.length-1;i++){
+        var p=pts[i],q=pts[i+1],dx=q[0]-p[0],dy=q[1]-p[1],len=Math.sqrt(dx*dx+dy*dy)||1,off=(Math.random()-.5)*disp;
+        next.push([(p[0]+q[0])/2-dy/len*off,(p[1]+q[1])/2+dx/len*off],q);
+      }
+      pts=next;disp*=.56;
+    }
+    return pts;
+  }
+  /* a bolt = main streak + a few forked branches + impact sparks */
+  function gen(ox,oy,tx,ty){
+    var len=Math.sqrt((tx-ox)*(tx-ox)+(ty-oy)*(ty-oy)),pts=jag([ox,oy],[tx,ty],len*.22,6),br=[],nb=2+Math.floor(Math.random()*2),i;
+    for(i=0;i<nb;i++){
+      var idx=Math.floor(pts.length*rnd(.22,.78)),p=pts[idx],side=Math.random()<.5?-1:1,dx=side*rnd(50,150),dy=rnd(60,170),l=Math.sqrt(dx*dx+dy*dy);
+      br.push({at:idx/pts.length,pts:jag(p,[p[0]+dx,p[1]+dy],l*.3,4)});
+    }
+    var sp=[];for(i=0;i<8;i++){var an=rnd(0,6.2832),l1=rnd(10,34);sp.push([Math.cos(an)*l1,Math.sin(an)*l1])}
+    return {pts:pts,br:br,sp:sp,tx:tx,ty:ty};
+  }
+  function trace(ctx,pts,n,ox,oy){
+    ctx.beginPath();ctx.moveTo(pts[0][0]-ox,pts[0][1]-oy);
+    for(var i=1;i<n;i++)ctx.lineTo(pts[i][0]-ox,pts[i][1]-oy);
+  }
+  /* draw one bolt: prog 0..1 = how far down it has struck, k = brightness */
+  function drawBolt(ctx,b,ox,oy,prog,k){
+    k*=STRENGTH;if(k<=0)return;
+    ctx.lineCap='round';ctx.lineJoin='round';
+    var n=Math.max(2,Math.ceil(prog*b.pts.length)),L=[[16,GLOW,.06],[6,GLOW,.15],[1.8,CORE,.58]],i,j;
+    for(i=0;i<L.length;i++){trace(ctx,b.pts,n,ox,oy);ctx.lineWidth=L[i][0];ctx.strokeStyle=rgba(L[i][1],L[i][2]*k);ctx.stroke()}
+    for(j=0;j<b.br.length;j++){
+      var br=b.br[j];if(prog<=br.at)continue;
+      var bp=Math.min(1,(prog-br.at)/Math.max(.001,1-br.at)),bn=Math.max(2,Math.ceil(bp*br.pts.length));
+      for(i=0;i<L.length;i++){trace(ctx,br.pts,bn,ox,oy);ctx.lineWidth=L[i][0]*.55;ctx.strokeStyle=rgba(L[i][1],L[i][2]*k*.75);ctx.stroke()}
+    }
+    if(prog>=1){                                                                 // impact flash + sparks
+      var x=b.tx-ox,y=b.ty-oy,g=ctx.createRadialGradient(x,y,0,x,y,70);
+      g.addColorStop(0,rgba(GLOW,.30*k));g.addColorStop(1,rgba(GLOW,0));
+      ctx.fillStyle=g;ctx.beginPath();ctx.arc(x,y,70,0,6.2832);ctx.fill();
+      ctx.lineWidth=1.4;ctx.strokeStyle=rgba(CORE,.5*k);ctx.beginPath();
+      for(i=0;i<b.sp.length;i++){ctx.moveTo(x+b.sp[i][0]*.25,y+b.sp[i][1]*.25);ctx.lineTo(x+b.sp[i][0],y+b.sp[i][1])}
+      ctx.stroke();
+    }
+  }
+  function ember(ctx,x,y,t){
+    var p=.65+.35*Math.sin(t*.006),g=ctx.createRadialGradient(x,y,0,x,y,34);
+    g.addColorStop(0,rgba(GLOW,.16*p*STRENGTH));g.addColorStop(1,rgba(GLOW,0));
+    ctx.fillStyle=g;ctx.beginPath();ctx.arc(x,y,34,0,6.2832);ctx.fill();
+    ctx.fillStyle=rgba(CORE,.5*p*STRENGTH);ctx.beginPath();ctx.arc(x,y,2.2,0,6.2832);ctx.fill();
+  }
+
+  function size(it){
+    var r=it.el.getBoundingClientRect();it.w=r.width;it.h=r.height;
+    it.c.width=Math.max(1,Math.round(r.width*dpr));it.c.height=Math.max(1,Math.round(r.height*dpr));
+  }
+  function drawStatic(it){
+    var ctx=it.ctx,tx=it.rest[0]*it.w,ty=it.rest[1]*it.h;
+    ctx.setTransform(dpr,0,0,dpr,0,0);ctx.clearRect(0,0,it.w,it.h);
+    drawBolt(ctx,gen(tx-30,-8,tx,ty),0,0,1,.7);
+  }
+  items.forEach(size);
+  if(typeof ResizeObserver!=='undefined'){
+    var ro2=new ResizeObserver(function(es){es.forEach(function(e){items.forEach(function(it){if(it.el===e.target){size(it);if(!live)drawStatic(it)}})})});
+    items.forEach(function(it){ro2.observe(it.el)});
+  }else window.addEventListener('resize',function(){items.forEach(function(it){size(it);if(!live)drawStatic(it)})});
+  if(!live){items.forEach(drawStatic);return}
+
+  /* live: strike -> flicker -> fade -> quiet gap; the strike point trails the cursor */
+  var tgt={x:window.innerWidth*.72,y:window.innerHeight*.45},cur={x:tgt.x,y:tgt.y},last=performance.now(),raf=0,tabVisible=true;
+  var strike=null,nextAt=last+500,lastHit={x:-9999,y:-9999};
+  window.addEventListener('pointermove',function(e){if(e.pointerType==='touch')return;tgt.x=e.clientX;tgt.y=e.clientY},{passive:true});
+
+  function newStrike(now){
+    var ox=Math.max(20,Math.min(window.innerWidth-20,cur.x+rnd(-130,130)));
+    strike={t0:now,ox:ox,jit:now,b:gen(ox,-12,cur.x,cur.y)};
+    lastHit={x:cur.x,y:cur.y};
+  }
+  function frame(now){
+    raf=requestAnimationFrame(frame);
+    var dt=Math.min(now-last,50)||16;last=now;
+    var kf=1-Math.pow(1-LAG,dt/16.7);cur.x+=(tgt.x-cur.x)*kf;cur.y+=(tgt.y-cur.y)*kf;
+
+    var prog=0,k=0;
+    if(!strike){
+      var moved=Math.sqrt((cur.x-lastHit.x)*(cur.x-lastHit.x)+(cur.y-lastHit.y)*(cur.y-lastHit.y));
+      if(now>=nextAt||(moved>240&&now>=nextAt-GAP[0]*.6))newStrike(now);
+    }
+    if(strike){
+      var age=now-strike.t0;
+      if(age>1050){strike=null;nextAt=now+rnd(GAP[0],GAP[1])}
+      else{
+        prog=Math.min(1,age/140);
+        if(age>140&&age<780&&now-strike.jit>85){strike.b=gen(strike.ox,-12,cur.x,cur.y);strike.jit=now}   // flicker: re-roll the path, aimed at the lagged cursor
+        k=age<140?1:age<520?(.62+.38*Math.abs(Math.sin(age*.045))):Math.max(0,.62*(1-(age-520)/530));
+      }
+    }
+    items.forEach(function(it){
+      if(!it.vis)return;
+      var r=it.el.getBoundingClientRect(),ctx=it.ctx;
+      ctx.setTransform(dpr,0,0,dpr,0,0);ctx.clearRect(0,0,it.w,it.h);
+      if(strike)drawBolt(ctx,strike.b,r.left,r.top,prog,k);
+      var ey=cur.y-r.top;if(ey>-40&&ey<it.h+40)ember(ctx,cur.x-r.left,ey,now);
+    });
+  }
+  function run(){
+    var any=items.some(function(it){return it.vis});
+    if(any&&tabVisible&&!raf){last=performance.now();raf=requestAnimationFrame(frame)}
+    else if((!any||!tabVisible)&&raf){cancelAnimationFrame(raf);raf=0}
+  }
+  if('IntersectionObserver' in window){
+    var io2=new IntersectionObserver(function(es){es.forEach(function(e){items.forEach(function(it){if(it.el===e.target)it.vis=e.isIntersecting})});run()},{rootMargin:'120px'});
+    items.forEach(function(it){io2.observe(it.el)});
+  }else{items.forEach(function(it){it.vis=true});run()}
+  document.addEventListener('visibilitychange',function(){tabVisible=!document.hidden;run()});
+})();
+
+/* ═══ Smooth, eased scrolling (desktop pointer only; falls back to native) ═══ */
+if(!reduce && window.matchMedia('(hover:hover) and (pointer:fine)').matches){
+  var ls=document.createElement('script');
+  ls.src='https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js';
+  ls.onload=function(){
+    if(!window.Lenis)return;
+    var lenis=window.__lenis=new Lenis({duration:1.15,smoothWheel:true,easing:function(t){return Math.min(1,1.001-Math.pow(2,-10*t))}});
+    root.classList.add('lenis','lenis-smooth');
+    (function loop(t){lenis.raf(t);requestAnimationFrame(loop)})(performance.now());
+    $$('a[href^="#"]').forEach(function(a){a.addEventListener('click',function(e){
+      var id=a.getAttribute('href');if(id.length<2)return;
+      var el=$(id);if(!el)return;
+      e.preventDefault();
+      lenis.scrollTo(el,{offset:-(parseInt(getComputedStyle(root).getPropertyValue('--header-h'),10)||76),duration:1.4});
+    })});
+  };
+  document.head.appendChild(ls);
+}
+
+$('#yr').textContent=new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
