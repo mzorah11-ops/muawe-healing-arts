@@ -1,0 +1,19 @@
+# Not part of the website: the second design lives in its own repository
+clone-site/
+
+# Tooling, working files and screenshots from building the site
+.agents/
+.claude/
+.taste-skill/
+temporary screenshots/
+skills-lock.json
+CLAUDE*.md
+screenshot.mjs
+*.bak
+node_modules/
+
+# A screenshot of someone else's website used only as a design reference: not ours to publish
+brand_assets/houmahani.com_.png
+
+# Editor settings
+*.code-workspace

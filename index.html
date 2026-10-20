@@ -1,0 +1,1875 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, interactive-widget=resizes-content">
+<title>Muawé Healing Arts — Art psychotherapy and healing in Manchester</title>
+<meta name="description" content="Muawé Healing Arts is a warm, inclusive space in Manchester City Centre for art psychotherapy, ancestral lineage healing and somatic healing. Book a session in person or online.">
+<meta name="theme-color" content="#071B4D">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Antonio:wght@300;400&family=Montserrat:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<style>
+/* ---------- Tokens (from brand guidelines) ---------- */
+:root{
+  --navy:#071B4D; --gold:#FF9A00; --sand:#F6F3EC; --slate:#5B6B8A; --charcoal:#1A1A1A;
+  --ivory:#FAFAF8; --stone:#E5E1DB; --sage:#8FA68F; --terracotta:#C4745A; --lavender:#B7A7D9;
+  --navy-2:#0C2766;
+  --font-display:'Playfair Display',Georgia,serif;
+  --font-logo:'Antonio','Arial Narrow',sans-serif;
+  --font-body:'Montserrat',system-ui,sans-serif;
+  --s1:.5rem; --s2:1rem; --s3:1.5rem; --s4:2.5rem; --s5:4rem; --s6:7rem;
+  --ease:cubic-bezier(.22,1,.36,1);
+  --shadow-1:0 1px 2px rgba(7,27,77,.06),0 8px 24px -12px rgba(7,27,77,.18);
+  --shadow-2:0 2px 4px rgba(7,27,77,.08),0 24px 48px -20px rgba(7,27,77,.32);
+  --gutter:clamp(1.25rem,5vw,3rem);
+  --max:1180px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:transparent}
+body{margin:0;background:var(--sand);color:var(--charcoal);font-family:var(--font-body);font-size:1rem;line-height:1.7;-webkit-font-smoothing:antialiased}
+img,svg{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3{font-family:var(--font-display);font-weight:400;margin:0;line-height:1.12;letter-spacing:-.02em;text-wrap:balance}
+p{margin:0}
+.wrap{width:100%;max-width:var(--max);margin-inline:auto;padding-inline:var(--gutter)}
+.section{padding-block:clamp(4rem,9vw,7rem)}
+.dark{background:var(--navy);color:var(--ivory)}
+.skip{position:absolute;left:1rem;top:-4rem;background:var(--gold);color:var(--navy);padding:.7rem 1rem;border-radius:999px;font-weight:600;z-index:200;transition:transform .2s var(--ease)}
+.skip:focus{transform:translateY(5.2rem)}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:4px}
+.dark :focus-visible{outline-color:var(--gold)}
+.light :focus-visible{outline-color:var(--navy)}
+
+/* ---------- Buttons ---------- */
+.btn{display:inline-flex;align-items:center;gap:.7rem;min-height:48px;padding:.8rem 1.6rem;border-radius:999px;border:1.5px solid transparent;font:600 .8rem/1 var(--font-body);letter-spacing:.1em;text-transform:uppercase;text-decoration:none;cursor:pointer;transition:transform .35s var(--ease),box-shadow .35s var(--ease),background-color .25s,color .25s;touch-action:manipulation}
+.btn svg{width:18px;height:18px;transition:transform .35s var(--ease)}
+@media (hover:hover) and (pointer:fine){.btn:hover svg{transform:translateX(4px)}}
+.btn:active{transform:scale(.97)}
+.btn-gold{background:var(--gold);color:var(--navy);box-shadow:0 10px 30px -10px rgba(255,154,0,.6)}
+@media (hover:hover) and (pointer:fine){.btn-gold:hover{transform:translateY(-2px);box-shadow:0 16px 34px -10px rgba(255,154,0,.7)}}
+.btn-navy{background:var(--navy);color:var(--ivory);box-shadow:var(--shadow-1)}
+@media (hover:hover) and (pointer:fine){.btn-navy:hover{transform:translateY(-2px);box-shadow:var(--shadow-2)}}
+.btn-line{border-color:currentColor;background:transparent}
+@media (hover:hover) and (pointer:fine){.btn-line:hover{background:rgba(255,255,255,.1);transform:translateY(-2px)}}
+@media (hover:hover) and (pointer:fine){.light .btn-line:hover{background:rgba(7,27,77,.06)}}
+.link{display:inline-flex;align-items:center;gap:.5rem;font-size:.82rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;padding-block:.6rem;min-height:44px}
+.link svg{width:16px;height:16px;transition:transform .35s var(--ease)}
+@media (hover:hover) and (pointer:fine){.link:hover svg{transform:translateX(4px)}}
+@media (hover:hover) and (pointer:fine){.link:hover{text-decoration:underline;text-underline-offset:5px}}
+
+/* ---------- Header ---------- */
+.site-header{position:fixed;inset:0 0 auto 0;z-index:100;color:var(--ivory);background:rgba(7,27,77,.97);transition:background-color .4s,box-shadow .4s}
+.site-header.stuck{background:rgba(7,27,77,.94);box-shadow:0 10px 30px -18px rgba(0,0,0,.6);backdrop-filter:blur(10px)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:76px}
+.brand{display:flex;align-items:center;gap:.9rem;text-decoration:none}
+.brand-mark{width:46px;height:40px;flex:none}
+.brand-mark img{width:100%;height:100%;object-fit:contain}
+.brand-word{font-family:var(--font-logo);font-weight:300;font-size:1.7rem;letter-spacing:.2em;line-height:1;display:block}
+.brand-sub{font-family:var(--font-logo);font-weight:300;font-size:.58rem;letter-spacing:.5em;display:block;opacity:.75;margin-top:.25rem}
+.nav-links{display:none;list-style:none;margin:0;padding:0;gap:.4rem}
+.nav-links a{display:inline-flex;align-items:center;min-height:44px;padding:0 .8rem;font-size:.78rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;opacity:.88;transition:opacity .2s,color .2s}
+@media (hover:hover) and (pointer:fine){.nav-links a:hover{opacity:1;color:var(--gold)}}
+.nav-cta{display:none}
+.menu-btn{width:48px;height:48px;border-radius:50%;border:1.5px solid rgba(250,250,248,.5);background:transparent;color:inherit;cursor:pointer;display:grid;place-items:center;transition:background-color .2s}
+@media (hover:hover) and (pointer:fine){.menu-btn:hover{background:rgba(255,255,255,.1)}}
+.menu-btn svg{width:22px;height:22px}
+.menu-btn .x{display:none}
+.menu-btn[aria-expanded="true"] .x{display:block}
+.menu-btn[aria-expanded="true"] .bars{display:none}
+.mobile-menu{position:fixed;inset:76px 0 auto 0;background:var(--navy);padding:1rem var(--gutter) 2rem;transform:translateY(-12px);opacity:0;visibility:hidden;transition:transform .4s var(--ease),opacity .3s,visibility 0s .4s;z-index:99;border-top:1px solid rgba(255,255,255,.1)}
+.mobile-menu.open{transform:none;opacity:1;visibility:visible;transition-delay:0s}
+.mobile-menu ul{list-style:none;margin:0 0 1.5rem;padding:0}
+.mobile-menu a.m{display:block;padding:.9rem 0;font-family:var(--font-display);font-size:1.6rem;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.1)}
+@media(min-width:960px){.nav-links{display:flex}.nav-cta{display:inline-flex}.menu-btn,.mobile-menu{display:none}.nav-cta.btn{min-height:44px;padding:.65rem 1.3rem}}
+
+/* ---------- Hero ---------- */
+.hero{position:relative;min-height:100vh;min-height:100svh;display:flex;align-items:center;overflow:hidden;background:#FFFDF7;color:var(--navy);padding-top:96px;isolation:isolate}
+/* Honey ember background: four blurred colour pools on a cream base, plus a fine dot texture */
+.ember{position:absolute;inset:0;z-index:-1;overflow:hidden;pointer-events:none}
+.ember-pools{position:absolute;inset:-1.5rem;background:#FFFDF7;filter:blur(24px);transform:translateZ(0)}
+.ember-pools i{position:absolute;border-radius:50%;filter:blur(64px)}
+.ember-pools .e1{top:-14%;left:-6%;width:70%;height:70%;background:#FBBF24;opacity:.78}
+.ember-pools .e2{top:8%;right:-8%;width:62%;height:62%;background:#F59E0B;opacity:.7}
+.ember-pools .e3{bottom:-22%;left:12%;width:66%;height:66%;background:#FB923C;opacity:.58}
+.ember-pools .e4{right:20%;bottom:-10%;width:56%;height:56%;background:#FECACA;opacity:.68}
+.ember-dots{position:absolute;inset:0;background-image:radial-gradient(circle at center,#78350F 1px,transparent 1px);background-size:4px 4px;opacity:.034}
+.hero-art::after,.grain::after{content:"";position:absolute;inset:0;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 .55 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");opacity:.1;mix-blend-mode:overlay;pointer-events:none}
+.hero-inner{padding-block:var(--s5)}
+.hero h1{font-size:clamp(2.9rem,8.2vw,6.4rem);letter-spacing:-.035em;max-width:11ch}
+.hero h1 .ln{display:block;overflow:hidden;padding-bottom:.08em}
+.hero h1 .ln>span{display:block;animation:rise 1.2s var(--ease) both}
+.hero h1 .ln:nth-child(2)>span{animation-delay:.14s;font-style:italic}
+.hero h1 .ln:nth-child(3)>span{animation-delay:.28s}
+@keyframes rise{from{transform:translateY(105%)}to{transform:none}}
+.hero .btn-gold{background:var(--navy);color:var(--ivory);box-shadow:0 12px 28px -12px rgba(7,27,77,.55)}
+@media (hover:hover) and (pointer:fine){.hero .btn-gold:hover{background:var(--navy-2);box-shadow:0 18px 34px -12px rgba(7,27,77,.6)}}
+.hero .btn-line{color:var(--navy)}
+@media (hover:hover) and (pointer:fine){.hero .btn-line:hover{background:rgba(7,27,77,.08)}}
+.hero-copy{max-width:34rem;margin-top:var(--s3);color:rgba(7,27,77,.86);font-size:1.08rem;animation:fade 1.2s .6s var(--ease) both}
+.hero-actions{display:flex;flex-wrap:wrap;gap:var(--s2);margin-top:var(--s4);animation:fade 1.2s .78s var(--ease) both}
+@keyframes fade{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.hero-foot{position:absolute;left:0;right:0;bottom:1.5rem;font-size:.7rem;letter-spacing:.3em;text-transform:uppercase;opacity:.75;color:var(--navy)}
+.hero-foot .wrap{display:flex;gap:1.2rem;flex-wrap:wrap}
+@media(max-width:700px){.hero-foot{display:none}}
+
+/* ---------- Quote band ---------- */
+.quote-band{background:var(--ivory);text-align:center;padding-block:clamp(3.5rem,8vw,6rem)}
+.quote-band blockquote{margin:0 auto;max-width:30ch;font-family:var(--font-display);font-style:italic;font-size:clamp(2rem,5vw,3.6rem);line-height:1.2;color:var(--navy);letter-spacing:-.02em}
+
+/* ---------- About ---------- */
+.two{display:grid;gap:var(--s5);align-items:start}
+@media(min-width:900px){.two{grid-template-columns:1.05fr 1fr;gap:6rem}}
+.h2{font-size:clamp(2.1rem,4.6vw,3.5rem);color:var(--navy)}
+.dark .h2{color:var(--ivory)}
+.lead{margin-top:var(--s3);font-size:1.1rem;max-width:36rem}
+.lead+.lead{margin-top:var(--s2)}
+.pillars{list-style:none;margin:0;padding:0;display:grid;gap:0}
+.pillars li{display:grid;grid-template-columns:56px 1fr;gap:1.2rem;padding-block:1.7rem;border-top:1px solid rgba(7,27,77,.18)}
+.pillars li:last-child{border-bottom:1px solid rgba(7,27,77,.18)}
+.pillars svg{width:44px;height:44px;color:var(--navy);fill:none;stroke:currentColor;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round}
+.pillars h3{font-size:1.5rem;color:var(--navy)}
+.pillars p{margin-top:.35rem;color:#33384a}
+
+/* ---------- Services ---------- */
+.services{background:var(--ivory)}
+.sec-head{display:grid;gap:var(--s2);margin-bottom:var(--s5);max-width:40rem}
+.svc{list-style:none;margin:0;padding:0}
+.svc li{display:grid;gap:.6rem 2rem;padding-block:2rem;border-top:1px solid rgba(7,27,77,.18);align-items:start}
+.svc li:last-child{border-bottom:1px solid rgba(7,27,77,.18)}
+.svc h3{font-size:clamp(1.5rem,2.6vw,2rem);color:var(--navy)}
+.svc p{max-width:34rem;color:#33384a}
+.svc .meta{font-size:.85rem;color:var(--slate);font-weight:500}
+@media(min-width:860px){.svc li{grid-template-columns:1fr 1.2fr auto;align-items:center}}
+.svc li{transition:background-color .35s var(--ease),padding .35s var(--ease)}
+@media(hover:hover){.svc li:hover{background:var(--sand);padding-inline:1.2rem}}
+
+/* ---------- Art placeholders (CSS paintings) ---------- */
+.art{position:absolute;inset:0;overflow:hidden;background:var(--navy);transition:transform 1.2s var(--ease)}
+.a1{background:radial-gradient(60% 50% at 25% 80%,#FF9A00 0,transparent 70%),radial-gradient(50% 60% at 80% 20%,#5B6B8A 0,transparent 70%),radial-gradient(40% 40% at 60% 60%,#C4745A 0,transparent 70%),#071B4D}
+.a2{background:radial-gradient(55% 55% at 20% 20%,#8FA68F 0,transparent 70%),radial-gradient(50% 50% at 85% 75%,#E5E1DB 0,transparent 70%),radial-gradient(40% 40% at 55% 55%,#5B6B8A 0,transparent 70%),#0C2766}
+.a3{background:radial-gradient(60% 50% at 75% 25%,#B7A7D9 0,transparent 70%),radial-gradient(55% 55% at 20% 85%,#C4745A 0,transparent 70%),radial-gradient(35% 35% at 50% 50%,#FF9A00 0,transparent 70%),#071B4D}
+.a4{background:radial-gradient(70% 45% at 50% 100%,#FF9A00 0,transparent 70%),radial-gradient(50% 50% at 15% 25%,#B7A7D9 0,transparent 70%),radial-gradient(45% 45% at 90% 40%,#5B6B8A 0,transparent 70%),#0C2766}
+.a5{background:radial-gradient(50% 60% at 30% 30%,#C4745A 0,transparent 70%),radial-gradient(55% 45% at 80% 80%,#8FA68F 0,transparent 70%),radial-gradient(40% 40% at 75% 30%,#F6F3EC 0,transparent 70%),#1A1A1A}
+.a6{background:radial-gradient(60% 60% at 80% 70%,#FF9A00 0,transparent 70%),radial-gradient(50% 55% at 20% 50%,#B7A7D9 0,transparent 70%),radial-gradient(40% 30% at 55% 15%,#8FA68F 0,transparent 70%),#071B4D}
+.art::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(7,27,77,.55),transparent 55%)}
+
+/* ---------- Programs ---------- */
+.programs{background:var(--sand)}
+.filters{display:flex;flex-wrap:wrap;gap:.6rem;margin-bottom:var(--s4)}
+.chip{min-height:44px;padding:.5rem 1.2rem;border-radius:999px;border:1.5px solid rgba(7,27,77,.35);background:transparent;color:var(--navy);font:500 .85rem/1 var(--font-body);cursor:pointer;transition:background-color .25s,color .25s,transform .25s var(--ease)}
+@media (hover:hover) and (pointer:fine){.chip:hover{background:rgba(7,27,77,.07)}}
+.chip:active{transform:scale(.96)}
+.chip[aria-pressed="true"]{background:var(--navy);color:var(--ivory);border-color:var(--navy)}
+.prog-grid{display:grid;gap:var(--s3);grid-template-columns:1fr}
+@media(min-width:640px){.prog-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:980px){.prog-grid{grid-template-columns:repeat(3,1fr)}}
+.prog{position:relative;aspect-ratio:4/5;border-radius:18px;overflow:hidden;box-shadow:var(--shadow-1);color:var(--ivory);text-decoration:none;display:block;transition:box-shadow .5s var(--ease),transform .5s var(--ease)}
+.prog[hidden]{display:none}
+@media (hover:hover) and (pointer:fine){.prog:hover{box-shadow:var(--shadow-2);transform:translateY(-4px)}}
+@media (hover:hover) and (pointer:fine){.prog:hover .art{transform:scale(1.07)}}
+.prog-body{position:absolute;inset:auto 0 0 0;padding:1.6rem;z-index:1}
+.prog h3{font-size:1.8rem}
+.prog p{font-size:.92rem;margin-top:.4rem;opacity:.92;max-width:26ch}
+.prog .tag{display:inline-block;font-size:.72rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;margin-bottom:.7rem;padding:.3rem .8rem;border-radius:999px;background:rgba(250,250,248,.16);backdrop-filter:blur(6px)}
+.prog .arr{position:absolute;right:1.4rem;bottom:1.5rem;width:44px;height:44px;border-radius:50%;border:1.5px solid rgba(250,250,248,.7);display:grid;place-items:center;z-index:1;transition:background-color .3s,color .3s,transform .4s var(--ease)}
+@media (hover:hover) and (pointer:fine){.prog:hover .arr{background:var(--gold);color:var(--navy);border-color:var(--gold);transform:translateX(3px)}}
+.prog .arr svg{width:18px;height:18px}
+.prog-body{padding-right:5rem}
+
+/* ---------- Gallery ---------- */
+.gallery{background:var(--navy);color:var(--ivory);position:relative;isolation:isolate;overflow:hidden}
+.gallery.grain::after{opacity:.07}
+.gal-grid{display:grid;gap:var(--s4) var(--s3);grid-template-columns:1fr}
+@media(min-width:620px){.gal-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:980px){.gal-grid{grid-template-columns:repeat(4,1fr)}.gal-grid .piece:nth-child(even){margin-top:3rem}}
+.piece figure{margin:0}
+.frame{position:relative;aspect-ratio:1/1;border-radius:4px;overflow:hidden;box-shadow:0 30px 50px -25px rgba(0,0,0,.7);outline:1px solid rgba(250,250,248,.12);outline-offset:8px;transition:outline-offset .5s var(--ease)}
+@media (hover:hover) and (pointer:fine){.piece:hover .frame{outline-offset:12px}}
+@media (hover:hover) and (pointer:fine){.piece:hover .art{transform:scale(1.06)}}
+.piece figcaption{display:flex;justify-content:space-between;align-items:flex-start;gap:1rem;margin-top:1.4rem}
+.piece h3{font-size:1.35rem}
+.piece .med{font-size:.85rem;opacity:.75;margin-top:.15rem}
+.piece .link{color:var(--gold);flex:none}
+.gal-note{margin-top:var(--s5);max-width:36rem;opacity:.85}
+
+/* ---------- Testimonials ---------- */
+.voices{background:var(--ivory)}
+.v-grid{display:grid;gap:var(--s5) var(--s4)}
+@media(min-width:900px){.v-grid{grid-template-columns:repeat(3,1fr)}}
+.v-grid blockquote{margin:0}
+.v-grid p{font-family:var(--font-display);font-style:italic;font-size:1.45rem;line-height:1.4;color:var(--navy);letter-spacing:-.01em}
+.v-grid footer{margin-top:1.1rem;font-size:.85rem;color:var(--slate);font-weight:500;display:flex;align-items:center;gap:.7rem}
+.v-grid footer::before{content:"";width:28px;height:2px;background:var(--gold)}
+
+/* ---------- Blog ---------- */
+.blog{background:var(--sand)}
+.b-grid{display:grid;gap:var(--s4) var(--s3)}
+@media(min-width:760px){.b-grid{grid-template-columns:1.3fr 1fr 1fr}}
+.post{display:flex;flex-direction:column;text-decoration:none;gap:1rem}
+.post .thumb{position:relative;aspect-ratio:3/2;border-radius:14px;overflow:hidden}
+@media (hover:hover) and (pointer:fine){.post:hover .art{transform:scale(1.06)}}
+.post .tags{display:flex;gap:.5rem}
+.post .tags span{font-size:.72rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:.25rem .7rem;border:1.2px solid rgba(7,27,77,.3);border-radius:999px;color:var(--navy)}
+.post h3{font-size:1.5rem;color:var(--navy);transition:color .25s}
+@media (hover:hover) and (pointer:fine){.post:hover h3{color:var(--terracotta)}}
+.post p{color:#33384a;font-size:.95rem}
+@media(min-width:760px){.post.feature h3{font-size:2rem}}
+
+/* ---------- Visit / map ---------- */
+.visit{position:relative;isolation:isolate;overflow:hidden}
+.visit .two{align-items:center}
+.details{display:grid;gap:1.4rem;margin-top:var(--s4)}
+.details dt{font-size:.9375rem;color:var(--gold);font-weight:600}
+.details dd{margin:.2rem 0 0;font-size:1.05rem}
+.map{position:relative;aspect-ratio:4/3;border-radius:18px;overflow:hidden;background:var(--navy-2);box-shadow:0 30px 60px -30px rgba(0,0,0,.7);outline:1px solid rgba(250,250,248,.14)}
+.map svg.grid{position:absolute;inset:0;width:100%;height:100%}
+.pin{position:absolute;left:52%;top:46%;width:44px;height:44px;margin:-44px 0 0 -22px;color:var(--gold)}
+.pin::after{content:"";position:absolute;left:50%;bottom:-6px;width:26px;height:10px;margin-left:-13px;border-radius:50%;background:rgba(0,0,0,.35);z-index:-1;animation:pulse 2.6s ease-out infinite}
+.pin svg{animation:bob 2.6s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(-6px)}}
+@keyframes pulse{0%{transform:scale(.6);opacity:.7}100%{transform:scale(2.2);opacity:0}}
+.map .open{position:absolute;left:1rem;bottom:1rem}
+
+/* ---------- Booking ---------- */
+.book{background:var(--ivory)}
+.form{display:grid;gap:1.4rem;background:var(--sand);padding:clamp(1.5rem,4vw,2.5rem);border-radius:20px;box-shadow:var(--shadow-1)}
+.field{display:grid;gap:.45rem}
+.field label{font-size:.85rem;font-weight:600;color:var(--navy)}
+.field .hint{font-size:.875rem;color:var(--slate)}
+.field input,.field select,.field textarea{width:100%;min-height:50px;padding:.8rem 1.1rem;font:400 1rem var(--font-body);color:var(--charcoal);background:var(--ivory);border:1.5px solid rgba(7,27,77,.3);border-radius:14px;transition:border-color .2s,box-shadow .2s}
+.field textarea{min-height:120px;resize:vertical}
+@media (hover:hover) and (pointer:fine){.field input:hover,.field select:hover,.field textarea:hover{border-color:var(--navy)}}
+.field input:focus-visible,.field select:focus-visible,.field textarea:focus-visible{outline:none;border-color:var(--navy);box-shadow:0 0 0 4px rgba(255,154,0,.45)}
+.field .err{display:none;font-size:.875rem;color:#9a3412;font-weight:500}
+.field.bad .err{display:block}
+.field.bad input,.field.bad select{border-color:#9a3412}
+.row{display:grid;gap:1.4rem}
+@media(min-width:600px){.row{grid-template-columns:1fr 1fr}}
+.ok{display:none;padding:1.2rem 1.4rem;border-radius:14px;background:#e8f0e8;color:#1f3a24;font-weight:500}
+.ok.show{display:block}
+/* booking type: two tab-style choices (real radio buttons underneath, so the keyboard and screen readers work) */
+.seg-wrap{border:0;margin:0;padding:0;min-width:0}
+.seg-wrap legend{padding:0;margin-bottom:.55rem;font-size:.85rem;font-weight:600;color:var(--navy)}
+.seg{display:grid;grid-template-columns:1fr 1fr;gap:.6rem}
+@media(max-width:520px){.seg{grid-template-columns:1fr}}
+.seg-opt{position:relative;display:block;cursor:pointer}
+.seg-opt input{position:absolute;opacity:0;inset:0;width:100%;height:100%;margin:0;cursor:pointer}
+.seg-opt span{display:grid;gap:.25rem;height:100%;padding:.9rem 1rem;border:1.5px solid rgba(7,27,77,.3);border-radius:14px;background:var(--ivory);color:var(--navy);transition:background-color .25s,color .25s,border-color .25s,box-shadow .25s,transform .3s var(--ease)}
+.seg-opt b{font-size:.92rem;font-weight:600}
+.seg-opt small{font-size:.78rem;line-height:1.45;color:var(--slate);transition:color .25s}
+@media (hover:hover) and (pointer:fine){.seg-opt:hover span{border-color:var(--navy)}}
+.seg-opt input:checked + span{background:var(--navy);border-color:var(--navy);color:var(--ivory);box-shadow:0 12px 24px -14px rgba(7,27,77,.7)}
+.seg-opt input:checked + span small{color:rgba(250,250,248,.82)}
+.seg-opt input:focus-visible + span{outline:3px solid var(--gold);outline-offset:3px}
+.seg-opt:active span{transform:scale(.98)}
+.field input[type=date],.field input[type=time]{min-height:50px}
+.field.bad input[type=date],.field.bad input[type=time]{border-color:#9a3412}
+.hint-line{margin:-.6rem 0 0;font-size:.875rem;color:var(--slate)}
+.fail{padding:1.1rem 1.4rem;border-radius:14px;background:#fbeae6;color:#7a2410;font-weight:500;line-height:1.6}
+.fail[hidden]{display:none}
+.fail a{color:inherit;text-decoration:underline;text-underline-offset:3px}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.hp input{font-size:1rem}
+.btn[disabled]{cursor:progress;opacity:.7;pointer-events:none}
+.fine{font-size:.875rem;color:var(--slate)}
+
+/* ---------- Real-content sections ---------- */
+.about-fig{margin:0;border-radius:6px;overflow:hidden;box-shadow:var(--shadow-2);aspect-ratio:8/7}
+.about-fig img{width:100%;height:100%;object-fit:cover}
+@media(min-width:900px){.about .two{grid-template-columns:1fr 1fr;align-items:start}.about-fig{position:sticky;top:104px;margin-top:1.2rem}}
+.about-cta{margin-top:var(--s3)}
+/* Lilac dusk canopy: sunlight through leaves, drawn live behind the section (see the script at the end of the page) */
+.about{position:relative;isolation:isolate;background:#4f4366}
+.about .canopy-cv{position:absolute;inset:0;z-index:-1;display:block;width:100%;height:100%;max-width:none;touch-action:pan-y}
+.about::after{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(90deg,rgba(32,24,48,0) 30%,rgba(32,24,48,.52) 62%)}
+.about .more .sign,.about .read-toggle{color:var(--ivory)}
+.about .about-fig{box-shadow:0 30px 60px -26px rgba(12,8,28,.75)}
+@media(max-width:899px){.about::after{background:rgba(32,24,48,.38)}}
+.more{display:grid;grid-template-rows:0fr;transition:grid-template-rows .6s var(--ease)}
+.more.open{grid-template-rows:1fr}
+.more>div{overflow:hidden;min-height:0;opacity:0;visibility:hidden;transition:opacity .45s var(--ease),visibility 0s .6s}
+.more.open>div{opacity:1;visibility:visible;transition-delay:0s}
+.more .lead{margin-top:var(--s2)}
+.more .sign{font-family:var(--font-display);font-style:italic;font-size:1.3rem;color:var(--navy)}
+.read-toggle{display:flex;align-items:center;gap:.5rem;min-height:44px;margin-top:var(--s2);padding:0;background:none;border:0;color:var(--navy);font:600 .82rem/1 var(--font-body);letter-spacing:.08em;text-transform:uppercase;cursor:pointer}
+.read-toggle svg{width:16px;height:16px;transition:transform .4s var(--ease)}
+.read-toggle[aria-expanded="true"] svg{transform:rotate(180deg)}
+@media (hover:hover) and (pointer:fine){.read-toggle:hover .t{text-decoration:underline;text-underline-offset:5px}}
+.cred{position:relative;isolation:isolate;overflow:hidden}
+.cred-bg{position:absolute;inset:0;z-index:-1}
+.cred-bg img{width:100%;height:100%;object-fit:cover;opacity:.5}
+.cred-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(7,27,77,.97) 30%,rgba(7,27,77,.72))}
+.cred-in{display:grid;gap:var(--s4);align-items:center}
+.cred-in>div{display:grid;justify-items:start}
+.cred-card{margin:0;max-width:960px;background:#fff;border-radius:6px;overflow:hidden;box-shadow:0 30px 60px -25px rgba(0,0,0,.7)}
+.cred-card img{width:100%;height:auto}
+.cred .h2{max-width:24ch}
+.cred .btn{justify-self:start}
+.badges{background:#fff;padding:1.2rem;border-radius:14px;width:200px;box-shadow:0 24px 48px -20px rgba(0,0,0,.6)}
+@media(min-width:860px){.badges{justify-self:end}}
+.svc-grid{display:grid;gap:var(--s4) var(--s3);grid-template-columns:1fr}
+@media(min-width:780px){.svc-grid{grid-template-columns:repeat(3,1fr)}}
+.svc-card{position:relative;display:flex;flex-direction:column;background:var(--sand);border-radius:16px;box-shadow:var(--shadow-1);transition:box-shadow .5s var(--ease),transform .5s var(--ease)}
+@media (hover:hover) and (pointer:fine){.svc-card:hover{box-shadow:var(--shadow-2);transform:translateY(-4px)}}
+.svc-img{aspect-ratio:7/5;overflow:hidden;border-radius:16px 16px 0 0}
+.svc-img img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+@media (hover:hover) and (pointer:fine){.svc-card:hover .svc-img img{transform:scale(1.05)}}
+.svc-body{padding:1.6rem;display:flex;flex-direction:column;gap:.7rem;flex:1}
+.svc-body h3{font-size:1.7rem;color:var(--navy)}
+.svc-body .cat{font-size:.85rem;font-weight:600;color:var(--slate);margin-top:-.4rem}
+.svc-body p{color:#33384a;font-size:.98rem}
+.svc-body .price{margin-top:auto;padding-top:.6rem;color:var(--charcoal)}
+.svc-body .price strong{font-family:var(--font-display);font-size:1.7rem;font-weight:500;color:var(--navy)}
+.svc-body .btn{align-self:flex-start;margin-top:.4rem}
+/* Spotlight card: a soft light follows the pointer across the card, its edge and a halo around it.
+   Mouse and trackpad only; the pointer position is set per card by the script at the end of the page. */
+@media (hover:hover) and (pointer:fine){
+  .svc-card[data-glow]{
+    --base:18;--spread:36;--radius:16;--border:2;--size:230;
+    --backup-border:rgba(7,27,77,.13);
+    --border-size:calc(var(--border) * 1px);
+    --spotlight-size:calc(var(--size) * 1px);
+    --hue:calc(var(--base) + (var(--xp,0) * var(--spread,0)));
+    border:var(--border-size) solid var(--backup-border);
+    background-image:radial-gradient(var(--spotlight-size) var(--spotlight-size) at calc(var(--mx,-999) * 1px) calc(var(--my,-999) * 1px),hsl(var(--hue) 100% 62% / .17),transparent);
+    background-repeat:no-repeat;
+  }
+  .svc-card[data-glow]::before,.svc-card[data-glow]::after,.svc-card .glow-halo::before,.svc-card .glow-halo::after{
+    pointer-events:none;content:"";position:absolute;inset:calc(var(--border-size) * -1);
+    border:var(--border-size) solid transparent;border-radius:calc(var(--radius) * 1px);
+    background-size:calc(100% + (2 * var(--border-size))) calc(100% + (2 * var(--border-size)));
+    background-repeat:no-repeat;background-position:50% 50%;
+    -webkit-mask:linear-gradient(transparent,transparent),linear-gradient(white,white);
+    -webkit-mask-clip:padding-box,border-box;-webkit-mask-composite:source-in;
+    mask:linear-gradient(transparent,transparent),linear-gradient(white,white);
+    mask-clip:padding-box,border-box;mask-composite:intersect;
+  }
+  .svc-card[data-glow]::before{
+    background-image:radial-gradient(calc(var(--spotlight-size) * .75) calc(var(--spotlight-size) * .75) at calc(var(--mx,-999) * 1px) calc(var(--my,-999) * 1px),hsl(var(--hue) 92% 38% / 1),transparent 100%);
+  }
+  .svc-card[data-glow]::after{
+    background-image:radial-gradient(calc(var(--spotlight-size) * .45) calc(var(--spotlight-size) * .45) at calc(var(--mx,-999) * 1px) calc(var(--my,-999) * 1px),hsl(calc(var(--hue) - 6) 95% 28% / 1),transparent 100%);
+  }
+  .svc-card .glow-halo{
+    position:absolute;inset:0;pointer-events:none;border-radius:calc(var(--radius) * 1px);
+    filter:blur(calc(var(--border-size) * 10));will-change:filter;
+  }
+  .svc-card .glow-halo::before,.svc-card .glow-halo::after{inset:-10px;border-width:10px}
+  .svc-card .glow-halo::before{
+    background-image:radial-gradient(calc(var(--spotlight-size) * .75) calc(var(--spotlight-size) * .75) at calc(var(--mx,-999) * 1px) calc(var(--my,-999) * 1px),hsl(var(--hue) 95% 46% / .9),transparent 100%);
+  }
+  .svc-card .glow-halo::after{
+    background-image:radial-gradient(calc(var(--spotlight-size) * .5) calc(var(--spotlight-size) * .5) at calc(var(--mx,-999) * 1px) calc(var(--my,-999) * 1px),hsl(calc(var(--hue) - 6) 95% 40% / .8),transparent 100%);
+  }
+}
+@media not all and (hover:hover) and (pointer:fine){.svc-card .glow-halo{display:none}}
+.soon{background:var(--sand)}
+.soon-in{display:grid;gap:var(--s3);justify-items:start;max-width:64rem}
+.soon-in .lead{max-width:36rem}
+.frame img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+@media (hover:hover) and (pointer:fine){.piece:hover .frame img{transform:scale(1.06)}}
+.rev-grid{display:grid;gap:var(--s5)}
+@media(min-width:960px){.rev-grid{grid-template-columns:1.3fr 1fr;gap:5rem;align-items:start}}
+.statement{margin:0;padding:2rem 2rem 2rem 2.2rem;background:var(--sand);border-radius:16px;box-shadow:var(--shadow-1);border-left:4px solid var(--gold)}
+.statement p{font-size:1rem;line-height:1.85;color:#262b3a}
+.statement footer{margin-top:1.2rem;font-weight:600;color:var(--navy);font-size:.9rem}
+.h3{font-size:clamp(1.8rem,3.4vw,2.6rem);color:var(--navy);margin-bottom:var(--s4)}
+.review{background:var(--sand);border-radius:16px;overflow:hidden;box-shadow:var(--shadow-1);max-width:26rem}
+.review>img{width:100%;height:auto;aspect-ratio:16/10;object-fit:cover}
+.review .rb{padding:1.5rem;display:grid;gap:.6rem}
+.review h3{font-size:1.4rem;color:var(--navy)}
+.review .when{font-size:.88rem;color:var(--slate);font-weight:500}
+.stars{display:flex;gap:.2rem;color:var(--navy)}
+.stars svg{width:20px;height:20px}
+.map iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.details a{text-decoration:underline;text-underline-offset:4px}
+@media (hover:hover) and (pointer:fine){.details a:hover{color:var(--gold)}}
+
+/* ---------- Service details ---------- */
+section[id]{scroll-margin-top:76px}
+.svc-body .learn{margin-top:-.2rem;padding-block:.4rem;color:var(--navy)}
+.detail{display:none;background:var(--sand);padding-top:clamp(2.5rem,6vw,4.5rem)}
+.detail.open,.detail:target{display:block;animation:fade .8s var(--ease) both}
+.detail:focus{outline:none}
+.detail .back{margin-bottom:var(--s4);color:var(--navy)}
+.detail .back svg{width:16px;height:16px}
+@media (hover:hover) and (pointer:fine){.detail .back:hover svg{transform:scaleX(-1) translateX(4px)}}
+.detail-grid{display:grid;gap:var(--s4)}
+@media(min-width:900px){.detail-grid{grid-template-columns:.85fr 1.15fr;gap:5rem;align-items:start}.detail-side{position:sticky;top:104px}}
+.detail-side img{width:100%;height:auto;border-radius:6px;box-shadow:var(--shadow-2)}
+.detail-side .price{margin-top:var(--s3);font-size:1rem}
+.detail-side .price strong{font-family:var(--font-display);font-size:1.9rem;font-weight:500;color:var(--navy)}
+.detail-side .btn{margin-top:var(--s2)}
+.detail-body .cat{margin-top:.6rem;font-size:.95rem;font-weight:600;color:var(--slate)}
+.detail-body .dur{margin-top:var(--s2);color:#262b3a}
+.detail-body p{margin-top:var(--s2);font-size:1.02rem;line-height:1.85;color:#262b3a;max-width:40rem}
+.detail-body .sub{margin-top:var(--s3);font-size:1.5rem;color:var(--navy)}
+
+/* ---------- Blog cards ---------- */
+.b-grid{display:grid;gap:var(--s3);grid-template-columns:1fr}
+@media(min-width:760px){.b-grid{grid-template-columns:repeat(3,1fr)}}
+.b-card{display:flex;flex-direction:column;background:var(--ivory);border:1px solid rgba(7,27,77,.2);border-radius:16px;overflow:hidden;box-shadow:var(--shadow-1);transition:box-shadow .5s var(--ease),transform .5s var(--ease)}
+@media (hover:hover) and (pointer:fine){.b-card:hover{box-shadow:var(--shadow-2);transform:translateY(-4px)}}
+.b-card h3{padding:1.6rem 1.5rem 1.2rem;font-size:1.55rem;color:var(--navy)}
+@media(min-width:760px){.b-card h3{min-height:calc(3 * 1.12em + 2.8rem)}}
+.b-img{aspect-ratio:316/218;overflow:hidden}
+.b-img img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+@media (hover:hover) and (pointer:fine){.b-card:hover .b-img img{transform:scale(1.05)}}
+.b-body{display:flex;flex-direction:column;gap:.7rem;padding:1.5rem;flex:1}
+.b-sub{font-weight:600;color:var(--navy)}
+.b-date{font-size:.9rem;color:var(--slate);font-weight:500}
+.b-ex{color:#33384a;font-size:.98rem;flex:1}
+.b-more{color:var(--navy);justify-content:center;margin-top:.6rem}
+.soon-note{font-style:italic;color:var(--slate)}
+.detail-body .pull{margin-top:var(--s3);font-family:var(--font-display);font-style:italic;font-size:1.45rem;line-height:1.4;color:var(--navy)}
+.detail-body .soon-note{margin-top:var(--s3)}
+.detail-body p a{color:var(--navy);text-decoration:underline;text-underline-offset:4px;font-weight:500}
+@media (hover:hover) and (pointer:fine){.detail-body p a:hover{color:var(--terracotta)}}
+.detail-body .sign{font-family:var(--font-display);font-style:italic;font-size:1.3rem;color:var(--navy)}
+
+/* ---------- Book a session buttons: liquid glass and metal gold ---------- */
+.btn-glass,.btn-metal{position:relative;isolation:isolate}
+.btn-glass::before,.btn-glass::after,.btn-metal::before,.btn-metal::after{content:"";position:absolute;pointer-events:none;border-radius:999px}
+
+/* Liquid glass: a clear lens with a bevelled rim. Light version for pale surfaces, .on-dark for rich or dark ones. */
+.btn-glass{--g-ink:var(--navy);--g-tint:rgba(255,253,247,.46);color:var(--g-ink);border-color:transparent;background:transparent;box-shadow:none;transition:transform .3s var(--ease)}
+.btn-glass.on-dark{--g-ink:var(--ivory);--g-tint:rgba(255,154,0,.36);text-shadow:0 1px 2px rgba(0,0,0,.4)}
+.btn-glass::before{inset:0;z-index:-1;background:var(--g-tint);
+  box-shadow:0 0 6px rgba(0,0,0,.03),0 2px 6px rgba(0,0,0,.08),inset 3px 3px .5px -3px rgba(0,0,0,.9),inset -3px -3px .5px -3px rgba(0,0,0,.85),inset 1px 1px 1px -.5px rgba(0,0,0,.6),inset -1px -1px 1px -.5px rgba(0,0,0,.6),inset 0 0 6px 6px rgba(0,0,0,.12),inset 0 0 2px 2px rgba(0,0,0,.06),0 0 12px rgba(255,255,255,.15)}
+.btn-glass.on-dark::before{
+  box-shadow:0 0 8px rgba(0,0,0,.03),0 2px 6px rgba(0,0,0,.08),inset 3px 3px .5px -3.5px rgba(255,255,255,.09),inset -3px -3px .5px -3.5px rgba(255,255,255,.85),inset 1px 1px 1px -.5px rgba(255,255,255,.6),inset -1px -1px 1px -.5px rgba(255,255,255,.6),inset 0 0 6px 6px rgba(255,255,255,.12),inset 0 0 2px 2px rgba(255,255,255,.06),0 0 12px rgba(0,0,0,.15)}
+.btn-glass::after{inset:0;z-index:-2;
+  -webkit-backdrop-filter:blur(5px) saturate(1.2);backdrop-filter:blur(5px) saturate(1.2);   /* every browser */
+  backdrop-filter:url(#container-glass)}                                                      /* Chromium: the liquid warp; others ignore this line */
+@media (hover:hover){.btn-glass:hover{transform:scale(1.05)}}
+.btn-glass:active{transform:scale(.98)}
+
+/* Metal gold: a raised metallic key with a double bevel that presses down. Text is deep brown, not the component's pale cream, so it stays readable on the light gold. */
+.btn-metal{border:2.25px solid transparent;padding:calc(.8rem - .75px) calc(1.6rem - .75px);color:#3A2A00;text-shadow:0 1px 0 rgba(255,255,255,.4);
+  background:linear-gradient(180deg,#917100,#EAD98F);
+  box-shadow:0 3px 8px rgba(0,0,0,.08);
+  transition:transform .25s cubic-bezier(.1,.4,.2,1),box-shadow .25s cubic-bezier(.1,.4,.2,1),filter .25s cubic-bezier(.1,.4,.2,1)}
+.btn-metal::before{inset:-1.25px;z-index:-2;background:linear-gradient(180deg,#FFFDDD,#856807 50%,#FFF1B3)}
+.btn-metal::after{inset:0;z-index:-1;background:linear-gradient(180deg,#FFEBA1,#9B873F)}
+@media (hover:hover){.btn-metal:hover{filter:brightness(1.05);box-shadow:0 4px 12px rgba(0,0,0,.12)}}
+.btn-metal:active{transform:translateY(2.5px) scale(.985);box-shadow:0 1px 2px rgba(0,0,0,.15);filter:brightness(.96)}
+.btn-metal svg{filter:drop-shadow(0 1px 0 rgba(255,255,255,.4))}
+
+/* ---------- Art for sale: free-floating paintings ----------
+   The script at the end of the page replaces the plain .gal-grid with this stage. The paintings drift on their own
+   (not tied to scrolling), so the page scrolls normally. Without JavaScript, or with reduced motion, the plain grid stays. */
+.float-stage{position:relative;height:clamp(520px,80vh,780px);margin-top:var(--s4);--cw:190px;--ch:238px;touch-action:pan-y}
+.mcard{position:absolute;left:0;top:0;width:var(--cw);height:var(--ch);perspective:1000px;cursor:pointer;opacity:0;transition:opacity 1.1s var(--ease);will-change:transform;z-index:1;outline:none}
+.float-stage.in .mcard{opacity:1}
+.mcard.up{z-index:5}
+.mflip{position:relative;width:100%;height:100%;transform-style:preserve-3d;transition:transform .6s var(--ease)}
+.mcard:focus-within .mflip,.mcard:focus .mflip,.mcard.flipped .mflip{transform:rotateY(180deg)}@media (hover:hover) and (pointer:fine){.mcard:hover .mflip{transform:rotateY(180deg)}}
+.mface{position:absolute;inset:0;border-radius:12px;overflow:hidden;-webkit-backface-visibility:hidden;backface-visibility:hidden;box-shadow:0 22px 34px -16px rgba(0,0,0,.65)}
+.mfront img{display:block;width:100%;height:100%;object-fit:cover}
+.mfront::after{content:"";position:absolute;inset:0;background:rgba(7,27,77,.1);transition:background-color .4s}
+@media (hover:hover) and (pointer:fine){.mcard:hover .mfront::after{background:transparent}}
+.mback{transform:rotateY(180deg);background:var(--navy-2);border:1px solid rgba(250,250,248,.2);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.45rem;padding:.9rem;text-align:center;color:var(--ivory)}
+.mback b{font-family:var(--font-display);font-weight:400;font-size:clamp(1rem,1.5vw,1.3rem)}
+.mback span{font-size:.78rem;line-height:1.4;color:rgba(250,250,248,.78)}
+.mback a{margin-top:.4rem;display:inline-flex;align-items:center;min-height:44px;padding:0 .6rem;font-size:.74rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);text-decoration:underline;text-underline-offset:4px}
+@media (hover:hover) and (pointer:fine){.mback a:hover{color:var(--ivory)}}
+.mcard:focus-visible .mface{outline:3px solid var(--gold);outline-offset:3px}
+.float-pause{position:absolute;right:0;bottom:0;z-index:6;min-height:44px;padding:0 1.1rem;border-radius:999px;border:1px solid rgba(250,250,248,.45);background:rgba(7,27,77,.55);color:var(--ivory);font:600 .74rem/1 var(--font-body);letter-spacing:.1em;text-transform:uppercase;cursor:pointer;transition:background-color .25s,transform .3s var(--ease)}
+@media (hover:hover) and (pointer:fine){.float-pause:hover{background:rgba(250,250,248,.14)}}
+.float-pause:active{transform:scale(.97)}
+
+/* ---------- Location card: tilts toward the pointer, click to expand a map preview ---------- */
+.lmap-wrap{display:grid;gap:var(--s3);justify-items:center}
+.lmap-stage{width:100%;min-height:400px;display:grid;place-items:center}   /* reserved space, so expanding never shifts the page */
+.lmap{position:relative;perspective:1000px;cursor:pointer;user-select:none;-webkit-user-select:none;padding-bottom:1.9rem;outline:none;-webkit-tap-highlight-color:transparent}
+.lmap-card{--w:290px;--h:170px;position:relative;overflow:hidden;width:var(--w);height:var(--h);max-width:100%;border-radius:18px;
+  background:linear-gradient(135deg,rgba(250,250,248,.1),rgba(250,250,248,.03) 55%,rgba(250,250,248,.08));
+  border:1px solid rgba(250,250,248,.2);box-shadow:0 30px 50px -28px rgba(0,0,0,.7);
+  transform-style:preserve-3d;will-change:transform;
+  transition:width .65s var(--ease),height .65s var(--ease),border-color .3s}
+.lmap.open .lmap-card{--w:min(430px,calc(100vw - 2 * var(--gutter)));--h:340px;border-color:rgba(255,154,0,.45)}
+@media (hover:hover) and (pointer:fine){.lmap:hover .lmap-card{border-color:rgba(250,250,248,.34)}}
+@media (hover:hover) and (pointer:fine){.lmap.open:hover .lmap-card{border-color:rgba(255,154,0,.6)}}
+.lmap-grid{position:absolute;inset:0;opacity:.06;transition:opacity .3s;
+  background-image:linear-gradient(rgba(250,250,248,.9) 1px,transparent 1px),linear-gradient(90deg,rgba(250,250,248,.9) 1px,transparent 1px);background-size:20px 20px}
+.lmap.open .lmap-grid{opacity:0}
+
+/* the map preview, drawn in when expanded */
+.lmap-map{position:absolute;inset:0;pointer-events:none;opacity:0;background:var(--navy-2);transition:opacity .25s}
+.lmap.open .lmap-map{opacity:1;pointer-events:auto;transition:opacity .4s .1s}
+.lm-roads{position:absolute;inset:0;width:100%;height:100%}
+.lm-road{stroke:rgba(250,250,248,.25);stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset .3s}
+.lm-road.r2{stroke:rgba(250,250,248,.2)}
+.lm-road.r3{stroke:rgba(250,250,248,.1)}
+.lmap.open .lm-road{stroke-dashoffset:0;transition:stroke-dashoffset var(--t) ease var(--d)}
+.lm-b{position:absolute;border-radius:3px;background:rgba(250,250,248,var(--a));border:1px solid rgba(250,250,248,calc(var(--a) * .6));opacity:0;transform:scale(.8);transition:opacity .2s,transform .2s}
+.lmap.open .lm-b{opacity:1;transform:none;transition:opacity .4s var(--d),transform .4s var(--d)}
+.lm-pin{position:absolute;left:50%;top:50%;margin:-17px 0 0 -17px;width:34px;height:34px;filter:drop-shadow(0 0 10px rgba(255,154,0,.55))}
+.lm-pin svg{display:block;transform:translateY(-20px) scale(0);transform-origin:50% 100%;transition:transform .2s}
+.lmap.open .lm-pin svg{transform:none;transition:transform .6s cubic-bezier(.34,1.56,.64,1) .3s}
+.lm-art{position:absolute;inset:0;transition:opacity .6s ease .1s}
+.lmap.map-ready .lm-art{opacity:0}
+/* the real map, restyled to sit in the card: dark navy tone, with the place card cropped off the top (our own text covers that job) */
+.lm-frame{position:absolute;left:0;top:-130px;width:100%;height:calc(100% + 130px);border:0;opacity:0;transition:opacity .8s ease .15s;
+  filter:invert(92%) hue-rotate(180deg) saturate(.6) brightness(.92) contrast(.95)}
+.lmap.map-ready .lm-frame{opacity:1}
+.lm-tint{position:absolute;inset:0;pointer-events:none;background:rgba(12,39,102,.34)}
+/* a soft fade behind our text at the bottom-left; the bottom-right is left clear so the map credits stay visible */
+.lm-fade{position:absolute;inset:0;pointer-events:none;background:linear-gradient(to top,rgba(7,27,77,.92),rgba(7,27,77,0) 55%);
+  -webkit-mask-image:linear-gradient(to right,#000 55%,transparent 90%);mask-image:linear-gradient(to right,#000 55%,transparent 90%)}
+
+/* text on top */
+.lmap-content{pointer-events:none;position:relative;z-index:2;height:100%;display:flex;flex-direction:column;justify-content:space-between;padding:1.25rem}
+.lmap-top{display:flex;justify-content:space-between;align-items:flex-start;gap:.75rem}
+.lm-icon{color:var(--gold);filter:drop-shadow(0 0 4px rgba(255,154,0,.4));transition:opacity .3s,filter .3s}
+@media (hover:hover) and (pointer:fine){.lmap:hover .lm-icon{filter:drop-shadow(0 0 8px rgba(255,154,0,.7))}}
+.lmap.open .lm-icon{opacity:0}
+.lm-pill{display:inline-flex;align-items:center;gap:.4rem;padding:.3rem .65rem;border-radius:999px;background:rgba(250,250,248,.08);font-size:.62rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:rgba(250,250,248,.85);transition:transform .3s var(--ease),background-color .3s}
+.lm-pill i{width:6px;height:6px;border-radius:50%;background:var(--gold)}
+.lmap.open .lm-pill{background:rgba(7,27,77,.88);box-shadow:0 0 0 1px rgba(250,250,248,.18)}
+@media (hover:hover) and (pointer:fine){.lmap:hover .lm-pill{transform:scale(1.05);background:rgba(250,250,248,.14)}}
+.lmap-bottom h3{font-family:var(--font-body);font-weight:600;font-size:1rem;letter-spacing:-.01em;color:var(--ivory);transition:transform .45s var(--ease)}
+.lm-addr{margin-top:.15rem;font-size:.8rem;line-height:1.4;color:rgba(250,250,248,.78);transition:transform .45s var(--ease)}
+@media (hover:hover) and (pointer:fine){.lmap:hover .lmap-bottom h3,.lmap:hover .lm-addr{transform:translateX(4px)}}
+.lm-post{max-height:0;opacity:0;overflow:hidden;margin-top:0;font-size:.74rem;letter-spacing:.14em;color:var(--gold);transition:max-height .3s,opacity .25s,margin-top .3s}
+.lmap.open .lm-post{max-height:1.6rem;opacity:1;margin-top:.3rem}
+.lm-line{display:block;height:1px;margin-top:.65rem;transform:scaleX(.3);transform-origin:0 50%;background:linear-gradient(90deg,rgba(255,154,0,.7),rgba(255,154,0,.3),transparent);transition:transform .4s ease-out}
+.lmap.open .lm-line{transform:scaleX(1)}@media (hover:hover) and (pointer:fine){.lmap:hover .lm-line{transform:scaleX(1)}}
+.lmap-hint{position:absolute;left:50%;bottom:0;transform:translate(-50%,4px);white-space:nowrap;font-size:.7rem;letter-spacing:.06em;color:rgba(250,250,248,.7);opacity:0;transition:opacity .2s,transform .2s}
+@media (hover:hover) and (pointer:fine){.lmap:hover:not(.open) .lmap-hint{opacity:1;transform:translate(-50%,0)}}
+@media (hover:none){.lmap:not(.open) .lmap-hint{opacity:.75;transform:translate(-50%,0)}}
+.lmap-links{display:flex;align-items:center;justify-content:center;gap:1.4rem;flex-wrap:wrap}
+.lmap-links .link{color:var(--ivory)}
+.lmap.open{cursor:auto}
+.lm-toggle{position:absolute;inset:0;z-index:5;width:100%;height:100%;padding:0;border:0;border-radius:inherit;background:transparent;cursor:pointer;outline:none;-webkit-tap-highlight-color:transparent}
+.lm-toggle:focus-visible{outline:3px solid var(--gold);outline-offset:-5px}
+.lmap.open .lm-toggle{display:none}
+.lm-close{display:none;position:absolute;top:.9rem;left:.9rem;z-index:6;align-items:center;gap:.5rem;min-height:44px;padding:0 1rem;border-radius:999px;border:1px solid rgba(250,250,248,.3);background:rgba(7,27,77,.88);color:var(--ivory);font:600 .7rem/1 var(--font-body);letter-spacing:.1em;text-transform:uppercase;cursor:pointer;transition:background-color .25s,transform .3s var(--ease)}
+.lmap.open .lm-close{display:inline-flex}
+@media (hover:hover) and (pointer:fine){.lm-close:hover{background:rgba(250,250,248,.16)}}
+.lm-close:active{transform:scale(.97)}
+.lm-close:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+
+/* ---------- Word motion ----------
+   Built by the script at the end of the page (and skipped entirely for visitors who prefer reduced motion).
+   Hero headline: each letter rises in turn, "through" keeps a slow wave, letters lift under the mouse.
+   Hero sentence: words rise in. Section headings and the quote: words rise in as they scroll into view.
+   Everything uses transform and opacity only. */
+.sr-only{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+.hero h1.has-chars .ln{padding-top:.14em;margin-top:-.14em}                 /* headroom so a lifted letter is never clipped */
+.hero h1.has-chars .ln>span{animation:none}                                 /* the letters carry the entrance instead of the whole line */
+.ch{display:inline-block;transform:translateY(110%) rotate(5deg);transform-origin:0 100%;translate:0 0;
+  animation:chRise .95s var(--ease) both;animation-delay:calc(var(--d,0s) + var(--i) * 32ms);transition:translate .4s var(--ease)}
+@keyframes chRise{from{transform:translateY(110%) rotate(5deg)}to{transform:none}}
+.ci{display:inline-block}
+.hero h1.has-chars .ln:nth-child(2) .ci{animation:chWave 5.4s ease-in-out infinite;animation-delay:calc(1.7s + var(--i) * 150ms)}
+@keyframes chWave{0%,100%{transform:translateY(0)}50%{transform:translateY(-.05em)}}
+@media (hover:hover) and (pointer:fine){.ch:hover{translate:0 -.09em}}
+.hero-copy.has-words{animation:none}
+.hero-copy .wd{display:inline-block;opacity:0;transform:translateY(.6em);animation:wdIn .85s var(--ease) both;animation-delay:calc(.8s + var(--i) * 30ms)}
+@keyframes wdIn{from{opacity:0;transform:translateY(.6em)}to{opacity:1;transform:none}}
+.wh .w{display:inline-block;overflow:hidden;vertical-align:top;padding:.08em 0 .16em;margin:-.08em 0 -.16em}
+.wh .wi{display:inline-block;transform:translateY(112%);transition:transform .9s var(--ease);transition-delay:calc(var(--i) * 75ms)}
+.wh.words-in .wi{transform:none}
+
+/* ---------- Phone feel ----------
+   The browser's grey tap flash is switched off (above), so every tappable thing needs its own press feedback.
+   Controls can't have their label selected by a long-press; real text can. */
+button,a,[role="button"]{touch-action:manipulation}
+button,.btn{user-select:none;-webkit-user-select:none;-webkit-touch-callout:none}
+.link{transition:opacity .12s}
+.link:active,.nav-links a:active,.mobile-menu a.m:active,footer.site li a:active{opacity:.6}
+
+/* ---------- Footer ---------- */
+footer.site{background:var(--navy);color:var(--ivory);padding-block:var(--s5) var(--s4)}
+.f-grid{display:grid;gap:var(--s4)}
+@media(min-width:800px){.f-grid{grid-template-columns:1.2fr 1fr 1fr}}
+.f-logo{width:200px;height:auto;margin-left:-14px}
+footer.site h2{font-family:var(--font-body);font-size:.9375rem;font-weight:600;color:var(--gold);margin-bottom:.8rem}
+footer.site ul{list-style:none;margin:0;padding:0}
+footer.site li a{display:inline-flex;align-items:center;min-height:40px;text-decoration:none;opacity:.88}
+@media (hover:hover) and (pointer:fine){footer.site li a:hover{opacity:1;text-decoration:underline;text-underline-offset:4px}}
+.news{display:flex;align-items:center;border:1.5px solid rgba(250,250,248,.45);border-radius:999px;padding:.3rem .3rem .3rem 1.2rem;max-width:22rem;transition:border-color .2s}
+.news:focus-within{border-color:var(--gold)}
+.news input{flex:1;min-width:0;background:transparent;border:0;color:inherit;font:400 1rem var(--font-body);min-height:44px}
+.news input::placeholder{color:rgba(250,250,248,.65)}
+.news input:focus-visible{outline:none}
+.news button{width:44px;height:44px;border-radius:50%;border:0;background:var(--gold);color:var(--navy);cursor:pointer;display:grid;place-items:center;flex:none;transition:transform .3s var(--ease)}
+@media (hover:hover) and (pointer:fine){.news button:hover{transform:scale(1.08)}}
+.news svg{width:18px;height:18px}
+.f-base{margin-top:var(--s6);display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem;font-size:.875rem;opacity:.85}
+.f-tag{letter-spacing:.25em;text-transform:uppercase;font-size:.7rem}
+.care-note{margin-top:1rem;font-size:.875rem;opacity:.8;max-width:38rem}
+
+/* ---------- Scroll reveal (few elements, transform + opacity only) ---------- */
+.rv{opacity:0;transform:translateY(22px);transition:opacity .9s var(--ease),transform .9s var(--ease);transition-delay:calc(var(--i,0)*90ms)}
+.rv.in{opacity:1;transform:none}
+.no-js .rv{opacity:1;transform:none}
+
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;transition-delay:0s!important}
+  .rv{opacity:1;transform:none}
+}
+</style>
+</head>
+<body class="no-js">
+<script>document.body.classList.remove('no-js')</script>
+<!-- Liquid glass: distorts the backdrop of .btn-glass buttons (Chrome and Edge; other browsers get a frosted blur) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <filter id="container-glass" x="0%" y="0%" width="100%" height="100%" color-interpolation-filters="sRGB">
+      <feTurbulence type="fractalNoise" baseFrequency="0.05 0.05" numOctaves="1" seed="1" result="turbulence"/>
+      <feGaussianBlur in="turbulence" stdDeviation="2" result="blurredNoise"/>
+      <feDisplacementMap in="SourceGraphic" in2="blurredNoise" scale="70" xChannelSelector="R" yChannelSelector="B" result="displaced"/>
+      <feGaussianBlur in="displaced" stdDeviation="4" result="finalBlur"/>
+      <feComposite in="finalBlur" in2="finalBlur" operator="over"/>
+    </filter>
+  </defs>
+</svg>
+<a class="skip" href="#main">Skip to main content</a>
+
+<!-- ===== Header ===== -->
+<header class="site-header" id="top">
+  <div class="wrap nav">
+    <a class="brand" href="#top" aria-label="Muawé Healing Arts, home">
+      <span class="brand-mark" aria-hidden="true"><img src="images/logo-mark.png" alt="" width="204" height="174"></span>
+      <span><span class="brand-word">MUAWÉ</span><span class="brand-sub">HEALING ARTS</span></span>
+    </a>
+    <nav aria-label="Primary">
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#journal">Journal</a></li>
+        <li><a href="#visit">Visit</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn-glass on-dark nav-cta" href="#book">Book a session</a>
+    <button class="menu-btn btn-glass on-dark" id="menuBtn" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open menu">
+      <svg class="bars" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      <svg class="x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+  </div>
+</header>
+<div class="mobile-menu" id="mobileMenu">
+  <ul>
+    <li><a class="m" href="#about">About</a></li>
+    <li><a class="m" href="#services">Services</a></li>
+    <li><a class="m" href="#gallery">Gallery</a></li>
+    <li><a class="m" href="#journal">Journal</a></li>
+    <li><a class="m" href="#visit">Visit</a></li>
+  </ul>
+  <a class="btn btn-glass on-dark" href="#book">Book a session
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg></a>
+</div>
+
+<main id="main">
+<!-- ===== Hero ===== -->
+<section class="hero" aria-labelledby="hero-title">
+  <div class="ember" aria-hidden="true">
+    <div class="ember-pools"><i class="e1"></i><i class="e2"></i><i class="e3"></i><i class="e4"></i></div>
+    <div class="ember-dots"></div>
+  </div>
+  <div class="wrap hero-inner">
+    <h1 id="hero-title"><span class="ln"><span>Healing</span></span><span class="ln"><span>through</span></span><span class="ln"><span>creativity</span></span></h1>
+    <p class="hero-copy">A warm, inclusive space in the heart of Manchester City Centre where all parts of you are welcome.</p>
+    <div class="hero-actions">
+      <a class="btn btn-glass" href="#book">Book a session
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg></a>
+      <a class="btn btn-glass" href="#services">Explore services</a>
+    </div>
+  </div>
+  <div class="hero-foot" aria-hidden="true"><div class="wrap"><span>Art</span><span>Healing</span><span>Wellbeing</span></div></div>
+</section>
+
+<!-- ===== Quote ===== -->
+<section class="quote-band light" aria-label="Our belief">
+  <div class="wrap"><blockquote class="rv">“Art heals what words cannot.”</blockquote></div>
+</section>
+
+<!-- ===== About ===== -->
+<section class="section about dark" id="about" aria-labelledby="about-t">
+  <canvas class="canopy-cv" id="canopyCv" aria-hidden="true"></canvas>
+  <div class="wrap two">
+    <figure class="about-fig rv"><img src="images/welcome-home.webp" alt="Painting of a woman in profile wearing a colourful headwrap against a speckled blue and white background" width="573" height="502" loading="lazy" decoding="async"></figure>
+    <div>
+      <h2 class="h2" id="about-t">Muawé means welcome home</h2>
+      <p class="lead">In the land of my ancestors – Okpella in West Africa, <em>muawé</em> means <strong><em>welcome back</em></strong> or <strong><em>welcome home</em></strong>. It is a return to belonging, where your presence is honoured and your wholeness is embraced.</p>
+      <p class="lead">Muawé Healing Arts is a warm, inclusive space in the heart of Manchester City Centre where all parts of you are welcome.</p>
+      <div class="more" id="aboutMore">
+        <div>
+          <p class="lead">Life’s experiences can leave us feeling disconnected or overwhelmed. At Muawé you are gently supported to explore your inner world, be seen and heard, and move toward healing with compassion and care.</p>
+          <p class="lead">I am an art therapist working psychodynamically, with a trauma-informed and attachment-based approach. I work with men, women and young people. Together, we explore your experiences with curiosity and care, supporting you to build insight, resilience, and a deeper connection to yourself.</p>
+          <p class="lead">My work is holistic, sometimes infusing animist psychology, shaped by my training with Daniel Foor. I weave in somatic practices to support reconnection with the body. I also practice ancestral lineage healing, creating space to tend to inherited patterns and draw on the strength of those who came before you. My yoga practice further informs my work, offering breath, movement, and presence as pathways to grounding and self-awareness.</p>
+          <p class="lead">At Muawé Healing Arts, your homecoming is honoured as you reclaim the parts of yourself that may have been lost or hidden. This is a space of remembrance, healing, and gentle transformation.</p>
+          <p class="lead">If you are seeking a compassionate space to explore, heal, and reconnect, I would be honoured to support you.</p>
+          <p class="lead sign">Take care:-)</p>
+        </div>
+      </div>
+      <button class="read-toggle" type="button" id="aboutToggle" aria-expanded="false" aria-controls="aboutMore"><span class="t">Read more</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+      <a class="btn btn-glass on-dark about-cta" href="#book">Book a session <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Credentials ===== -->
+<section class="section cred grain dark" id="practitioner" aria-labelledby="cred-t">
+  <div class="cred-bg" aria-hidden="true"><img src="images/paint-brush.webp" alt="" width="1266" height="238" loading="lazy" decoding="async"></div>
+  <div class="wrap cred-in">
+    <div>
+      <h2 class="h2" id="cred-t">Victoria Ashadu, art psychotherapist</h2>
+      <p class="lead">I'm a qualified and certified HCPC and BAAT registered art psychotherapist. I specialise in ACE's trauma for young people and adults. I also practice attachment-based therapy.</p>
+    </div>
+    <figure class="cred-card"><img src="images/credentials-banner.png" alt="Victoria Ashadu, qualified, certified HCPC and BAAT registered art psychotherapist, specialist in ACE's trauma, young people and adults. BAAT full member and HCPC registered logos." width="1022" height="408" loading="lazy" decoding="async"></figure>
+    <a class="btn btn-glass on-dark" href="#book">Book a session <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg></a>
+  </div>
+</section>
+
+<!-- ===== Services ===== -->
+<section class="section services light" id="services" aria-labelledby="svc-t">
+  <div class="wrap">
+    <div class="sec-head"><h2 class="h2" id="svc-t">Therapeutic services, in person and online</h2><p class="lead" style="margin:0">I'm here to guide you through a journey of self-discovery and empowerment. Let's embark on this journey together and see where it takes us.</p></div>
+    <!-- TODO: add the full service descriptions (the old site truncated them behind "Learn more") -->
+    <div class="svc-grid">
+      <article class="svc-card rv" data-glow style="--i:0"><span class="glow-halo" aria-hidden="true"></span>
+        <div class="svc-img"><img src="images/art-psychotherapy.webp" alt="Expressive painting of a figure in profile in blue, magenta and yellow" width="307" height="220" loading="lazy" decoding="async"></div>
+        <div class="svc-body">
+          <h3>Art psychotherapy</h3>
+          <p>In my practice as an art psychotherapist, I utilise art as a means of expression and communication.</p>
+          <a class="link learn" href="#detail-art" data-detail="detail-art">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg></a>
+          <p class="price"><strong>£70.00</strong> per hour</p>
+          <a class="btn btn-metal" href="#book" data-service="Art psychotherapy">Book now</a>
+        </div>
+      </article>
+      <article class="svc-card rv" data-glow style="--i:1"><span class="glow-halo" aria-hidden="true"></span>
+        <div class="svc-img"><img src="images/ancestral-healing.webp" alt="Painting of birds flying over a golden sun above a deep blue sea" width="307" height="220" loading="lazy" decoding="async"></div>
+        <div class="svc-body">
+          <h3>Intergenerational healing</h3>
+          <p class="cat">Ancestral lineage healing</p>
+          <p>What is ancestral lineage healing? There are moments in life when something within us begins to reach back quietly.</p>
+          <a class="link learn" href="#detail-ancestral" data-detail="detail-ancestral">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg></a>
+          <p class="price"><strong>£90.00</strong> per session</p>
+          <a class="btn btn-metal" href="#book" data-service="Intergenerational healing">Book now</a>
+        </div>
+      </article>
+      <article class="svc-card rv" data-glow style="--i:2"><span class="glow-halo" aria-hidden="true"></span>
+        <div class="svc-img"><img src="images/somatic-healing.webp" alt="Painting of a seated meditating figure in colourful brushstrokes" width="307" height="220" loading="lazy" decoding="async"></div>
+        <div class="svc-body">
+          <h3>Bespoke somatic healing</h3>
+          <p class="cat">Somatic healing yoga</p>
+          <p>Welcome, and thank you for being here. This is a gentle, one-to-one space for healing, reconnection, and coming home.</p>
+          <a class="link learn" href="#detail-somatic" data-detail="detail-somatic">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg></a>
+          <p class="price"><strong>£120.00</strong> per session</p>
+          <a class="btn btn-metal" href="#book" data-service="Somatic healing yoga">Book now</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Service details (opened from "Learn more") ===== -->
+<section class="section detail light" id="detail-art" aria-labelledby="detail-art-t" tabindex="-1">
+  <div class="wrap">
+    <a class="link back" href="#services"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="transform:scaleX(-1)"><path d="M4 12h16M14 6l6 6-6 6"/></svg> Back to services</a>
+    <div class="detail-grid">
+      <aside class="detail-side">
+        <img src="images/detail-art-psychotherapy.webp" alt="Expressive painting of a figure in profile in blue, magenta and yellow" width="506" height="458" loading="lazy" decoding="async">
+        <p class="price"><strong>£70.00</strong> per hour</p>
+        <a class="btn btn-metal" href="#book" data-service="Art psychotherapy">Book now <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg></a>
+      </aside>
+      <div class="detail-body">
+        <h2 class="h2" id="detail-art-t">Art psychotherapy</h2>
+        <p>In my practice as an art psychotherapist, I utilise art as a means of expression and communication. The purpose of using art is not for diagnosis but as a tool to help individuals manage distressing and perplexing emotions. I work with a variety of people, addressing a wide range of issues, including mental health difficulties, physical illness, neurological conditions, and behavioural challenges.</p>
+        <p>Art psychotherapy is a transformative therapeutic approach that leverages the power of art as a medium for expression and communication. Rather than using art for diagnostic purposes, it serves as a potent tool to assist individuals in navigating distressing and complex emotions. As a skilled professional, I work with a diverse range of clients, tackling various challenges such as mental health difficulties, physical illness, neurological conditions, and behavioural issues. Through art, my clients find a safe space to explore their inner world, fostering healing, self-discovery, and emotional well-being.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section detail light" id="detail-ancestral" aria-labelledby="detail-ancestral-t" tabindex="-1">
+  <div class="wrap">
+    <a class="link back" href="#services"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="transform:scaleX(-1)"><path d="M4 12h16M14 6l6 6-6 6"/></svg> Back to services</a>
+    <div class="detail-grid">
+      <aside class="detail-side">
+        <img src="images/detail-ancestral-healing.webp" alt="Painting of birds flying over a golden sun above a deep blue sea" width="506" height="458" loading="lazy" decoding="async">
+        <p class="price"><strong>£90.00</strong> per session</p>
+        <a class="btn btn-metal" href="#book" data-service="Intergenerational healing">Book now <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg></a>
+      </aside>
+      <div class="detail-body">
+        <h2 class="h2" id="detail-ancestral-t">Intergenerational healing</h2>
+        <p class="cat">Ancestral lineage healing</p>
+        <p class="dur"><strong>Duration:</strong> 1 hour</p>
+        <h3 class="sub">What is Ancestral Lineage Healing?</h3>
+        <p>There are moments in life when something within us begins to reach back quietly towards where we come from. A longing for understanding, connection and a sense of belonging that goes deeper than words.</p>
+        <p>I came to this work during one of those moments. When my dad sadly passed unexpectedly, I found myself in a space of deep confusion, grief, and the overwhelming chaos that can follow loss. In that time, I began searching for a way to make sense of what I was feeling, and of what seemed to live beyond my own individual experience. It was through this search that I discovered Ancestral Lineage Healing, an ancient, cross-cultural, non-religious way of tending to the threads that connect us across generations.</p>
+        <p>Ancestral Lineage Healing is a gentle, earth-honouring practice of reconnection. It invites us to meet our lineage with care and reverence, to acknowledge what has been carried, and to open to the blessings that may be waiting to come through. It does not require any specific belief system. Instead, it offers a human, grounded way of relating to those who came before us, across cultures and traditions.</p>
+        <p>This work can be especially supportive if you sense patterns that feel inherited, if you are navigating grief or transition, or if you simply feel a quiet pull to understand your place within a larger story.</p>
+        <p>At its heart, this is a relational practice. We begin by listening to what feels present, tender, and to what your lineage may be asking for. The process unfolds slowly and with care, at a pace that honours your nervous system and your lived experience. Nothing is forced. There is space here.</p>
+        <p>Like art therapy, this work also welcomes symbol, image, and the inner landscape as meaningful ways of knowing. Rather than searching for answers, we allow insight to emerge gently, with compassion and respect.</p>
+        <p>Ancestral Lineage Healing also sits alongside emerging understandings in epigenetics, which explore how lived experiences and stress may influence gene expression across generations. Research into transgenerational trauma suggests that what we carry can be both biological and psychological, though this is still an evolving field and not a replacement for medical care.</p>
+        <p>My approach is informed by training with Daniel Foor, PhD, founder of Ancestral Medicine, whose work centres psychological and cultural safety, inclusivity, and a deep respect for the living relationship between humans and the more than human world.</p>
+        <p>If something in you feels quietly drawn to this work, you are warmly welcome here. This is an invitation into a gentle, meaningful conversation with your lineage, one that may open pathways towards healing, blessing, and a deeper sense of belonging.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section detail light" id="detail-somatic" aria-labelledby="detail-somatic-t" tabindex="-1">
+  <div class="wrap">
+    <a class="link back" href="#services"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="transform:scaleX(-1)"><path d="M4 12h16M14 6l6 6-6 6"/></svg> Back to services</a>
+    <div class="detail-grid">
+      <aside class="detail-side">
+        <img src="images/detail-somatic-healing.webp" alt="Painting of a seated meditating figure in colourful brushstrokes" width="506" height="458" loading="lazy" decoding="async">
+        <p class="price"><strong>£120.00</strong> per session</p>
+        <a class="btn btn-metal" href="#book" data-service="Somatic healing yoga">Book now <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg></a>
+      </aside>
+      <div class="detail-body">
+        <h2 class="h2" id="detail-somatic-t">Bespoke somatic healing</h2>
+        <p class="cat">Somatic healing yoga</p>
+        <p class="dur"><strong>Duration:</strong> 1 hour</p>
+        <p>Welcome, and thank you for being here. This is a gentle, one-to-one space for healing, reconnection, and coming home to yourself with care, compassion, and warmth.</p>
+        <p>My work brings together somatic healing, yoga, and art therapy in a way that is soft, supportive, and deeply human. I am training at the <strong>School of Holistic Therapy</strong> under Simonetta Logan, and I also bring my yoga instructor qualification and art therapy practice into this heart led work.</p>
+        <p>Trauma is not only held in the mind; it can also live in the body as tension, holding, numbness, overwhelm, or a sense of being stuck. Somatic experiencing, developed by Peter Levine, supports the body in gently completing protective responses that may have been interrupted during overwhelming experiences. Babette Rothschild’s trauma informed approach also places safety, pacing, and choice at the centre of healing.</p>
+        <p>In session, we do not force or push. Instead, we listen closely to the body’s signals, notice sensation, breath, movement, and boundaries, and allow the nervous system to slowly settle at its own pace. This can create space for the body to soften, release stored stress, and begin to feel safer again.</p>
+        <p>I have experienced the calmer, more grounded and connective support of this work first hand. Research suggests that somatic experiencing may help reduce post traumatic symptoms and support nervous system regulation.</p>
+        <p>Art therapy can help with emotional expression, self-esteem, coping, and resilience, especially when words feel too difficult or too small for what you are carrying. When these approaches are woven together, they can offer a gentle path toward relief, insight, and healing through both body and creative expression.</p>
+        <p>Each session is shaped around you, your pace, and what feels manageable in the moment. We will begin with grounding and breath work, then move into gentle movement, body awareness, and creative exploration with colour, image, shape, metaphor, and mark making.</p>
+        <p>This is an invitation to explore what is present with kindness, rather than judgement. You do not need to arrive with the right words or the perfect starting point. Simply come as you are.</p>
+        <p>If your body is asking for softness, your heart is asking for care, or your creative self is asking to be heard, I would love to welcome you to book a session or begin a gentle conversation about what support feels right for you.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Workshops: coming soon ===== -->
+<section class="section soon light" id="programs" aria-labelledby="soon-t">
+  <div class="wrap soon-in">
+    <h2 class="h2" id="soon-t">Workshops and groups are coming soon</h2>
+    <p class="lead">Want to hear first, or have an idea for a workshop? Send us a message and we'll keep you posted.</p>
+    <a class="btn btn-metal" href="#book">Ask to be told first <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg></a>
+  </div>
+</section>
+
+<!-- ===== Gallery (art for sale) ===== -->
+<section class="section gallery grain dark" id="gallery" aria-labelledby="gal-t">
+  <div class="wrap">
+    <div class="sec-head"><h2 class="h2" id="gal-t">Art for sale</h2><p class="lead" style="margin:0">Original paintings from Muawé Healing Arts. Enquire to buy a piece.</p></div>
+    <div class="gal-grid">
+      <article class="piece rv" style="--i:0"><figure><div class="frame"><img src="images/welcome-home.webp" alt="Painting of a woman in profile wearing a colourful headwrap against a speckled blue and white background" width="573" height="502" loading="lazy" decoding="async"></div><figcaption><div><h3>Untitled</h3><p class="med">Woman in a headwrap</p></div><a class="link" href="mailto:hiya@muawehealingarts.com?subject=Enquiry%3A%20Woman%20in%20a%20headwrap">Enquire</a></figcaption></figure></article>
+      <article class="piece rv" style="--i:1"><figure><div class="frame"><img src="images/art-psychotherapy.webp" alt="Expressive painting of a figure in profile in blue, magenta and yellow" width="307" height="220" loading="lazy" decoding="async"></div><figcaption><div><h3>Untitled</h3><p class="med">Portrait in blue and magenta</p></div><a class="link" href="mailto:hiya@muawehealingarts.com?subject=Enquiry%3A%20Portrait%20in%20blue%20and%20magenta">Enquire</a></figcaption></figure></article>
+      <article class="piece rv" style="--i:2"><figure><div class="frame"><img src="images/ancestral-healing.webp" alt="Painting of birds flying over a golden sun above a deep blue sea" width="307" height="220" loading="lazy" decoding="async"></div><figcaption><div><h3>Untitled</h3><p class="med">Birds over a sunset sea</p></div><a class="link" href="mailto:hiya@muawehealingarts.com?subject=Enquiry%3A%20Birds%20over%20a%20sunset%20sea">Enquire</a></figcaption></figure></article>
+      <article class="piece rv" style="--i:3"><figure><div class="frame"><img src="images/somatic-healing.webp" alt="Painting of a seated meditating figure in colourful brushstrokes" width="307" height="220" loading="lazy" decoding="async"></div><figcaption><div><h3>Untitled</h3><p class="med">Seated figure in meditation</p></div><a class="link" href="mailto:hiya@muawehealingarts.com?subject=Enquiry%3A%20Seated%20figure%20in%20meditation">Enquire</a></figcaption></figure></article>
+    </div>
+    <p class="gal-note">Interested in a piece? Get in touch and we'll arrange a viewing.</p>
+  </div>
+</section>
+
+<!-- ===== Words from Victoria + client review ===== -->
+<section class="section voices light" id="reviews" aria-labelledby="voices-t">
+  <div class="wrap rev-grid">
+    <div>
+      <h2 class="h2" id="voices-t" style="margin-bottom:var(--s4)">Words from Victoria</h2>
+      <blockquote class="statement rv">
+        <p>I am experienced in working with young people in special education settings and children in care with a range of complex needs such as ADHD. One young client who was diagnosed with ADHD had difficulties sitting still and engaging in one-to-one dialogue, told me after our first session that art therapy has given her the opportunity to see that she is not to blame for her difficulties. She engaged in 18 sessions and became confident and able to engage with other professionals in a calm manner. In managing emotional and trauma clinical work as Art Psychotherapist, I am part of multi-agency teams working collaboratively so that the people's wellbeing remain the focus of my service. I am fully committed to safeguarding and promoting the welfare of the people I work with. I undergo further training to keep abreast of changes.</p>
+        <footer>Victoria Ashadu, art psychotherapist</footer>
+      </blockquote>
+    </div>
+    <div>
+      <h2 class="h3">What clients have said</h2>
+      <!-- TODO: paste the full review text; the old site only showed the first lines -->
+      <article class="review rv">
+        <img src="images/welcome-home.webp" alt="" width="573" height="502" loading="lazy" decoding="async">
+        <div class="rb">
+          <h3>Client review</h3>
+          <p>Last week we had a core meeting for Room 3. It was mentioned in the meeting that Mum has engaged in your…</p>
+          <p class="when">20 January 2024</p>
+          <div class="stars" role="img" aria-label="5 out of 5 stars"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Blog ===== -->
+<section class="section blog light" id="journal" aria-labelledby="blog-t">
+  <div class="wrap">
+    <div class="sec-head"><h2 class="h2" id="blog-t">Journal</h2></div>
+    <div class="b-grid">
+      <article class="b-card rv" style="--i:0">
+        <h3>You are capable of Good and Evil. Own it.</h3>
+        <div class="b-img"><img src="images/blog-good-evil.webp" alt="Green painting with yellow, pink and red hand-lettered words reading you are capable of good and evil, own it" width="316" height="218" loading="lazy" decoding="async"></div>
+        <div class="b-body">
+          <p class="b-ex">There is something deeply human you may not have been given permission to hold, which is that you are capable of both good and evil. You are capable …</p>
+          <a class="btn btn-glass b-more" href="#detail-blog-good-evil" data-detail="detail-blog-good-evil">Read more</a>
+        </div>
+      </article>
+      <article class="b-card rv" style="--i:1">
+        <h3>Healing Power within</h3>
+        <div class="b-img"><img src="images/blog-healing-power.webp" alt="Abstract painting in bold red, yellow, blue and green brushstrokes" width="316" height="218" loading="lazy" decoding="async"></div>
+        <div class="b-body">
+          <p class="b-sub">Coming Home to Yourself</p>
+          <p class="b-ex">Have you ever felt like healing was supposed to be something you could schedule? A neat hour between everything else, like …</p>
+          <a class="btn btn-glass b-more" href="#detail-blog-healing-power" data-detail="detail-blog-healing-power">Read more</a>
+        </div>
+      </article>
+      <article class="b-card rv" style="--i:2">
+        <h3>Art Therapy: The Transformative Power of Creative Expression</h3>
+        <div class="b-img"><img src="images/blog-art-therapy.webp" alt="Hands drawing a mandala at a table with plants, pens and glasses" width="316" height="218" loading="lazy" decoding="async"></div>
+        <div class="b-body">
+          <p class="b-date">Posted 20 Jan, 2024</p>
+          <p class="b-ex">Art has been a universal language of expression for centuries, transcending cultural and linguistic boundaries. It's a medium …</p>
+          <a class="btn btn-glass b-more" href="#detail-blog-art-therapy" data-detail="detail-blog-art-therapy">Read more</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Blog posts (opened from "Read more"; full articles to be added) ===== -->
+<section class="section detail light" id="detail-blog-good-evil" aria-labelledby="detail-blog-good-evil-t" tabindex="-1">
+  <div class="wrap">
+    <a class="link back" href="#journal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="transform:scaleX(-1)"><path d="M4 12h16M14 6l6 6-6 6"/></svg> Back to journal</a>
+    <div class="detail-grid">
+      <aside class="detail-side"><img src="images/blog-good-evil.webp" alt="Green painting with yellow, pink and red hand-lettered words reading you are capable of good and evil, own it" width="316" height="218" loading="lazy" decoding="async"></aside>
+      <div class="detail-body">
+        <h2 class="h2" id="detail-blog-good-evil-t">You are capable of Good and Evil. Own it.</h2>
+        <p>There is something deeply human you may not have been given permission to hold, which is that you are capable of both good and evil. You are capable of tenderness and harm. You are capable of love and fear.</p>
+        <p class="pull">Not because you are broken, but because you are whole.</p>
+        <p>Healing does not begin with becoming better. It begins with becoming honest whilst sitting quietly enough to notice what lives within you, without turning away.</p>
+        <p class="pull">Many of the things you carry did not begin with you.</p>
+        <p>Patterns, fears, ways of protecting yourself, ways of closing down or reaching out. These can move through families, environments and generations. Ancestral healing is not about looking back with blame, but with awareness. It is about gently asking “what am I still carrying that I am now ready to release?” And just as importantly, “what do I want to keep?”</p>
+        <p class="pull">Nature can be a steady guide in this process.</p>
+        <p>Through an animist lens, everything holds presence and meaning. The ground beneath you, the trees, the water, the air around your body. You are not separate from these things. You are part of the same living system. A tree does not rush its growth. The seasons do not question their timing.</p>
+        <p>There is nothing in nature that asks for external validation to exist as it is. So what would it feel like to begin choosing yourself in that same way? Not loudly or forcefully. But consistently creating space for your mental health. Letting rest be part of your life, not something you earn. Allowing small acts of care to matter, choosing something beautiful, like holding a crystal that grounds you, enjoying food that nourishes you, even something as simple as vegan ice cream on a quiet afternoon.</p>
+        <p>These moments are not insignificant. They are how safety is built in the body. And the body is where so much of your healing lives.</p>
+        <p>Somatic practices, including yoga based approaches, invite you to listen to your body’s language, sensation, breath, tension, release. They offer a way to gently unwind what has been held, often for a very long time. You do not have to force this process. The body responds to presence more than pressure.</p>
+        <p>There are also parts of you that may not yet have words. This is where art therapy can open a door. Through colour, shape, texture, and movement, something internal begins to take form. Not to be judged, but to be witnessed. It is in this witnessing that something begins to shift.</p>
+        <p>Different healing modalities offer different entry points into the same truth in that you are allowed to return to yourself.</p>
+        <p>Through Muawé Healing Arts, you are invited to explore this in your own way. Ancestral healing, for understanding the deeper roots of what you carry. Art therapy, for expressing what sits beneath language. Yoga somatic healing, for reconnecting with your body and creating space within it.</p>
+        <p>There is no expectation to arrive a certain way. You do not need to be ready. You only need a willingness to be present with yourself. As you walk this path, you will meet your shadow.</p>
+        <p>The parts of you that feel uncomfortable. The anger, the grief, the fear, the instincts you were taught to suppress. These are not parts to remove, instead, they are parts to appreciate and alchemise.</p>
+        <p>Alchemising your darker aspects is a quiet, ongoing process. It is how anger becomes clarity. How fear becomes awareness. How grief becomes deeply nourishing.</p>
+        <p class="pull">Nothing is wasted when it is met with attention and self compassion.</p>
+        <p>And something else begins to happen, often without you noticing at first. You soften in a way that makes you more real, more grounded, less driven by reaction and more guided by presence.</p>
+        <p>Others can feel this too. You do not need to explain it or convince anyone. Healing is not something you impose, you are not here to force or convert people.</p>
+        <p>Even in religion, where there is often talk of guiding others toward truth, it is worth asking quietly, is that truly what GOD asks of us? Or is it enough to live in a way that reflects care, presence, integrity, and trust that others will find their own path when they are ready?</p>
+        <p>Your role is not to change the world all at once. It is to tend to your part of it. And as you do, your healing becomes something others can sense. Not as an instruction, but as a possibility, a glimpse that something softer, steadier, more connected is available.</p>
+        <p>So let this be a simple invitation. What would healing look like for you, if it did not have to be rushed? What feels ready to be acknowledged, even gently? What kind of support would feel safe enough for you to explore?</p>
+        <p>If something in you is curious, you are welcome to step into that exploration through Muawé Healing Arts. There is no single path, only different ways of meeting yourself with care.</p>
+        <p>You do not have to become someone new. You are allowed to return to who you are, with more awareness, compassion, and choice.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section detail light" id="detail-blog-healing-power" aria-labelledby="detail-blog-healing-power-t" tabindex="-1">
+  <div class="wrap">
+    <a class="link back" href="#journal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="transform:scaleX(-1)"><path d="M4 12h16M14 6l6 6-6 6"/></svg> Back to journal</a>
+    <div class="detail-grid">
+      <aside class="detail-side"><img src="images/blog-healing-power.webp" alt="Abstract painting in bold red, yellow, blue and green brushstrokes" width="316" height="218" loading="lazy" decoding="async"></aside>
+      <div class="detail-body">
+        <h2 class="h2" id="detail-blog-healing-power-t">Healing Power within</h2>
+        <p class="cat">Coming Home to Yourself</p>
+        <p>Have you ever felt like healing was supposed to be something you could schedule?<br>A neat hour between everything else, like just another item on the list?</p>
+        <p>You might have tried that. You might have found that it didn’t quite work.<br>The kind of healing your body is asking for may not fit into a calendar slot at all.<br>It might be quieter. Slower. And already within you.</p>
+        <p>Think about this:<br>In your life, have you ever noticed moments when your body told you something before your mind did?<br>A tightness in your chest. A heaviness in your shoulders. A sense of calm when you finally paused?</p>
+        <p>For many people, these signals get ignored. You tell yourself to keep pushing through<br>But what if you could start to listen to your inner wisdom.</p>
+        <p>When do you feel most tired (physically, emotionally, or mentally), what happens when you try to rest, and do you feel like part of you is always “on” even when slowing down?</p>
+        <p>You may be carrying more than you realise, which is not a sign that something is wrong with you. Instead, it’s a sign that you’ve been doing a lot for a long time.</p>
+        <p class="pull">What would it feel like to return to yourself?</p>
+        <p>Imagine pausing, just for a moment, and asking yourself honestly how you actually feel. Not how you think you should feel, or what’s expected of you. But what’s really there beneath the surface.</p>
+        <p>Imagine creating without pressure. Letting things take shape in their own time. Moving your body without forcing it. Resting because you need it.</p>
+        <p>What if your body wasn’t something to fix, but something to listen to and be in a relationship with?</p>
+        <p>And as you sit with that, notice if there is a part of you that already knows this is possible? A quieter part, perhaps, that’s been there all along waiting, gently, for permission to slow down?</p>
+        <h3 class="sub">You don’t have to change everything at once</h3>
+        <p>Healing often begins with a small act of attention. A breath. A pause. A moment of noticing.</p>
+        <p>What’s one small thing you could offer yourself today just to listen a little more closely?</p>
+        <p>Maybe it begins with something simple.<br>Taking three slow, steady breaths, and actually feeling them as they move through you.</p>
+        <p>Or placing a hand on your chest, softening for a moment, and quietly asking, “What do I need?” and giving yourself the space to hear whatever comes.</p>
+        <p>Perhaps it’s sitting still for five minutes, doing nothing at all. No fixing, no planning, no proving. Just being here, as you are.</p>
+        <p class="pull">What feels like the easiest place to begin?</p>
+        <h3 class="sub">Let’s begin this together</h3>
+        <p>If any of this feels familiar, you don’t have to stay disconnected.<br>You don’t have to keep pushing through.<br>You can come home to yourself gently, slowly, and with care.</p>
+        <p>Would you like to explore what that could look like for you?</p>
+        <p>Book a gentle, no-pressure conversation to see if working together feels right.<br>There’s no need to have it all figured out. You only need to begin by listening.</p>
+        <p class="sign">Take care:-)</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section detail light" id="detail-blog-art-therapy" aria-labelledby="detail-blog-art-therapy-t" tabindex="-1">
+  <div class="wrap">
+    <a class="link back" href="#journal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="transform:scaleX(-1)"><path d="M4 12h16M14 6l6 6-6 6"/></svg> Back to journal</a>
+    <div class="detail-grid">
+      <aside class="detail-side"><img src="images/blog-art-therapy.webp" alt="Hands drawing a mandala at a table with plants, pens and glasses" width="316" height="218" loading="lazy" decoding="async"></aside>
+      <div class="detail-body">
+        <h2 class="h2" id="detail-blog-art-therapy-t">Art Therapy: The Transformative Power of Creative Expression</h2>
+        <p class="dur">Posted 20 Jan, 2024</p>
+        <p>Art has been a universal language of expression for centuries, transcending cultural and linguistic boundaries. It's a medium that allows individuals to communicate their thoughts, emotions, and experiences without the need for words. In recent years, the therapeutic benefits of art have gained recognition, and Art Psychotherapy has emerged as a powerful tool for healing. In this article, we will explore the transformative power of creative expression through Art Psychotherapy and delve into how individuals, under the guidance of professionals like Victoria Ashadu, can find healing, self-discovery, and emotional well-being.</p>
+        <h3 class="sub">The Healing Potential of Art</h3>
+        <p>Art has the unique ability to tap into the depths of the human psyche. When words fail to convey complex emotions or traumatic experiences, art steps in as a means of expression. Whether through painting, drawing, sculpture, or other creative forms, individuals can externalize their internal worlds and gain insight into their thoughts and feelings. Art Psychotherapy, often referred to as art therapy, is a form of psychotherapy that utilizes the creative process of making art to improve and enhance the physical, mental, and emotional well-being of individuals of all ages. It is based on the belief that the creative process and self-expression can be therapeutic and healing.</p>
+        <h3 class="sub">The Role of the Art Psychotherapist</h3>
+        <p>Art Psychotherapists, like Victoria Ashadu, are trained professionals who guide individuals through the art-making process in a therapeutic context. They provide a safe and supportive environment where clients can explore their thoughts and emotions without judgment. The role of the therapist is not to interpret the artwork but to facilitate the client's exploration and self-discovery. One of the significant areas where Art Psychotherapy has proven highly effective is in addressing trauma, including Adverse Childhood Experiences (ACEs). Traumatic events can leave lasting emotional scars that impact an individual's mental health and overall well-being. Art therapy offers a non-confrontational and non-verbal way to process and heal from trauma.</p>
+        <h3 class="sub">The Therapeutic Process</h3>
+        <p>Art Psychotherapy sessions typically involve the creation of artwork and subsequent discussion or reflection on the art's meaning. The therapist may ask open-ended questions to encourage self-reflection and exploration. Through this process, clients can gain insights into their emotions, behaviors, and coping mechanisms. Art therapy allows individuals to express and regulate their emotions effectively. For those who struggle to verbalize their feelings, art provides a safe outlet for pent-up emotions. It can help clients identify and name their emotions, which is a crucial step in emotional regulation and management.</p>
+        <h3 class="sub">Boosting Self-Esteem and Self-Confidence</h3>
+        <p>Engaging in the creative process and witnessing the tangible results of one's efforts can boost self-esteem and self-confidence. This is particularly valuable for individuals who have experienced trauma or struggle with self-worth issues. Art therapy encourages creative thinking and problem-solving skills. Clients learn to approach challenges with an open mind, finding multiple solutions to a problem—a valuable skill that can be applied in various aspects of life.</p>
+        <h3 class="sub">Enhancing Communication Skills</h3>
+        <p>For those who have difficulty expressing themselves verbally, art therapy can improve communication skills. It helps individuals become more adept at conveying their thoughts and emotions, which can positively impact their relationships and interactions with others. Art Psychotherapy is not just about addressing emotional pain; it's also a tool for personal growth and development. Clients can discover new facets of themselves, set and achieve goals, and gain a deeper understanding of their inner world.</p>
+        <h3 class="sub">Empowering Vulnerable Populations</h3>
+        <p>Art therapy is particularly effective for vulnerable populations, including survivors of domestic violence, individuals with complex needs, and young people. Victoria Ashadu's expertise in working with these populations has shown that art therapy can provide a sense of empowerment and hope. Victoria Ashadu's practice in Manchester takes a holistic approach to healing, recognizing the interconnectedness of mind, body, and soul. Her commitment to promoting emotional well-being and healthy mental health routines aligns with the principles of art therapy.</p>
+        <h3 class="sub">Continuous Learning and Growth</h3>
+        <p>One of the distinguishing features of Victoria Ashadu as an Art Psychotherapist is her commitment to continuous learning and growth. She stays up-to-date with the latest developments in the field to provide the best possible support to her clients.</p>
+        <h3 class="sub">Embarking on Your Healing Journey</h3>
+        <p>In conclusion, Art Psychotherapy offers a profound avenue for healing, self-discovery, and emotional well-being. Under the guidance of professionals like Victoria Ashadu, individuals can harness the transformative power of creative expression to address trauma, improve communication, boost self-esteem, and foster personal growth.</p>
+        <p>If you're in Manchester and seeking a trusted and compassionate Art Psychotherapist, Victoria Ashadu is here to support you on your healing journey. To learn more about her services and begin your transformative experience, please visit her <a href="#book">Contact Form</a>. Your path to well-being starts here.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Visit / map ===== -->
+<section class="section visit grain dark" id="visit" aria-labelledby="visit-t">
+  <div class="wrap two">
+    <div>
+      <h2 class="h2" id="visit-t">Come and find us</h2>
+      <p class="lead">In the heart of Manchester City Centre.</p>
+      <dl class="details">
+        <div><dt>Location</dt><dd>Muawé Healing Arts, Peter House, Oxford Road, Manchester</dd></div>
+        <div><dt>Sessions</dt><dd>In person and online</dd></div>
+        <div><dt>Contact</dt><dd><a href="mailto:hiya@muawehealingarts.com">hiya@muawehealingarts.com</a></dd></div>
+      </dl>
+    </div>
+    <div class="lmap-wrap">
+      <div class="lmap-stage">
+        <div class="lmap" id="lmap">
+          <div class="lmap-card" id="lmapCard">
+            <button class="lm-toggle" id="lmapToggle" type="button" aria-expanded="false" aria-controls="lmapMap" aria-label="Show the map: Muawé Healing Arts, Peter House, Oxford Road, Manchester"></button>
+            <button class="lm-close" id="lmapClose" type="button" aria-label="Hide the map"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M2 2l8 8M10 2l-8 8"/></svg>Close</button>
+            <div class="lmap-grid" aria-hidden="true"></div>
+            <div class="lmap-map" id="lmapMap" inert>
+              <div class="lm-art" aria-hidden="true">
+              <svg class="lm-roads" width="100%" height="100%">
+            <line x1="0%" y1="35%" x2="100%" y2="35%" pathLength="1" class="lm-road r1" stroke-width="4" style="--d:0.2s;--t:0.8s"/>
+            <line x1="0%" y1="65%" x2="100%" y2="65%" pathLength="1" class="lm-road r1" stroke-width="4" style="--d:0.3s;--t:0.8s"/>
+            <line x1="30%" y1="0%" x2="30%" y2="100%" pathLength="1" class="lm-road r2" stroke-width="3" style="--d:0.4s;--t:0.6s"/>
+            <line x1="70%" y1="0%" x2="70%" y2="100%" pathLength="1" class="lm-road r2" stroke-width="3" style="--d:0.5s;--t:0.6s"/>
+            <line x1="0%" y1="20%" x2="100%" y2="20%" pathLength="1" class="lm-road r3" stroke-width="1.5" style="--d:0.6s;--t:0.5s"/>
+            <line x1="0%" y1="50%" x2="100%" y2="50%" pathLength="1" class="lm-road r3" stroke-width="1.5" style="--d:0.7s;--t:0.5s"/>
+            <line x1="0%" y1="80%" x2="100%" y2="80%" pathLength="1" class="lm-road r3" stroke-width="1.5" style="--d:0.8s;--t:0.5s"/>
+            <line x1="15%" y1="0%" x2="15%" y2="100%" pathLength="1" class="lm-road r3" stroke-width="1.5" style="--d:0.7s;--t:0.5s"/>
+            <line x1="45%" y1="0%" x2="45%" y2="100%" pathLength="1" class="lm-road r3" stroke-width="1.5" style="--d:0.8s;--t:0.5s"/>
+            <line x1="55%" y1="0%" x2="55%" y2="100%" pathLength="1" class="lm-road r3" stroke-width="1.5" style="--d:0.9s;--t:0.5s"/>
+            <line x1="85%" y1="0%" x2="85%" y2="100%" pathLength="1" class="lm-road r3" stroke-width="1.5" style="--d:1.0s;--t:0.5s"/>
+              </svg>
+          <i class="lm-b" style="top:40%;left:10%;width:15%;height:20%;--a:0.3;--d:0.5s"></i>
+          <i class="lm-b" style="top:15%;left:35%;width:12%;height:15%;--a:0.25;--d:0.6s"></i>
+          <i class="lm-b" style="top:70%;left:75%;width:18%;height:18%;--a:0.28;--d:0.7s"></i>
+          <i class="lm-b" style="top:20%;right:10%;width:10%;height:25%;--a:0.22;--d:0.55s"></i>
+          <i class="lm-b" style="top:55%;left:5%;width:8%;height:12%;--a:0.2;--d:0.65s"></i>
+          <i class="lm-b" style="top:8%;left:75%;width:14%;height:10%;--a:0.22;--d:0.75s"></i>
+              <div class="lm-pin"><svg width="34" height="34" viewBox="0 0 24 24" fill="none"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" fill="#FF9A00"/><circle cx="12" cy="9" r="2.5" fill="#0C2766"/></svg></div>
+              </div>
+              <iframe class="lm-frame" id="lmapFrame" title="Map showing Peter House, Oxford Road, Manchester" data-src="https://www.google.com/maps?q=Peter+House,+Oxford+Road,+Manchester&amp;output=embed" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <div class="lm-tint" aria-hidden="true"></div>
+              <div class="lm-fade" aria-hidden="true"></div>
+            </div>
+            <div class="lmap-content">
+              <div class="lmap-top">
+                <svg class="lm-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"/><line x1="9" x2="9" y1="3" y2="18"/><line x1="15" x2="15" y1="6" y2="21"/></svg>
+                <span class="lm-pill"><i></i>In person and online</span>
+              </div>
+              <div class="lmap-bottom">
+                <h3>Muawé Healing Arts</h3>
+                <p class="lm-addr">Peter House, Oxford Road, Manchester</p>
+                <p class="lm-post">M1 5AN</p>
+                <span class="lm-line"></span>
+              </div>
+            </div>
+          </div>
+          <p class="lmap-hint" id="lmapHint" aria-hidden="true">Click to expand</p>
+        </div>
+      </div>
+      <div class="lmap-links">
+        <a class="btn btn-glass on-dark" href="https://www.google.com/maps/search/?api=1&amp;query=Peter+House%2C+Oxford+Road%2C+Manchester" target="_blank" rel="noopener">Open in Google Maps</a>
+        <a class="link" href="https://www.google.com/maps/dir/?api=1&amp;destination=Peter+House%2C+Oxford+Road%2C+Manchester" target="_blank" rel="noopener">Get directions</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Booking ===== -->
+<section class="section book light below" id="book" aria-labelledby="book-t">
+  <div class="wrap two">
+    <div>
+      <h2 class="h2" id="book-t">Book a session</h2>
+      <p class="lead">Tell us a little about what you're looking for and we'll get back to you to find a time that suits you.</p>
+      <p class="lead fine">If you need urgent help, call NHS 111, or 999 in an emergency.</p>
+    </div>
+    <form class="form" id="bookForm" novalidate>
+      <fieldset class="seg-wrap">
+        <legend>What are you booking?</legend>
+        <div class="seg">
+          <label class="seg-opt"><input type="radio" name="booking_type" value="Initial consultation"><span><b>Initial consultation</b><small>A gentle conversation about what support feels right for you</small></span></label>
+          <label class="seg-opt"><input type="radio" name="booking_type" value="Book a session" checked><span><b>Book a session</b><small>Choose a service and a date that suits you</small></span></label>
+        </div>
+      </fieldset>
+      <div class="row">
+        <div class="field"><label for="name">Full name</label><input id="name" name="name" type="text" autocomplete="name" required><span class="err" id="name-e">Enter your name so we know who to reply to.</span></div>
+        <div class="field"><label for="email">Email address</label><input id="email" name="email" type="email" autocomplete="email" inputmode="email" required aria-describedby="email-e"><span class="err" id="email-e">Enter an email address like name@example.com.</span></div>
+      </div>
+      <div class="field"><label for="type">Which service are you interested in?</label>
+        <select id="type" name="type" required>
+          <option value="">Choose one</option>
+          <option>Art psychotherapy</option>
+          <option>Intergenerational healing</option>
+          <option>Somatic healing yoga</option>
+          <option>Not sure yet</option>
+        </select><span class="err" id="type-e">Choose the kind of session you're interested in.</span></div>
+      <div class="row">
+        <div class="field"><label for="date">Date</label><input id="date" name="date" type="date" required aria-describedby="date-e"><span class="err" id="date-e">Choose a date from today onwards.</span></div>
+        <div class="field"><label for="time">Time</label>
+          <select id="time" name="time" required aria-describedby="time-e"><option value="">Choose a time</option><option value="09:00">9:00 am</option><option value="09:15">9:15 am</option><option value="09:30">9:30 am</option><option value="09:45">9:45 am</option><option value="10:00">10:00 am</option><option value="10:15">10:15 am</option><option value="10:30">10:30 am</option><option value="10:45">10:45 am</option><option value="11:00">11:00 am</option><option value="11:15">11:15 am</option><option value="11:30">11:30 am</option><option value="11:45">11:45 am</option><option value="12:00">12:00 pm</option><option value="12:15">12:15 pm</option><option value="12:30">12:30 pm</option><option value="12:45">12:45 pm</option><option value="13:00">1:00 pm</option><option value="13:15">1:15 pm</option><option value="13:30">1:30 pm</option><option value="13:45">1:45 pm</option><option value="14:00">2:00 pm</option><option value="14:15">2:15 pm</option><option value="14:30">2:30 pm</option><option value="14:45">2:45 pm</option><option value="15:00">3:00 pm</option><option value="15:15">3:15 pm</option><option value="15:30">3:30 pm</option><option value="15:45">3:45 pm</option><option value="16:00">4:00 pm</option><option value="16:15">4:15 pm</option><option value="16:30">4:30 pm</option><option value="16:45">4:45 pm</option><option value="17:00">5:00 pm</option><option value="17:15">5:15 pm</option><option value="17:30">5:30 pm</option><option value="17:45">5:45 pm</option><option value="18:00">6:00 pm</option><option value="18:15">6:15 pm</option><option value="18:30">6:30 pm</option><option value="18:45">6:45 pm</option><option value="19:00">7:00 pm</option><option value="19:15">7:15 pm</option><option value="19:30">7:30 pm</option><option value="19:45">7:45 pm</option><option value="20:00">8:00 pm</option></select>
+          <span class="err" id="time-e">Choose a time between 9:00 am and 8:00 pm. If the date is today, it needs to be later than now.</span></div>
+      </div>
+      <p class="hint-line">Opening hours are 9am to 8pm.</p>
+      <div class="field"><label for="msg">Anything we should know? <span style="font-weight:400;color:var(--slate)">(optional)</span></label><textarea id="msg" name="msg"></textarea><span class="hint">Preferred days, access needs, or questions.</span></div>
+      <div class="hp" aria-hidden="true"><label for="website">Leave this field empty</label><input id="website" name="website" type="text" tabindex="-1" autocomplete="off"></div>
+      <button class="btn btn-metal" type="submit" id="send"><span class="lbl">Send request</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg></button>
+      <p class="ok" id="ok" role="status" tabindex="-1">Thank you. Your booking is confirmed.</p>
+      <p class="fail" id="fail" role="alert" tabindex="-1" hidden>Sorry, your request didn't send. Please try again, or email <a href="mailto:hiya@muawehealingarts.com">hiya@muawehealingarts.com</a> and we'll sort out your booking.</p>
+    </form>
+  </div>
+</section>
+</main>
+
+<!-- ===== Footer ===== -->
+<footer class="site dark">
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <img class="f-logo" src="images/logo.png" alt="Muawé Healing Arts for mental wellness" width="786" height="762" loading="lazy">
+        <address class="care-note" style="font-style:normal">Peter House, Oxford Road, Manchester<br><a href="mailto:hiya@muawehealingarts.com">hiya@muawehealingarts.com</a></address>
+      </div>
+      <nav aria-label="Footer"><h2>Explore</h2>
+        <ul><li><a href="#about">About</a></li><li><a href="#services">Services</a></li><li><a href="#gallery">Gallery</a></li><li><a href="#journal">Journal</a></li><li><a href="#visit">Visit</a></li></ul>
+      </nav>
+      <div><h2>Stay in touch</h2>
+        <form class="news" id="newsForm" novalidate>
+          <label for="nl" class="sr" style="position:absolute;left:-9999px">Email address</label>
+          <input id="nl" type="email" placeholder="Your email address" autocomplete="email" inputmode="email">
+          <button type="submit" aria-label="Subscribe to the newsletter"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg></button>
+        </form>
+        <p class="care-note" id="nlMsg" role="status"></p>
+      </div>
+    </div>
+    <div class="f-base"><span class="f-tag">Healing minds · Empowering creativity · Building community</span><span>© <span id="yr">2026</span> Muawé Healing Arts</span></div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var $=function(s,c){return (c||document).querySelector(s)}, $$=function(s,c){return Array.prototype.slice.call((c||document).querySelectorAll(s))};
+  $('#yr').textContent=new Date().getFullYear();
+
+  /* header state */
+  var hdr=$('.site-header'),ticking=false;
+  function onScroll(){ if(!ticking){ticking=true;requestAnimationFrame(function(){hdr.classList.toggle('stuck',window.scrollY>40);ticking=false})} }
+  window.addEventListener('scroll',onScroll,{passive:true});onScroll();
+
+  /* mobile menu */
+  var mb=$('#menuBtn'),mm=$('#mobileMenu');
+  function setMenu(o){mb.setAttribute('aria-expanded',o);mb.setAttribute('aria-label',o?'Close menu':'Open menu');mm.classList.toggle('open',o)}
+  mb.addEventListener('click',function(){setMenu(mb.getAttribute('aria-expanded')!=='true')});
+  $$('#mobileMenu a').forEach(function(a){a.addEventListener('click',function(){setMenu(false)})});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&mb.getAttribute('aria-expanded')==='true'){setMenu(false);mb.focus()}});
+
+  /* reveal */
+  var rv=$$('.rv');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px',threshold:.12});
+    rv.forEach(function(el){io.observe(el)});
+  } else rv.forEach(function(el){el.classList.add('in')});
+
+  /* booking form */
+  var form=$('#bookForm');
+  /* the date can't be in the past: the picker greys those days out, and a typed or pasted past date is caught here */
+  var dateEl=$('#date'),timeEl=$('#time');
+  (function(){var d=new Date(),m=String(d.getMonth()+1).padStart(2,'0'),day=String(d.getDate()).padStart(2,'0');dateEl.min=d.getFullYear()+'-'+m+'-'+day})();
+  function nowHM(){var d=new Date();return String(d.getHours()).padStart(2,'0')+':'+String(d.getMinutes()).padStart(2,'0')}
+  /* a time is only wrong if it is empty, or it is earlier than now on today's date */
+  function timeOk(){return !!timeEl.value&&!(dateEl.value&&dateEl.value===dateEl.min&&timeEl.value<=nowHM())}
+  function syncTimes(){
+    var isToday=!!dateEl.value&&dateEl.value===dateEl.min,now=nowHM();
+    [].forEach.call(timeEl.options,function(o){if(o.value)o.disabled=isToday&&o.value<=now});
+    if(timeEl.selectedOptions[0]&&timeEl.selectedOptions[0].disabled)timeEl.value='';   /* a slot that has just passed can't stay chosen */
+  }
+  dateEl.addEventListener('input',syncTimes);dateEl.addEventListener('change',syncTimes);
+  form.addEventListener('reset',function(){setTimeout(syncTimes,0)});
+  function check(el){var ok=el.type==='email'?/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(el.value):el.type==='date'?(!!el.value&&(!el.min||el.value>=el.min)):el.type==='time'?timeOk():!!el.value.trim();el.closest('.field').classList.toggle('bad',!ok);el.setAttribute('aria-invalid',!ok);return ok}
+  ['name','email','type','date','time'].forEach(function(id){var el=$('#'+id);el.addEventListener('blur',function(){check(el)});el.addEventListener('input',function(){if(el.closest('.field').classList.contains('bad'))check(el);if(id==='date'&&timeEl.closest('.field').classList.contains('bad'))check(timeEl)})});
+  /* Booking requests go to the Zapier webhook that starts the booking flow.
+     Zapier replies {"status":"success"} and allows the page to read that reply, so "Thank you" is only shown once Zapier
+     has actually accepted the request. A refusal, network failure or timeout shows the error message instead. */
+  var WEBHOOK='https://hooks.zapier.com/hooks/catch/29185566/41g6be5/';
+  var sendBtn=$('#send'),sendLbl=$('.lbl',sendBtn),okEl=$('#ok'),failEl=$('#fail'),sending=false,loadedAt=Date.now();
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    if(sending)return;
+    okEl.classList.remove('show');failEl.hidden=true;
+    var bad=['name','email','type','date','time'].map(function(id){return $('#'+id)}).filter(function(el){return !check(el)});
+    if(bad.length){bad[0].focus();return}
+    /* spam trap: bots fill the hidden field or submit within moments of the page loading; they get a quiet "success" and nothing is sent */
+    if(form.elements.website.value||Date.now()-loadedAt<2500){form.reset();okEl.classList.add('show');okEl.focus();return}
+
+    if(!WEBHOOK){form.reset();okEl.classList.add('show');okEl.focus();return}   /* nothing to send to yet: confirm only, as before */
+
+    sending=true;sendBtn.disabled=true;sendLbl.textContent='Sending…';
+    var body=new URLSearchParams();
+    body.append('name',form.elements.name.value.trim());
+    body.append('email',form.elements.email.value.trim());
+    body.append('booking_type',form.elements.booking_type.value);
+    body.append('service',form.elements.type.value);
+    body.append('preferred_date',form.elements.date.value);   /* yyyy-mm-dd */
+    body.append('preferred_time',form.elements.time.value);   /* hh:mm, 24-hour */
+    body.append('message',form.elements.msg.value.trim());
+    body.append('source','Muawé website booking form');
+    body.append('page',window.location.href);
+    body.append('submitted_at',new Date().toISOString());
+
+    var ctrl='AbortController' in window?new AbortController():null,timer=setTimeout(function(){if(ctrl)ctrl.abort()},15000);
+    fetch(WEBHOOK,{method:'POST',body:body,keepalive:true,signal:ctrl?ctrl.signal:undefined})
+      .then(function(res){
+        if(!res.ok)throw new Error('Zapier answered HTTP '+res.status);
+        return res.json().catch(function(){return {}});
+      })
+      .then(function(data){
+        if(data&&data.status&&data.status!=='success')throw new Error('Zapier answered: '+data.status);
+        form.reset();okEl.classList.add('show');okEl.focus();
+      })
+      .catch(function(){failEl.hidden=false;failEl.focus()})
+      .then(function(){clearTimeout(timer);sending=false;sendBtn.disabled=false;sendLbl.textContent='Send request'});
+  });
+
+  /* about: read more / read less */
+  var rt=$('#aboutToggle'),rm=$('#aboutMore');
+  rt.addEventListener('click',function(){
+    var open=rt.getAttribute('aria-expanded')!=='true';
+    rt.setAttribute('aria-expanded',open);rm.classList.toggle('open',open);
+    $('.t',rt).textContent=open?'Read less':'Read more';
+  });
+
+  /* service details: Learn more opens a section below the services */
+  var details=$$('.detail');
+  function syncDetail(){
+    var h=location.hash.slice(1);
+    if(details.some(function(d){return d.id===h})) details.forEach(function(d){d.classList.toggle('open',d.id===h)});
+    else if(h==='services'||h==='journal') details.forEach(function(d){d.classList.remove('open')});
+  }
+  $$('[data-detail]').forEach(function(a){a.addEventListener('click',function(e){
+    e.preventDefault();
+    var id=a.dataset.detail;
+    history.pushState(null,'','#'+id);syncDetail();
+    var el=document.getElementById(id);el.scrollIntoView();el.focus({preventScroll:true});
+  })});
+  window.addEventListener('hashchange',syncDetail);
+  syncDetail();
+
+  /* preselect the service chosen on a Book now button */
+  $$('[data-service]').forEach(function(a){a.addEventListener('click',function(){
+    $('#type').value=a.dataset.service;
+    form.elements.booking_type.value='Book a session';      /* a Book now button on a service means a session, not a first consultation */
+  })});
+
+  /* newsletter */
+  $('#newsForm').addEventListener('submit',function(e){
+    e.preventDefault();var i=$('#nl'),m=$('#nlMsg');
+    if(/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(i.value)){m.textContent="Thank you, you're on the list.";i.value=''}
+    else{m.textContent='Enter an email address like name@example.com.';i.focus()}
+  });
+})();
+</script>
+<script>
+/* Lilac dusk canopy — the last of the light through a tree, thrown soft and coral across a violet wall.
+   One fragment shader, no textures. Leaves sway on a slow breeze, flutter, and swing when a gust comes through.
+   Move over the About section and the canopy is pushed; a click is a gust. Sleeps off-screen, honours reduced
+   motion, lowers its own resolution on slow devices, and paints a still gradient where WebGL is unavailable. */
+(function(){
+  var section=document.getElementById('about'), canvas=document.getElementById('canopyCv');
+  if(!section||!canvas)return;
+
+  /* palette and light: the component's defaults with the "lilac-dusk" preset on top */
+  var P={wallTop:'#4f4366',wallBottom:'#6e5f86',bounce:'#9a6f92',light:'#f4a8a2',hot:'#ffd2b8',
+    sunX:.15,sunY:.3,sunWidth:1.0,sunHeight:.55,sunAngle:.5,leafAngle:.95,leafSize:.36,density:.6,blur:.85,
+    shadow:.82,sway:.7,flutter:1,gustiness:.5,grain:.045,flicker:.35,follow:.08,push:1};
+  var speed=1, interactive=true;
+
+  /* ---------- helpers ---------- */
+  function hexToRgb(hex){
+    var h=String(hex).trim().replace(/^#/,'');
+    if(h.length===3)h=h.replace(/./g,function(c){return c+c});
+    if(!/^[0-9a-f]{6}$/i.test(h))return [.5,.5,.5];
+    var n=parseInt(h,16);return [((n>>16)&255)/255,((n>>8)&255)/255,(n&255)/255];
+  }
+  function noise1(t,seed){
+    var i=Math.floor(t),f=t-i;
+    function hash(n){var s=Math.sin(n*127.1+seed*311.7)*43758.5453;return s-Math.floor(s)}
+    var u=f*f*(3-2*f);return hash(i)*(1-u)+hash(i+1)*u;
+  }
+  function gustAt(t,gustiness){
+    var g=Math.min(Math.max(gustiness,0),1);
+    var n=noise1(t*.13,1.7)*.7+noise1(t*.41,5.3)*.3;
+    var lo=.62-g*.32, x=Math.min(Math.max((n-lo)/.32,0),1);
+    return .25+.75*x*x*(3-2*x);
+  }
+  function springStep(pos,vel,target,dt,stiffness,damping){
+    var steps=Math.max(1,Math.ceil(dt/(1/120))), h=Math.min(dt,.25)/steps;
+    for(var i=0;i<steps;i++){vel+=((target-pos)*stiffness-vel*damping)*h;pos+=vel*h}
+    return [pos,vel];
+  }
+  function approach(cur,target,dt,k){return target+(cur-target)*Math.exp(-dt*k)}
+  function wallUnit(w,h){return Math.max(Math.min(w,h),Math.max(w,h)*.62,1)}
+  function toWall(u,v,w,h){var m=wallUnit(w,h);return [((u-.5)*w)/m,((v-.5)*h)/m]}
+
+  /* ---------- shaders ---------- */
+  var VERT='attribute vec2 a_pos;\nvoid main(){ gl_Position = vec4(a_pos, 0.0, 1.0); }';
+  var FRAG=[
+'precision highp float;',
+'uniform vec2 u_res;','uniform float u_time;','uniform float u_seed;','uniform vec2 u_wind;','uniform float u_gust;',
+'uniform vec3 u_pointer;','uniform vec2 u_sun;','uniform vec3 u_sunShape;','uniform float u_leafAngle;','uniform float u_leafSize;',
+'uniform float u_density;','uniform float u_blur;','uniform float u_shadow;','uniform float u_sway;','uniform float u_flutter;',
+'uniform float u_grain;','uniform float u_gain;','uniform vec3 u_wallTop;','uniform vec3 u_wallBottom;','uniform vec3 u_bounce;',
+'uniform vec3 u_light;','uniform vec3 u_hot;','',
+'mat2 rot(float a){ float c = cos(a), s = sin(a); return mat2(c, s, -s, c); }',
+'float h21(vec2 p){ vec3 q = fract(vec3(p.xyx) * 0.1031); q += dot(q, q.yzx + 33.33); return fract((q.x + q.y) * q.z); }',
+'vec2 h22(vec2 p){ vec3 q = fract(vec3(p.xyx) * vec3(0.1031, 0.1030, 0.0973)); q += dot(q, q.yzx + 33.33); return fract((q.xx + q.yz) * q.zy); }',
+'float vnoise(vec2 p){',
+'  vec2 i = floor(p), f = fract(p);',
+'  f = f * f * (3.0 - 2.0 * f);',
+'  return mix(mix(h21(i), h21(i + vec2(1.0, 0.0)), f.x), mix(h21(i + vec2(0.0, 1.0)), h21(i + vec2(1.0, 1.0)), f.x), f.y);',
+'}','',
+'float canopy(vec2 q, float t, float blur, float seed, float flut, float tilt){',
+'  vec2 cell = vec2(1.2, 0.42);',
+'  vec2 g = q / cell;',
+'  vec2 id = floor(g);',
+'  vec2 f = fract(g);',
+'  float clear = 1.0;',
+'  for (int j = -2; j <= 2; j++) {',
+'    for (int i = -1; i <= 1; i++) {',
+'      vec2 o = vec2(float(i), float(j));',
+'      vec2 cid = id + o;',
+'      vec2 r = h22(cid + seed * 17.0);',
+'      float r2 = h21(cid + seed * 31.0 + 7.1);',
+'      float clump = vnoise(cid * vec2(0.42, 0.6) + seed * 5.0 + t * 0.015);',
+'      float keep = smoothstep(0.0, 0.25, clump + u_density - 0.75 + r2 * 0.3);',
+'      if (keep < 0.002) continue;',
+'      float ph = r2 * 6.2831;',
+'      float sp = 2.1 + r.x * 2.9;',
+'      float flick = sin(t * sp + ph) + 0.5 * sin(t * (sp * 2.3 + 1.1) + ph * 2.0);',
+'      vec2 c = o + 0.5 + (r - 0.5) * 0.55;',
+'      vec2 d = (f - c) * cell;',
+'      d += vec2(sin(t * 1.3 + ph), cos(t * 1.7 + ph * 1.3)) * 0.04 * flut;',
+'      d = rot(tilt + (r.y - 0.5) * 0.7 + clamp(flick * flut * 0.1, -0.3, 0.3)) * d;',
+'      float len = 0.3 + 0.3 * r.x;',
+'      float wid = (0.15 + 0.11 * r.y) * (1.0 - min(flut, 1.6) * 0.22 * (0.5 + 0.5 * flick));',
+'      d.y *= 1.0 + 0.5 * smoothstep(-len, len, d.x);',
+'      float k = length(d / vec2(len, wid));',
+'      float a = 1.0 - smoothstep(1.0 - blur, 1.0 + blur * 0.35, k);',
+'      clear *= 1.0 - a * keep;',
+'    }',
+'  }',
+'  return clear;',
+'}','',
+'void main(){',
+'  vec2 uv = gl_FragCoord.xy / u_res;',
+'  float m = max(min(u_res.x, u_res.y), max(u_res.x, u_res.y) * 0.62);',
+'  vec2 p = (gl_FragCoord.xy - 0.5 * u_res) / m;',
+'  float t = u_time;','',
+'  vec2 s = rot(-u_sunShape.z) * (p - u_sun);',
+'  float e = length(s / u_sunShape.xy);',
+'  float sun = 1.0 - smoothstep(0.2, 1.05, e);',
+'  sun = sun * sun * (3.0 - 2.0 * sun);',
+'  float core = exp(-e * e * 4.0);','',
+'  vec2 dp = p - u_pointer.xy;',
+'  float near = u_pointer.z * exp(-dot(dp, dp) / 0.05);',
+'  float flut = u_flutter * (0.25 + 0.75 * u_gust) + near * 1.4;','',
+'  vec2 w = p + u_wind;',
+'  w += vec2(sin(t * 0.43 + p.y * 1.7) + 0.5 * sin(t * 0.97 + p.x * 2.3),',
+'            cos(t * 0.37 + p.x * 1.3) + 0.5 * cos(t * 0.81 + p.y * 2.9)) * 0.045 * u_sway * (0.5 + u_gust);',
+'  w += dp * near * 0.22;','',
+'  vec2 q = rot(-u_leafAngle) * w / max(u_leafSize, 0.02);',
+'  float b = clamp(u_blur, 0.0, 1.0);',
+'  float far = canopy(q * 0.62 + vec2(3.7, 1.9) - u_wind * 0.6, t * 0.7, 0.55 + b * 0.45, 1.0, flut * 0.6, -0.22);',
+'  float nr = canopy(q + u_wind * 0.8, t, 0.2 + b * 0.6, 2.0, flut, 0.18);',
+'  float through = mix(1.0, far * nr, u_shadow);',
+'  float lit = sun * through * u_gain;','',
+'  float diag = clamp(uv.x * 0.65 + (1.0 - uv.y) * 0.45, 0.0, 1.0);',
+'  vec3 col = mix(u_wallTop, u_wallBottom, smoothstep(0.0, 1.0, diag));',
+'  col = mix(col, u_bounce, sun * 0.55);',
+'  col = mix(col, u_light, clamp(lit, 0.0, 1.0));',
+'  col += (u_hot - u_light) * lit * core * 0.45;','',
+'  float n = h21(gl_FragCoord.xy + u_seed * 101.7) + h21(gl_FragCoord.xy * 1.37 - u_seed * 57.3) - 1.0;',
+'  col += n * u_grain;',
+'  gl_FragColor = vec4(clamp(col, 0.0, 1.0), 1.0);',
+'}'].join('\n');
+
+  var COLOR_KEYS=['wallTop','wallBottom','bounce','light','hot'];
+  var FLOAT_KEYS=['leafAngle','leafSize','density','blur','shadow','sway','flutter','grain'];
+
+  /* ---------- no WebGL: a still picture of the same light ---------- */
+  function stillFallback(){
+    var f=hexToRgb(P.light).map(function(c){return Math.round(c*255)}).join(',');
+    canvas.style.display='none';
+    section.style.background='radial-gradient(110% 80% at '+(P.sunX*100)+'% '+((1-P.sunY)*100)+'%, rgba('+f+',.95) 0%, '+P.bounce+' 38%, '+P.wallBottom+' 72%, '+P.wallTop+' 100%)';
+  }
+
+  /* ---------- the live canopy ---------- */
+  var reduced=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  function start(){
+    var gl=canvas.getContext('webgl',{antialias:false,alpha:false,depth:false,stencil:false,preserveDrawingBuffer:false,powerPreference:'low-power'});
+    if(!gl){stillFallback();return function(){}}
+    function compile(type,src){
+      var sh=gl.createShader(type);if(!sh)return null;
+      gl.shaderSource(sh,src);gl.compileShader(sh);
+      if(!gl.getShaderParameter(sh,gl.COMPILE_STATUS)){console.error('canopy:',gl.getShaderInfoLog(sh));gl.deleteShader(sh);return null}
+      return sh;
+    }
+    var vs=compile(gl.VERTEX_SHADER,VERT), fs=compile(gl.FRAGMENT_SHADER,FRAG);
+    var program=vs&&fs?gl.createProgram():null;
+    if(!program){stillFallback();return function(){}}
+    gl.attachShader(program,vs);gl.attachShader(program,fs);gl.linkProgram(program);
+    gl.deleteShader(vs);gl.deleteShader(fs);
+    if(!gl.getProgramParameter(program,gl.LINK_STATUS)){console.error('canopy:',gl.getProgramInfoLog(program));gl.deleteProgram(program);stillFallback();return function(){}}
+    gl.useProgram(program);
+
+    var buffer=gl.createBuffer();
+    gl.bindBuffer(gl.ARRAY_BUFFER,buffer);
+    gl.bufferData(gl.ARRAY_BUFFER,new Float32Array([-1,-1,3,-1,-1,3]),gl.STATIC_DRAW);
+    var aPos=gl.getAttribLocation(program,'a_pos');
+    gl.enableVertexAttribArray(aPos);gl.vertexAttribPointer(aPos,2,gl.FLOAT,false,0,0);
+
+    function loc(n){return gl.getUniformLocation(program,n)}
+    var U={res:loc('u_res'),time:loc('u_time'),seed:loc('u_seed'),wind:loc('u_wind'),gust:loc('u_gust'),pointer:loc('u_pointer'),sun:loc('u_sun'),sunShape:loc('u_sunShape'),gain:loc('u_gain')};
+    var colorLocs=COLOR_KEYS.map(function(k){return loc('u_'+k)});
+    var floatLocs=FLOAT_KEYS.map(function(k){return loc('u_'+k)});
+    var colorVals=COLOR_KEYS.map(function(k){return hexToRgb(P[k])});
+
+    /* sizing from the element; the light is soft, so the buffer stays near 1x, and steps down on slow devices */
+    var cssW=1,cssH=1,quality=1;
+    function resize(){
+      var dpr=Math.min(window.devicePixelRatio||1,1.25)*quality;
+      cssW=Math.max(canvas.clientWidth,1);cssH=Math.max(canvas.clientHeight,1);
+      var w=Math.max(1,Math.round(cssW*dpr)),h=Math.max(1,Math.round(cssH*dpr));
+      if(canvas.width!==w||canvas.height!==h){canvas.width=w;canvas.height=h}
+    }
+    resize();
+
+    /* state */
+    var clock=7.3,windX=0,windY=0,windVX=0,windVY=0,boost=0,stir=0;
+    var pointerU=.5,pointerV=.5,pointerSeen=false,sunU=P.sunX,sunV=P.sunY,frameNo=0;
+    var raf=0,last=0,visible=true,grainClock=0,slow=0;
+
+    function toUv(e){
+      var r=canvas.getBoundingClientRect();
+      return [Math.min(Math.max((e.clientX-r.left)/Math.max(r.width,1),0),1),Math.min(Math.max(1-(e.clientY-r.top)/Math.max(r.height,1),0),1)];
+    }
+    function onMove(e){
+      if(!interactive)return;
+      var uv=toUv(e),u=uv[0],v=uv[1];
+      if(pointerSeen){
+        var d=toWall(u-pointerU+.5,v-pointerV+.5,cssW,cssH),k=P.push;
+        windVX+=d[0]*2.4*k;windVY+=d[1]*2.4*k;
+        stir=Math.min(1,stir+Math.hypot(d[0],d[1])*9);
+      }
+      pointerU=u;pointerV=v;pointerSeen=true;wake();
+    }
+    function onDown(e){
+      if(!interactive)return;
+      var uv=toUv(e);pointerU=uv[0];pointerV=uv[1];pointerSeen=true;
+      boost=1;stir=1;
+      var w=toWall(uv[0],uv[1],cssW,cssH),d=Math.hypot(w[0],w[1])||1,k=P.push;
+      windVX+=(-w[0]/d)*.9*k;windVY+=(-w[1]/d)*.9*k;wake();
+    }
+    function onLeave(){pointerSeen=false}
+    section.addEventListener('pointermove',onMove);
+    section.addEventListener('pointerdown',onDown);
+    section.addEventListener('pointerleave',onLeave);
+
+    function draw(){
+      gl.viewport(0,0,canvas.width,canvas.height);
+      gl.uniform2f(U.res,canvas.width,canvas.height);
+      gl.uniform1f(U.time,clock);
+      gl.uniform1f(U.seed,(frameNo%97)+.5);
+      gl.uniform2f(U.wind,windX,windY);
+      var gust=Math.min(1,gustAt(clock,P.gustiness)+boost*.8);
+      gl.uniform1f(U.gust,gust);
+      var pw=toWall(pointerU,pointerV,cssW,cssH);gl.uniform3f(U.pointer,pw[0],pw[1],stir);
+      var sw=toWall(sunU,sunV,cssW,cssH);gl.uniform2f(U.sun,sw[0],sw[1]);
+      gl.uniform3f(U.sunShape,Math.max(P.sunWidth,.05),Math.max(P.sunHeight,.05),P.sunAngle);
+      var shimmer=noise1(clock*1.9,9.1)*.6+noise1(clock*5.3,3.3)*.4;
+      gl.uniform1f(U.gain,1-Math.min(Math.max(P.flicker,0),1)*.28*shimmer*(.5+gust*.5));
+      for(var i=0;i<colorLocs.length;i++)gl.uniform3f(colorLocs[i],colorVals[i][0],colorVals[i][1],colorVals[i][2]);
+      for(var j=0;j<floatLocs.length;j++)gl.uniform1f(floatLocs[j],P[FLOAT_KEYS[j]]);
+      gl.drawArrays(gl.TRIANGLES,0,3);
+    }
+
+    function frame(now){
+      raf=0;
+      var raw=last?(now-last)/1000:1/60;
+      var dt=Math.min(raw,.1);last=now;
+      clock+=dt*Math.max(speed,0);
+
+      var a=springStep(windX,windVX,0,dt,7,2.6);windX=a[0];windVX=a[1];
+      var b=springStep(windY,windVY,0,dt,7,2.6);windY=b[0];windVY=b[1];
+      windX=Math.min(Math.max(windX,-.6),.6);windY=Math.min(Math.max(windY,-.6),.6);
+      boost=approach(boost,0,dt,.9);stir=approach(stir,0,dt,1.4);
+
+      var follow=interactive&&pointerSeen?P.follow:0;
+      sunU=approach(sunU,P.sunX+(pointerU-.5)*follow,dt,2.2);
+      sunV=approach(sunV,P.sunY+(pointerV-.5)*follow,dt,2.2);
+
+      grainClock+=dt;
+      if(grainClock>=1/24){grainClock%=1/24;frameNo++}
+
+      /* slow device: step the drawing resolution down rather than stutter */
+      if(raw>.032){if(++slow>30&&quality>.55){quality*=.8;slow=0;resize()}}else if(slow>0)slow--;
+
+      draw();
+      if(visible)raf=requestAnimationFrame(frame);
+    }
+    function wake(){
+      if(reduced||raf||!visible||document.hidden)return;
+      last=0;raf=requestAnimationFrame(frame);
+    }
+
+    var ro=new ResizeObserver(function(){resize();if(reduced||!raf)draw()});
+    ro.observe(canvas);
+    var io=new IntersectionObserver(function(en){visible=en[0].isIntersecting;if(visible)wake()});
+    io.observe(section);
+    function onVis(){if(!document.hidden)wake()}
+    document.addEventListener('visibilitychange',onVis);
+
+    draw();   /* paint before the first frame so nothing ever shows an empty canvas */
+    wake();
+
+    return function stop(){
+      cancelAnimationFrame(raf);raf=0;visible=false;
+      ro.disconnect();io.disconnect();
+      document.removeEventListener('visibilitychange',onVis);
+      section.removeEventListener('pointermove',onMove);
+      section.removeEventListener('pointerdown',onDown);
+      section.removeEventListener('pointerleave',onLeave);
+      gl.deleteBuffer(buffer);gl.deleteProgram(program);
+    };
+  }
+
+  var stop=start();
+  canvas.addEventListener('webglcontextlost',function(e){e.preventDefault();stop();stop=function(){}});
+  canvas.addEventListener('webglcontextrestored',function(){stop=start()});
+})();
+</script>
+<script>
+/* Spotlight cards: tell each service card where the pointer is, relative to the card.
+   Only runs with a mouse or trackpad, only touches cards near the pointer, and batches work to one update per frame. */
+(function(){
+  var fine=window.matchMedia('(hover:hover) and (pointer:fine)');
+  var cards=[].slice.call(document.querySelectorAll('.svc-card[data-glow]'));
+  if(!cards.length||!fine.matches)return;
+  var px=-9999,py=-9999,pending=false,REACH=260;
+
+  function apply(){
+    pending=false;
+    var xp=(Math.min(Math.max(px/window.innerWidth,0),1)).toFixed(3);
+    for(var i=0;i<cards.length;i++){
+      var c=cards[i],r=c.getBoundingClientRect();
+      var near=px>r.left-REACH&&px<r.right+REACH&&py>r.top-REACH&&py<r.bottom+REACH;
+      if(near){
+        c.style.setProperty('--mx',(px-r.left).toFixed(1));
+        c.style.setProperty('--my',(py-r.top).toFixed(1));
+        c.style.setProperty('--xp',xp);
+        c._glowOn=true;
+      }else if(c._glowOn){
+        c.style.setProperty('--mx','-999');c.style.setProperty('--my','-999');
+        c._glowOn=false;
+      }
+    }
+  }
+  function queue(){if(!pending){pending=true;requestAnimationFrame(apply)}}
+
+  document.addEventListener('pointermove',function(e){
+    if(e.pointerType==='touch')return;
+    px=e.clientX;py=e.clientY;queue();
+  },{passive:true});
+  window.addEventListener('scroll',function(){if(px>-9000)queue()},{passive:true});
+  document.documentElement.addEventListener('mouseleave',function(){px=-9999;py=-9999;queue()});
+})();
+</script>
+<script>
+/* Art for sale: free-floating paintings.
+   Each painting wanders the stage on its own — heading for a random spot, then another — and steers clear of the others.
+   Motion is time-based, never tied to scrolling, and only runs while the section is on screen. Hover, focus or tap a
+   painting to hold it still and flip it to reach its Enquire link; a button pauses everything. Built from the plain
+   .gal-grid (which is replaced); with reduced motion, or without JavaScript, the plain grid is kept. */
+(function(){
+  var section=document.getElementById('gallery');
+  if(!section||window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+  var grid=section.querySelector('.gal-grid'),pieces=[].slice.call(section.querySelectorAll('.piece'));
+  if(!grid||!pieces.length)return;
+  var N=pieces.length;
+
+  function el(tag,cls,text){var e=document.createElement(tag);if(cls)e.className=cls;if(text!=null)e.textContent=text;return e}
+  function clamp(v,a,b){return Math.min(Math.max(v,a),b)}
+  function rand(a,b){return a+Math.random()*(b-a)}
+
+  /* ---------- build the stage from the plain grid ---------- */
+  var stage=el('div','float-stage');
+  stage.setAttribute('role','group');stage.setAttribute('aria-label','Paintings for sale');
+
+  var cards=pieces.map(function(p,i){
+    var img=p.querySelector('img'),title=p.querySelector('h3').textContent.trim(),desc=p.querySelector('.med').textContent.trim(),href=p.querySelector('a.link').getAttribute('href');
+    var card=el('article','mcard'),flip=el('div','mflip'),front=el('div','mface mfront'),back=el('div','mface mback');
+    card.tabIndex=0;card.setAttribute('aria-label',title+', '+desc);
+    var im=new Image();im.src=img.getAttribute('src');im.alt=img.getAttribute('alt')||'';im.decoding='async';front.appendChild(im);
+    back.appendChild(el('b',null,title));back.appendChild(el('span',null,desc));
+    var a=el('a',null,'Enquire');a.href=href;back.appendChild(a);
+    flip.appendChild(front);flip.appendChild(back);card.appendChild(flip);stage.appendChild(card);
+    var c={el:card,x:0,y:0,vx:rand(-20,20),vy:rand(-20,20),wx:0,wy:0,wt:0,speed:rand(26,50),
+      freq:rand(.18,.34),phase:rand(0,6.28),sc:1,hover:false,focus:false,flipped:false};
+    card.addEventListener('mouseenter',function(){c.hover=true});
+    card.addEventListener('mouseleave',function(){c.hover=false});
+    card.addEventListener('focusin',function(){c.focus=true});
+    card.addEventListener('focusout',function(){c.focus=false});
+    return c;
+  });
+
+  var paused=false;
+  var pauseBtn=el('button','float-pause','Pause motion');
+  pauseBtn.type='button';pauseBtn.setAttribute('aria-pressed','false');
+  pauseBtn.addEventListener('click',function(){
+    paused=!paused;
+    pauseBtn.setAttribute('aria-pressed',paused);pauseBtn.textContent=paused?'Play motion':'Pause motion';
+    if(!paused)wake();
+  });
+  stage.appendChild(pauseBtn);
+
+  /* touch: tap a painting to flip (and hold) it; hover does that for a mouse */
+  if(!window.matchMedia('(hover:hover)').matches){
+    cards.forEach(function(c){c.el.addEventListener('click',function(e){
+      if(e.target.closest('a'))return;
+      var next=!c.flipped;cards.forEach(function(o){o.flipped=false;o.el.classList.remove('flipped')});
+      c.flipped=next;c.el.classList.toggle('flipped',next);
+    })});
+  }
+
+  grid.parentNode.insertBefore(stage,grid);
+  grid.parentNode.removeChild(grid);
+
+  /* ---------- geometry ---------- */
+  var w=1,h=1,W=190,H=238,mx=100,my=120;
+  function layout(){
+    w=stage.clientWidth||600;h=stage.clientHeight||600;
+    W=Math.round(clamp(w*.17,118,210));H=Math.round(W*1.25);
+    mx=W/2+6;my=H/2+6;
+    stage.style.setProperty('--cw',W+'px');stage.style.setProperty('--ch',H+'px');
+    cards.forEach(function(c){c.x=clamp(c.x,mx,Math.max(mx,w-mx));c.y=clamp(c.y,my,Math.max(my,h-my))});
+  }
+  function newWaypoint(c){
+    c.wx=rand(mx,Math.max(mx+1,w-mx));c.wy=rand(my,Math.max(my+1,h-my));c.wt=rand(5,11);
+  }
+  layout();
+  cards.forEach(function(c,i){
+    /* start spread out, in a loose zigzag, each already heading somewhere */
+    c.x=clamp((i+.5)/N*w+rand(-30,30),mx,Math.max(mx,w-mx));
+    c.y=clamp(h*(i%2?.66:.34)+rand(-40,40),my,Math.max(my,h-my));
+    newWaypoint(c);
+  });
+
+  /* ---------- motion ---------- */
+  var clock=0,last=0,raf=0,visible=false,MAXV=95;
+  function frozen(c){return c.hover||c.focus||c.flipped}
+
+  function step(dt){
+    clock+=dt;
+    var i,j,c,o;
+    for(i=0;i<N;i++){
+      c=cards[i];
+      if(frozen(c)){
+        var k=Math.exp(-dt*7);c.vx*=k;c.vy*=k;                              /* hold still so it can be read and clicked */
+        c.el.classList.add('up');
+      }else{
+        c.el.classList.remove('up');
+        var dx=c.wx-c.x,dy=c.wy-c.y,dist=Math.hypot(dx,dy)||1;
+        c.wt-=dt;
+        if(dist<70||c.wt<=0)newWaypoint(c);
+        c.vx+=((dx/dist)*c.speed-c.vx)*.9*dt;                                /* steer toward the waypoint */
+        c.vy+=((dy/dist)*c.speed-c.vy)*.9*dt;
+      }
+    }
+    /* keep clear of each other */
+    var min=W*1.1;
+    for(i=0;i<N;i++)for(j=i+1;j<N;j++){
+      c=cards[i];o=cards[j];
+      var ddx=o.x-c.x,ddy=o.y-c.y,d=Math.hypot(ddx,ddy)||.01;
+      if(d<min){
+        var push=(min-d)/min*240*dt,nx=ddx/d,ny=ddy/d,cf=frozen(c),of=frozen(o);
+        if(!cf){c.vx-=nx*push*(of?1.6:1);c.vy-=ny*push*(of?1.6:1)}
+        if(!of){o.vx+=nx*push*(cf?1.6:1);o.vy+=ny*push*(cf?1.6:1)}
+      }
+    }
+    for(i=0;i<N;i++){
+      c=cards[i];
+      var sp=Math.hypot(c.vx,c.vy);if(sp>MAXV){c.vx*=MAXV/sp;c.vy*=MAXV/sp}
+      c.x+=c.vx*dt;c.y+=c.vy*dt;
+      /* soft walls */
+      if(c.x<mx){c.x=mx;c.vx=Math.abs(c.vx)*.6}else if(c.x>w-mx){c.x=Math.max(mx,w-mx);c.vx=-Math.abs(c.vx)*.6}
+      if(c.y<my){c.y=my;c.vy=Math.abs(c.vy)*.6}else if(c.y>h-my){c.y=Math.max(my,h-my);c.vy=-Math.abs(c.vy)*.6}
+    }
+  }
+
+  function paint(){
+    for(var i=0;i<N;i++){
+      var c=cards[i];
+      var rot=Math.sin(clock*c.freq+c.phase)*12+c.vx*.09;                    /* a slow sway, leaning into the drift */
+      var targetScale=frozen(c)?1.08:1+Math.sin(clock*.5+c.phase)*.025;
+      c.sc+=(targetScale-c.sc)*.12;
+      c.el.style.transform='translate3d('+(c.x-W/2).toFixed(1)+'px,'+(c.y-H/2).toFixed(1)+'px,0) rotate('+rot.toFixed(2)+'deg) scale('+c.sc.toFixed(3)+')';
+    }
+  }
+
+  function frame(now){
+    raf=0;
+    var dt=last?Math.min((now-last)/1000,.05):1/60;last=now;
+    step(dt);paint();
+    if(visible&&!paused)raf=requestAnimationFrame(frame);else last=0;
+  }
+  function wake(){if(visible&&!paused&&!raf){last=0;raf=requestAnimationFrame(frame)}}
+
+  paint();
+
+  if('ResizeObserver' in window)new ResizeObserver(function(){layout();if(!raf)paint()}).observe(stage);
+  else window.addEventListener('resize',function(){layout();if(!raf)paint()});
+
+  /* animate only while on screen; fade the paintings in the first time they are seen */
+  new IntersectionObserver(function(en){
+    visible=en[0].isIntersecting;
+    if(visible){stage.classList.add('in');wake()}
+  },{rootMargin:'120px 0px'}).observe(stage);
+})();
+</script>
+<script>
+/* Location card: tilts toward the pointer on a spring while closed; click, tap or Enter expands it and loads the real map
+   (only the first time, so Google is not contacted until someone asks). Close button or Escape collapses it. */
+(function(){
+  var root=document.getElementById('lmap'),card=document.getElementById('lmapCard'),hint=document.getElementById('lmapHint'),
+      toggle=document.getElementById('lmapToggle'),closeBtn=document.getElementById('lmapClose'),
+      mapBox=document.getElementById('lmapMap'),frame=document.getElementById('lmapFrame');
+  if(!root||!card||!toggle||!closeBtn||!frame)return;
+  var open=false,loaded=false,touch=!window.matchMedia('(hover:hover)').matches;
+  var tx=0,ty=0,wake=function(){};
+  hint.textContent=(touch?'Tap':'Click')+' to expand';
+
+  function set(v,moveFocus){
+    open=v;root.classList.toggle('open',v);toggle.setAttribute('aria-expanded',v?'true':'false');
+    if(v){
+      mapBox.removeAttribute('inert');
+      if(!loaded){
+        loaded=true;
+        frame.addEventListener('load',function(){root.classList.add('map-ready')});
+        frame.src=frame.getAttribute('data-src');
+      }
+      tx=0;ty=0;wake();                                   /* no tilt while the map is open: it would fight panning */
+      if(moveFocus!==false)setTimeout(function(){closeBtn.focus({preventScroll:true})},60);
+    }else{
+      mapBox.setAttribute('inert','');
+      if(moveFocus!==false)toggle.focus({preventScroll:true});
+    }
+  }
+  toggle.addEventListener('click',function(){set(true)});
+  closeBtn.addEventListener('click',function(){set(false)});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&open)set(false)});
+
+  /* tilt: pointer offset from the centre maps to +/-8 degrees, eased with a spring */
+  if(!window.matchMedia('(hover:hover) and (pointer:fine)').matches||window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+  var rx=0,ry=0,vx=0,vy=0,raf=0,last=0;
+  function clamp(v,a,b){return Math.min(Math.max(v,a),b)}
+  function spring(p,v,t,dt){
+    var steps=Math.max(1,Math.ceil(dt/(1/120))),h=Math.min(dt,.25)/steps;
+    for(var i=0;i<steps;i++){v+=((t-p)*300-v*30)*h;p+=v*h}
+    return [p,v];
+  }
+  function frame_(now){
+    raf=0;var dt=last?Math.min((now-last)/1000,.05):1/60;last=now;
+    var a=spring(rx,vx,tx,dt);rx=a[0];vx=a[1];
+    var b=spring(ry,vy,ty,dt);ry=b[0];vy=b[1];
+    card.style.transform='rotateX('+rx.toFixed(2)+'deg) rotateY('+ry.toFixed(2)+'deg)';
+    if(Math.abs(rx-tx)>.01||Math.abs(ry-ty)>.01||Math.abs(vx)>.01||Math.abs(vy)>.01)raf=requestAnimationFrame(frame_);
+    else{last=0;if(tx===0&&ty===0)card.style.transform=''}
+  }
+  wake=function(){if(!raf){last=0;raf=requestAnimationFrame(frame_)}};
+  root.addEventListener('pointermove',function(e){
+    if(open){tx=0;ty=0;wake();return}
+    var r=root.getBoundingClientRect();
+    var mx=e.clientX-(r.left+r.width/2),my=e.clientY-(r.top+r.height/2);
+    ty=clamp(mx/50,-1,1)*8;            /* rotateY follows x */
+    tx=-clamp(my/50,-1,1)*8;           /* rotateX follows y, inverted */
+    wake();
+  });
+  root.addEventListener('pointerleave',function(){tx=0;ty=0;wake()});
+})();
+</script>
+<script>
+/* Word motion: splits some text into letters or words so they can move on their own. The real text stays readable to
+   screen readers (the pieces are hidden from them and the full text is kept alongside), and nothing is split for
+   visitors who prefer reduced motion. */
+(function(){
+  if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+  function span(cls,text){var s=document.createElement('span');s.className=cls;if(text!=null)s.textContent=text;return s}
+
+  /* hero headline: letter by letter */
+  var h1=document.querySelector('.hero h1');
+  if(h1){
+    h1.setAttribute('aria-label',[].map.call(h1.querySelectorAll('.ln'),function(l){return l.textContent.trim()}).join(' '));   /* "Healing through creativity" */
+    [].forEach.call(h1.querySelectorAll('.ln'),function(ln,li){
+      var inner=ln.firstElementChild,text=inner.textContent;
+      inner.textContent='';inner.setAttribute('aria-hidden','true');
+      ln.style.setProperty('--d',(li*.14)+'s');
+      text.split('').forEach(function(c,i){
+        var ch=span('ch'),ci=span('ci',c);ch.style.setProperty('--i',i);ch.appendChild(ci);inner.appendChild(ch);
+      });
+    });
+    h1.classList.add('has-chars');
+  }
+
+  /* hero sentence: word by word */
+  var hc=document.querySelector('.hero-copy');
+  if(hc){
+    var full=hc.textContent.trim();hc.textContent='';
+    var vis=span('wsplit');vis.setAttribute('aria-hidden','true');
+    full.split(/\s+/).forEach(function(w,i){var s=span('wd',w);s.style.setProperty('--i',i);vis.appendChild(s);vis.appendChild(document.createTextNode(' '))});
+    hc.appendChild(vis);hc.appendChild(span('sr-only',full));hc.classList.add('has-words');
+  }
+
+  /* section headings and the quote: words rise as they scroll into view */
+  var targets=[].slice.call(document.querySelectorAll('h2.h2, .quote-band blockquote')).filter(function(h){return !h.children.length&&h.textContent.trim()});
+  var io='IntersectionObserver' in window?new IntersectionObserver(function(entries){
+    entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('words-in');io.unobserve(e.target)}});
+  },{threshold:.35}):null;
+  targets.forEach(function(h){
+    var full=h.textContent.trim();h.textContent='';
+    var vis=span('wsplit');vis.setAttribute('aria-hidden','true');
+    full.split(/\s+/).forEach(function(w,i){
+      var o=span('w'),n=span('wi',w);n.style.setProperty('--i',i);o.appendChild(n);vis.appendChild(o);vis.appendChild(document.createTextNode(' '));
+    });
+    h.appendChild(vis);h.appendChild(span('sr-only',full));
+    h.classList.add('wh');h.classList.remove('rv');                       /* the words carry the entrance, not a fade of the whole block */
+    if(io)io.observe(h);else h.classList.add('words-in');
+  });
+})();
+</script>
+</body>
+</html>
